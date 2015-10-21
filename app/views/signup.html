@@ -1,0 +1,43 @@
+
+<form class="login-form" ng-submit="signup(signupForm.$valid)" name="signupForm" >
+
+  <input type="text" id="inputUsername" name="inputUsername" placeholder="Username" class="form-control" required ng-model="inputData.username">
+
+  <input type="email" id="inputEmail" name="inputEmail" placeholder="Email" class="form-control" required ng-model="inputData.email">
+
+  <input type="password" id="inputPassword" placeholder="Password" name="inputPassword" class="form-control" required ng-model="inputData.password">
+
+  <input type="password" id="inputPassword2" placeholder="Password confirm" name="inputPassword2" class="form-control" required ng-model="inputData.password2"  compare-to="inputData.password" >
+
+  <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign Up">
+
+  <div class="help-block" ng-messages="signupForm.inputUsername.$error" ng-show="signupForm.inputUsername.$touched">
+    <div ng-message="required">
+      Please enter your email address...
+    </div>
+  </div>
+  <div class="help-block" ng-messages="signupForm.inputEmail.$error" ng-show="signupForm.inputEmail.$touched">
+    <div ng-message="required">
+      Please enter your email address...
+    </div>
+    <div ng-message="email">
+      You did not enter your email address correctly...
+    </div>
+  </div>
+  <div class="help-block" ng-messages="signupForm.inputPassword.$error" ng-show="signupForm.inputPassword.$touched">
+    <div ng-message="required">
+      Please enter a password...
+    </div>
+  </div>
+  <div class="help-block" ng-messages="signupForm.inputPassword2.$error" ng-show="signupForm.inputPassword2.$touched">
+    <div ng-message="required">
+      Please enter a matching password...
+    </div>
+  </div>
+
+
+</form>
+
+
+
+

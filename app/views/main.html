@@ -1,0 +1,20 @@
+<h1>Google maps</h1>
+<div class="row">
+  <div class="col-lg-9">
+  <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="true" events="map.events" >
+    <ui-gmap-layer type="TrafficLayer"></ui-gmap-layer>
+    <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" icon="m.icon" idkey="m.id" options="m.options" click="selectMarker(this)"></ui-gmap-marker>
+  </ui-gmap-google-map>
+    </div>
+  <div class="col-lg-3">
+    <h2>
+      {{selectedMarker.title}}
+    </h2>
+    <p>Location: {{selectedMarker.location}}</p>
+    <p>Size: {{selectedMarker.size}}</p>
+  </div>
+</div>
+
+
+
+
