@@ -27,19 +27,47 @@ angular
       })
       .when('/about', {
         templateUrl: 'views/about.html',
+        caseInsensitiveMatch: true,
         controller: 'AboutCtrl'
       })
       .when('/login', {
         templateUrl: 'views/login.html',
+        caseInsensitiveMatch: true,
         controller: 'AuthCtrl'
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
+        caseInsensitiveMatch: true,
         controller: 'AuthCtrl'
+      })
+      .when('/admin', {
+        templateUrl: 'views/admin.html',
+        caseInsensitiveMatch: true,
+        controller: 'AuthCtrl',
+
+      })
+      .when('/loading', {
+        templateUrl: 'views/loading.html',
+        caseInsensitiveMatch: true,
+        controller: 'LoadingCtrl',
+
       })
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .run(function(playgroundService, application, $rootScope, $location){
+    playgroundService.getPlaygrounds().then(function(){
+      application.makeReady();
+    });
+    $rootScope.$on('$locationChangeStart', function(scope, next, current){
+
+      if($location.path() === '/loading') return;
+
+      if(!application.isReady()){
+        $location.path('loading');
+      }
+    })
   });
 
 angular.module('playgroundApp').config(function (uiGmapGoogleMapApiProvider) {

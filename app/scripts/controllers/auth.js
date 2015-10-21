@@ -93,3 +93,41 @@ var compareTo = function() {
 };
 
 angular.module('playgroundApp').directive("compareTo", compareTo);
+
+angular.module('playgroundApp')
+  .service('Authentication', function(){
+
+  })
+
+
+
+
+angular.module('playgroundApp')
+  .factory('Auth', function($http, $q, AuthToken){
+    var authFactory = {};
+
+  authFactory.login = function(username, password){
+    return $http.post('/api/login', {
+      username: username,
+      password: password
+    })
+      .success(function(data){
+        AuthToken.setToken(data.token);
+        return data;
+      })
+  }
+
+    authFactory.logout = function(){
+      AuthToken.setToken();
+    }
+
+    authFactory.isLoggedIn= function(){
+      return AuthToken.getToken()
+    }
+
+    authFactory.getUser = function(){
+      if(AuthToken.getToken()){
+        return $http.get
+      }
+    }
+});

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="playgroundApp">
+  <body ng-app="playgroundApp" ng-controller="MainCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -43,19 +43,23 @@
               <li><a ng-href="#/about">About</a></li>
               <li><a ng-href="#/signup">Signup</a></li>
               <li><a ng-href="#/login">Log In</a></li>
+              <li><a ng-href="#/admin">Admin</a></li>
             </ul>
+            <span class="pull-right">Hello {{ user.username }}</span>
           </div>
         </div>
+
       </div>
     </div>
 
     <div class="container">
+
     <div ng-view=""></div>
     </div>
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-heart"></span> Group Project 2015</p>
       </div>
     </div>
 
@@ -99,6 +103,10 @@
         <script src="scripts/controllers/auth.js"></script>
         <script src="scripts/controllers/playground.js"></script>
         <script src="scripts/directives/playgroundmap.js"></script>
+        <script src="scripts/controllers/loading.js"></script>
+        <script src="scripts/controllers/application.js"></script>
+        <script src="scripts/services/application.js"></script>
+        <script src="scripts/services/authentication.js"></script>
         <!-- endbuild -->
 </body>
 </html>
