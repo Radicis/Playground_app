@@ -41,11 +41,16 @@
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
               <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/signup">Signup</a></li>
-              <li><a ng-href="#/login">Log In</a></li>
-              <li><a ng-href="#/admin">Admin</a></li>
+              <li ng-if="userIsAdmin"><a ng-href="#/admin">Admin</a></li>
             </ul>
-            <span class="pull-right">Hello {{ user.username }}</span>
+
+            <span class="pull-right" ng-if="displayUsername!=null">Hello {{ displayUsername }} | <a ng-href='#here' ng-click="logout()">Log Out</a></span>
+            <span class="pull-right" ng-if="!displayUsername">
+              <a ng-href="#/login">Log In</a>
+              or
+              <a ng-href="#/signup">Signup</a>
+            </span>
+            <a ng-href='#here' ng-click="testSecurity()">Test</a>
           </div>
         </div>
 
@@ -100,13 +105,14 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/services/authentication.js"></script>
         <script src="scripts/controllers/auth.js"></script>
         <script src="scripts/controllers/playground.js"></script>
         <script src="scripts/directives/playgroundmap.js"></script>
         <script src="scripts/controllers/loading.js"></script>
-        <script src="scripts/controllers/application.js"></script>
         <script src="scripts/services/application.js"></script>
-        <script src="scripts/services/authentication.js"></script>
+
+        <script src="scripts/controllers/admin.js"></script>
         <!-- endbuild -->
 </body>
 </html>

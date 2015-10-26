@@ -8,24 +8,14 @@
  * Controller of the playgroundApp
  */
 angular.module('playgroundApp')
-  .controller('AuthCtrl', function ($scope, $http, $cookies, $location) {
+  .controller('AuthCtrl', function ($scope, $http, $cookies, $location, authentication) {
     $scope.postForm = function(){
 
-      var encodedString = 'username=' + ($scope.inputData.username) + '&password=' + ($scope.inputData.password);
+      var username = $scope.inputData.username;
+      var password = $scope.inputData.password;
 
-      $http({
-        method: 'PUT',
-        url:'http://localhost/playground/rest/api/auth/auth',
-        data: encodedString,
-        headers: {'Content-type': 'application/x-www-form-urlencoded'}
-      }).success(function(data){
-        console.log(data);
-        $cookies.put('myToken', data['message']);
-        $cookies.put('username', $scope.inputData.username);
-        $location.path( "/" );
-      }).error(function(data){
-        console.log(data);
-      })
+      authentication.login(username, password);
+
     }
 
     $scope.testForm = function(){
@@ -94,13 +84,9 @@ var compareTo = function() {
 
 angular.module('playgroundApp').directive("compareTo", compareTo);
 
-angular.module('playgroundApp')
-  .service('Authentication', function(){
-
-  })
 
 
-
+/*
 
 angular.module('playgroundApp')
   .factory('Auth', function($http, $q, AuthToken){
@@ -131,3 +117,6 @@ angular.module('playgroundApp')
       }
     }
 });
+*/
+
+

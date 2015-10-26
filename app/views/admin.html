@@ -1,1 +1,7 @@
 <h2>Admin Section</h2>
+
+<ul>
+  <li ng-repeat="playground in playgrounds">
+    {{playground.name}} | <a href="">View</a> | <a href="">Edit</a> | <button ng-click="deletePlayground(playground.id)">Delete</button>
+  </li>
+</ul>

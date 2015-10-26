@@ -58,7 +58,6 @@ angular.module('playgroundApp')
 				}
 			}
 		});
-
 	});
 
 
@@ -66,12 +65,27 @@ angular.module('playgroundApp')
 
 
 angular.module('playgroundApp').service('playgroundService', function($http, $q){
-	var deferred = $q.defer();
-	$http.get('http://localhost/playground/rest/api/playground/playgrounds/').then(function(data){
-		deferred.resolve(data);
-	})
+
 
 	this.getPlaygrounds = function(){
-		return deferred.promise;
+    var deferred = $q.defer();
+    $http.get('http://localhost/playground/rest/api/playground/playgrounds/').then(function(data){
+      deferred.resolve(data);
+    })
+    return deferred.promise;
 	}
+
+  this.deletePlayground = function(id){
+    $http({
+      method: 'DELETE',
+      data: 'username=root&token=aaa42296669b958c3cee6c0475c8093e',
+      url: 'http://localhost/playground/rest/api/playground/playgrounds/id/' + id,
+      headers: {'Content-type': 'application/x-www-form-urlencoded'}
+    }).success(function(data) {
+      console.log(data);
+      return data;
+    }).error(function(data, status) {
+      console.log(data);
+    });
+  }
 });

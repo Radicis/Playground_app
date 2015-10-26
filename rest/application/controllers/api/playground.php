@@ -113,14 +113,15 @@ class Playground extends REST_Controller {
                 'message' => 'Deleted the resource'
             ];
             $this->set_response($message, REST_Controller::HTTP_ACCEPTED); // NO_CONTENT (204) being the HTTP response
+
         }
         else{
             $message = [
                 'id' => $id,
-                'message' => 'Unauthorized'
+                'message' => 'Unauthorized: ' . $username
             ];
         }
-        $this->set_response($message, REST_Controller::HTTP_FORBIDDEN); // NO_CONTENT (204) being the HTTP response code
+        //$this->set_response($message, REST_Controller::HTTP_FORBIDDEN); // NO_CONTENT (204) being the HTTP response code
     }
 
 }

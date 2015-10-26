@@ -227,6 +227,11 @@ ul{
   overflow-y: auto;
 }
 
+.loading{
+  text-align: center;
+  margin:0 auto;
+}
+
 
 
 

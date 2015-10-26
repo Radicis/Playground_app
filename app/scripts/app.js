@@ -43,8 +43,7 @@ angular
       .when('/admin', {
         templateUrl: 'views/admin.html',
         caseInsensitiveMatch: true,
-        controller: 'AuthCtrl',
-
+        controller: 'AdminCtrl',
       })
       .when('/loading', {
         templateUrl: 'views/loading.html',
@@ -56,10 +55,24 @@ angular
         redirectTo: '/'
       });
   })
-  .run(function(playgroundService, application, $rootScope, $location){
+  .run(function(playgroundService, application, $rootScope, $location, authentication){
     playgroundService.getPlaygrounds().then(function(){
       application.makeReady();
     });
+
+    //comes back undefined due to promise. Set listener
+    $rootScope.verified = authentication.verifyToken();
+
+    if(true) {
+      $rootScope.displayUsername = authentication.getUsername();
+      if ($rootScope.displayUsername) {
+        //Also a delay
+        $rootScope.userIsAdmin = authentication.isAdmin();
+        //For testing
+        $rootScope.userIsAdmin = true;
+      }
+    }
+
     $rootScope.$on('$locationChangeStart', function(scope, next, current){
 
       if($location.path() === '/loading') return;

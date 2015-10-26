@@ -18,13 +18,31 @@ class Auth extends REST_Controller {
     public function auth_get()
     {
 
-        $this->set_response("Unrecognised method", REST_Controller::HTTP_BAD_REQUEST);
+        $token = $this->get('token');
+        $username = $this->get('username');
+
+
+        $message = [
+             'message' => $this->auth_model->verify($username, $token),
+        ];
+
+        $this->set_response($message, REST_Controller::HTTP_CREATED);
     }
 
 
     public function auth_post()
     {
-        $this->set_response("Unrecognised method", REST_Controller::HTTP_BAD_REQUEST);
+        $token = $this->post('token');
+
+        //$token = "aaa42296669b958c3cee6c0475c8093e";
+
+        $isAdmin = $this->auth_model->is_admin($token);
+
+        $message = [
+            'message' => $isAdmin,
+        ];
+
+        $this->set_response($message, REST_Controller::HTTP_CREATED);
     }
 
     //Logs in user and returns auth token
@@ -35,7 +53,10 @@ class Auth extends REST_Controller {
         $username = $this->put('username');
         $password = $this->put('password');
 
+
         $token = $this->user_model->login($username, $password);
+        $test = $token;
+        //$isAdmin = $this->auth_model->verify_admin($username, $token);
         if($token!=FALSE){
 
             //Return the token as JSON so the client can set a cookie.
@@ -46,7 +67,7 @@ class Auth extends REST_Controller {
             $this->set_response($message, REST_Controller::HTTP_CREATED); // CREATED (201) being the HTTP response code
         }
         else{
-            $this->set_response("Invalid Login", REST_Controller::HTTP_BAD_REQUEST); // CREATED (201) being the HTTP response co
+            $this->set_response($test, REST_Controller::HTTP_BAD_REQUEST); // CREATED (201) being the HTTP response co
         }
     }
 }

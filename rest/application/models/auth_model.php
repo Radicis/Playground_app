@@ -31,6 +31,9 @@ class Auth_model extends CI_Model
 
     public function verify($username, $token)
     {
+
+        //return TRUE;
+
         $this->db->where('username', $username);
         $query = $this->db->get('users');
 
@@ -86,14 +89,13 @@ class Auth_model extends CI_Model
         }
     }
 
-    public function is_admin(){
-        $this->db->where('username', $this->input->post('username'));
-        $this->db->where('password', md5($this->input->post('password')));
-        $query = $this->db->get('users');
+    public function is_admin($token){
+        $this->db->where('token', $token);
+        $query = $this->db->get('auth_tokens');
 
         foreach ($query->result() as $row)
         {
-            if($row->isAdmin==1) {
+            if($row->isAdmin==true) {
                 return TRUE;
             }
             else{
