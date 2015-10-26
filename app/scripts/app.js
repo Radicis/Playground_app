@@ -19,7 +19,7 @@ angular
     'ngTouch',
     'uiGmapgoogle-maps'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -44,6 +44,7 @@ angular
         templateUrl: 'views/admin.html',
         caseInsensitiveMatch: true,
         controller: 'AdminCtrl',
+        requireLogin: true
       })
       .when('/loading', {
         templateUrl: 'views/loading.html',
@@ -54,6 +55,8 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
+    $locationProvider.html5Mode(true);
   })
   .run(function(playgroundService, application, $rootScope, $location, authentication){
     playgroundService.getPlaygrounds().then(function(){
@@ -61,20 +64,27 @@ angular
     });
 
     //comes back undefined due to promise. Set listener
-    $rootScope.verified = authentication.verifyToken();
-
-    if(true) {
-      $rootScope.displayUsername = authentication.getUsername();
-      if ($rootScope.displayUsername) {
-        //Also a delay
-        $rootScope.userIsAdmin = authentication.isAdmin();
-        //For testing
-        $rootScope.userIsAdmin = true;
+    var verifyPromise = authentication.verifyToken();
+    verifyPromise.then(function(message){
+      if(message) {
+        var username = authentication.getUsername();
+        if (username) {
+          $rootScope.displayUsername = username;
+          var adminPromise = authentication.isAdmin();
+          adminPromise.then(function (isAdmin) {
+               $rootScope.userIsAdmin = isAdmin;
+          })
+        }
       }
-    }
+      else{
+        $rootScope.displayUsername = null;
+        $rootScope.userIsAdmin = false;
+      }
+    });
 
     $rootScope.$on('$locationChangeStart', function(scope, next, current){
 
+      console.log($location.path.controller);
       if($location.path() === '/loading') return;
 
       if(!application.isReady()){
@@ -90,4 +100,20 @@ angular.module('playgroundApp').config(function (uiGmapGoogleMapApiProvider) {
     libraries: 'weather,geometry,visualization'
   });
 });
+
+/*
+angular.module('playgroundApp').service('authInterceptor', function ($cookies) {
+  return{
+    request: function(config){
+      config.headers = config.headers || {};
+      if($cookies.get('myToken')){
+        config.headers.token =  $cookies.get('myToken');
+      }
+      return config;
+    }
+  }
+}).config(function($httpProvider){
+  $httpProvider.interceptors.push('authInterceptor');
+});
+*/
 

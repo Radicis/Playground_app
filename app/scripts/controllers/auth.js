@@ -18,25 +18,6 @@ angular.module('playgroundApp')
 
     }
 
-    $scope.testForm = function(){
-
-      var username = $cookies.get('username');
-      var token = $cookies.get('myToken');
-
-      var encodedString = 'username=' + username + '&token=' + token;
-
-      $http({
-        method: 'DELETE',
-        url:'http://localhost/playground/rest/api/playground/playgrounds/id/' + $scope.inputData.id,
-        data: encodedString,
-        headers: {'Content-type': 'application/x-www-form-urlencoded'}
-      }).success(function(data){
-        console.log(data);
-      }).error(function(data){
-        console.log(data);
-      })
-    }
-
     $scope.signup = function(isValid){
 
       if(isValid){

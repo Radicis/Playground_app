@@ -16,23 +16,28 @@ angular.module('playgroundApp')
 
     $scope.playgrounds = [];
 
-    var promise = playgroundService.getPlaygrounds();
-    promise.then(function(response){
-      $.each(response.data, function(index){
+    $scope.getPlaygrounds = function() {
+      $scope.playgrounds = [];
+      var promise = playgroundService.getPlaygrounds();
+      promise.then(function (response) {
+        $.each(response.data, function (index) {
           var playground = {};
-        playground.id = response.data[index].id;
+          playground.id = response.data[index].id;
           playground.name = response.data[index].name;
           playground.location = response.data[index].location;
           playground.size = response.data[index].size;
           $scope.playgrounds.push(playground);
-      })
-    });
-
-    $scope.deletePlayground = function(id){
-      playgroundService.deletePlayground(id);
-      //Delay on this. Use promise
-      $location.path("/admin");
+        })
+      });
     }
 
+    $scope.getPlaygrounds();
 
+    $scope.deletePlayground = function(id) {
+      var delPromise = playgroundService.deletePlayground(id);
+
+      delPromise.then(function (response) {
+        $scope.getPlaygrounds();
+      });
+    }
   });
