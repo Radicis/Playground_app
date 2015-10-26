@@ -11,5 +11,5 @@ angular.module('playgroundApp')
   .controller('LoadingCtrl', function ($scope, application, $location) {
     application.registerListener(function(){
       $location.path('/');
-    })
+    });
   });

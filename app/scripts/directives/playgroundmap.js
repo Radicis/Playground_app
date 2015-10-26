@@ -10,8 +10,7 @@ angular.module('playgroundApp')
   .directive('playgroundMap', function () {
     return {
       restrict: 'E',
-      templateUrl: "views/map.html",
+      templateUrl: 'views/map.html',
       controller: 'playgroundCtrl'
-
-    }
+    };
   });

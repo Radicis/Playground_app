@@ -17,47 +17,48 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'uiGmapgoogle-maps'
+    'uiGmapgoogle-maps',
   ])
-  .config(function ($routeProvider, $locationProvider) {
+  .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'PlaygroundCtrl'
+        controller: 'PlaygroundCtrl',
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         caseInsensitiveMatch: true,
-        controller: 'AboutCtrl'
+        controller: 'AboutCtrl',
       })
       .when('/login', {
         templateUrl: 'views/login.html',
         caseInsensitiveMatch: true,
-        controller: 'AuthCtrl'
+        controller: 'AuthCtrl',
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
         caseInsensitiveMatch: true,
-        controller: 'AuthCtrl'
+        controller: 'AuthCtrl',
       })
       .when('/admin', {
         templateUrl: 'views/admin.html',
         caseInsensitiveMatch: true,
         controller: 'AdminCtrl',
-        requireLogin: true
+        auth: true
       })
       .when('/loading', {
         templateUrl: 'views/loading.html',
         caseInsensitiveMatch: true,
         controller: 'LoadingCtrl',
-
-      })
+       })
       .otherwise({
         redirectTo: '/'
       });
 
-    $locationProvider.html5Mode(true);
-  })
+    //$locationProvider.html5Mode(true);
+  }])
   .run(function(playgroundService, application, $rootScope, $location, authentication){
     playgroundService.getPlaygrounds().then(function(){
       application.makeReady();
@@ -73,7 +74,7 @@ angular
           var adminPromise = authentication.isAdmin();
           adminPromise.then(function (isAdmin) {
                $rootScope.userIsAdmin = isAdmin;
-          })
+          });
         }
       }
       else{
@@ -84,13 +85,17 @@ angular
 
     $rootScope.$on('$locationChangeStart', function(scope, next, current){
 
-      console.log($location.path.controller);
-      if($location.path() === '/loading') return;
+      if($location.path() ==='/admin' && !$rootScope.userIsAdmin) {
+        $location.path('login');
+      }
 
+     if ($location.path() === '/loading') {
+        return;
+      }
       if(!application.isReady()){
         $location.path('loading');
       }
-    })
+    });
   });
 
 angular.module('playgroundApp').config(function (uiGmapGoogleMapApiProvider) {

@@ -10,17 +10,14 @@
 angular.module('playgroundApp')
   .service('authentication', function ($cookies, $http, $rootScope, $q) {
 
-    var username;
-    var isAdmin;
-
     this.verifyToken =  function() {
       var deferred = $q.defer();
       $http({
         method: 'GET',
-        url: 'http://localhost/playground/rest/api/auth/auth?token=' + $cookies.get('myToken') + "&username=" + $cookies.get('username'),
+        url: 'http://localhost/playground/rest/api/auth/auth?token=' + $cookies.get('myToken') + '&username=' + $cookies.get('username'),
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
       }).then(function (data) {
-        deferred.resolve(data.data['message']);
+        deferred.resolve(data.data.message);
       });
       return deferred.promise;
     };
@@ -41,16 +38,16 @@ angular.module('playgroundApp')
           headers: {'Content-type': 'application/x-www-form-urlencoded'}
         }).success(function (data) {
           console.log(data);
-          $cookies.put('myToken', data['message']);
+          $cookies.put('myToken', data.message);
           $cookies.put('username', username);
           //$location.path("/");
-          console.log("Login Done!")
-          $rootScope.$broadcast("login-done");
+          console.log('Login Done!');
+          $rootScope.$broadcast('login-done');
           return true;
         }).error(function (data) {
           console.log(data);
           return false;
-        })
+        });
       };
 
     this.logout= function(){
@@ -58,15 +55,11 @@ angular.module('playgroundApp')
         var cookies = $cookies.getAll();
         angular.forEach(cookies, function (v, k) {
           $cookies.remove(k);
-        })
+        });
       };
 
     this.getUsername= function(){
         return  $cookies.get('username');
-      };
-
-    this.isLoggedIn = function(){
-          return loggedIn;
       };
 
     this.isAdmin = function(){
@@ -77,17 +70,8 @@ angular.module('playgroundApp')
         data: 'token=' + $cookies.get('myToken'),
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
       }).then(function (data) {
-        deferred.resolve(data.data['message']);
+        deferred.resolve(data.data.message);
       });
       return deferred.promise;
-
-
-
       };
-
-    this.createTest = function(){
-        $cookies.put('myToken', 'invalidtoken');
-        $cookies.put('username', 'root');
-        $cookies.put('isAdmin', 'true');
-      }
   });

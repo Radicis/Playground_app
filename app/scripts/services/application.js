@@ -16,7 +16,7 @@ angular.module('playgroundApp')
       $.each(registeredListeners, function(index){
         registeredListeners[index]();
       });
-    }
+    };
 
     return {
       isReady:function(){
@@ -30,5 +30,5 @@ angular.module('playgroundApp')
         if(ready) callback();
         else registeredListeners.push(callback);
       }
-    }
+    };
   });

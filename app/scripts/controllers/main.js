@@ -10,7 +10,7 @@
 angular.module('playgroundApp')
   .controller('MainCtrl', function ($scope, authentication, $rootScope) {
 
-    $rootScope.$on("login-done", function() {
+    $rootScope.$on('login-done', function() {
       var verifyPromise = authentication.verifyToken();
       verifyPromise.then(function(message){
         if(message) {
@@ -20,7 +20,7 @@ angular.module('playgroundApp')
             var adminPromise = authentication.isAdmin();
             adminPromise.then(function (isAdmin) {
               $rootScope.userIsAdmin = isAdmin;
-            })
+            });
           }
         }
         else{
@@ -32,12 +32,12 @@ angular.module('playgroundApp')
 
     $scope.logout = function(){
       authentication.logout();
-      $rootScope.$broadcast("login-done");
+      $rootScope.$broadcast('login-done');
     };
 
     $scope.testSecurity = function(){
       authentication.createTest();
-    }
+    };
 
 
   });
