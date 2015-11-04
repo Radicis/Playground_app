@@ -102,7 +102,7 @@ angular.module('playgroundApp').config(function (uiGmapGoogleMapApiProvider) {
   uiGmapGoogleMapApiProvider.configure({
     key: '',
     v: '3',
-    libraries: 'weather,geometry,visualization'
+    libraries: ''
   });
 });
 

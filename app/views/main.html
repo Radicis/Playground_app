@@ -1,26 +1,33 @@
 <div class="row">
-  <div class="col-lg-9">
+  <div class="col-md-2">
+    <form>
+      <input type="text" name="search" />
+
+
+    </form>
+  </div>
+  <div class="col-md-7">
   <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="true" events="map.events" >
-    <ui-gmap-layer type="TrafficLayer"></ui-gmap-layer>
     <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" icon="m.icon" idkey="m.id" options="m.options" click="selectMarker(this)"></ui-gmap-marker>
   </ui-gmap-google-map>
     </div>
-  <div class="col-lg-3 playground-list">
+  <div class="col-md-3 playground-list">
     <div ng-if="showSelectedMarker">
-      <h2>
+      <h3>
         {{selectedMarker.title}}
-      </h2>
-      <p>Location: {{selectedMarker.location}}</p>
-      <p>Size: {{selectedMarker.size}}</p>
+      </h3>
+      <p><strong>County:</strong> {{selectedMarker.county}}</p>
+      <p><strong>Surface:</strong> {{selectedMarker.surface}}</p>
+      <p><strong>Age:</strong> {{selectedMarker.age}}</p>
+      <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
+      <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
       <hr>
       </div>
     <ul>
       <li ng-repeat="marker in markerList">
-        <h2>
+        <h4 ng-click="selectMarkerById(marker.id)" class="playground-click">
           {{marker.options.title}}
-        </h2>
-        <p>Location: {{marker.options.location}}</p>
-        <p>Size: {{marker.options.size}}</p>
+        </h4>
       </li>
     </ul>
   </div>

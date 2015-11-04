@@ -10,12 +10,14 @@
     <file url="file://$PROJECT_DIR$/app/scripts/directives/playgroundmap.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/services/application.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/services/authentication.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/services/playground.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/admin.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/loading.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/login.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/main.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/signup.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest/application/config/config.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest/application/config/rest.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest/application/controllers/Rest_server.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest/application/controllers/api/auth.php" charset="UTF-8" />

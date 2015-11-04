@@ -30,7 +30,7 @@ angular.module('playgroundApp')
 
         $http({
           method: 'PUT',
-          url:'http://localhost/playground/rest/api/user/users',
+          url:'http://playground.betterfrog.com/rest/api/user/users',
           data: encodedString,
           headers: {'Content-type': 'application/x-www-form-urlencoded'}
         }).success(function(data){

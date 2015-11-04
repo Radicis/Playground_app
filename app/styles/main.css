@@ -59,29 +59,6 @@ body {
   margin-top: 28px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 930px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
-
 
 
 /* ==========================================================================
@@ -92,6 +69,10 @@ html, body{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight:700;
   height:100%;
+}
+
+p{
+  font-weight:300;
 }
 
 .ui-widget, .btn{
@@ -225,6 +206,18 @@ ul{
 .playground-list{
   height:400px;
   overflow-y: auto;
+}
+.playground-list ul li{
+  border-bottom:1px solid #ccc;
+}
+
+.playground-click{
+  cursor: pointer;
+  color: #003366;
+}
+
+.playground-click:hover{
+  color: #0066bb;
 }
 
 .loading{
