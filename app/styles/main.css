@@ -211,6 +211,12 @@ ul{
   border-bottom:1px solid #ccc;
 }
 
+.playground-list img{
+  float:right;
+  max-width:120px;
+  max-height:120px;
+}
+
 .playground-click{
   cursor: pointer;
   color: #003366;
