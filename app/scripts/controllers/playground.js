@@ -90,14 +90,16 @@ angular.module('playgroundApp')
       }
     });
 
-    $scope.getDirections = function(){
+   $scope.getDirections = function(){
+
+
 
       var map = $scope.map.control.getGMap();    // get map object through $scope.map.control getGMap() function
       var directionsService = new google.maps.DirectionsService(),
         directionsDisplay = new google.maps.DirectionsRenderer();
       directionsDisplay.setMap(map);
       directionsDisplay.setPanel(document.getElementById("map-directions"));
-      var start = $scope.getLocation();
+      var start = $scope.initialLocation;
       var end = '51.896892, -8.486316';
       var travel = {
         origin : start,
@@ -122,8 +124,10 @@ angular.module('playgroundApp')
       }
       else{
         //If no location is gained from location sharing on client then set to default or spe
-        $scope.initialLocation = new google.maps.LatLng(51.896892, -8.486316);
+       $scope.initialLocation = new google.maps.LatLng(51.896892, -8.486316);
       }
     }
+
+    $scope.getLocation();
 
   });
