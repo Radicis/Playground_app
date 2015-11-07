@@ -14,7 +14,6 @@ angular.module('playgroundApp')
 
     $scope.markerList = [];
 		$scope.markers = [];
-		$scope.mapCenter;
 
 		$scope.selectedMarker = {};
 		$scope.showSelectedMarker = false;
@@ -98,8 +97,8 @@ angular.module('playgroundApp')
         directionsDisplay = new google.maps.DirectionsRenderer();
       directionsDisplay.setMap(map);
       directionsDisplay.setPanel(document.getElementById("map-directions"));
-      var start = '37.7683909618184, -122.51089453697205';
-      var end = '41.850033, -87.6500523';
+      var start = $scope.getLocation();
+      var end = '51.896892, -8.486316';
       var travel = {
         origin : start,
         destination : end,
@@ -111,6 +110,20 @@ angular.module('playgroundApp')
           directionsDisplay.setDirections(result);
         }
       });
+    }
+
+    //MUST BE A PROMISE and .then to render directions and.or errors
+
+    $scope.getLocation = function(){
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          $scope.initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+        });
+      }
+      else{
+        //If no location is gained from location sharing on client then set to default or spe
+        $scope.initialLocation = new google.maps.LatLng(51.896892, -8.486316);
+      }
     }
 
   });
