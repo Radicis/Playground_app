@@ -13,7 +13,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     var deferred = $q.defer();
     $http.get('http://playground.betterfrog.com/rest/api/playground/playgrounds').then(function(data){
       deferred.resolve(data);
-    })
+    });
     return deferred.promise;
   };
 
@@ -29,7 +29,8 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
       deferred.resolve(data);
     });
     return deferred.promise;
-  }
+  };
+
 });
 
 

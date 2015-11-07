@@ -9,9 +9,10 @@
  */
 
 angular.module('playgroundApp')
-	.controller('PlaygroundCtrl', function ($scope, playgroundService) {
+	.controller('PlaygroundCtrl', function ($scope, playgroundService, uiGmapGoogleMapApi, uiGmapIsReady) {
 
-		$scope.markerList = [];
+
+    $scope.markerList = [];
 		$scope.markers = [];
 		$scope.mapCenter;
 
@@ -75,7 +76,6 @@ angular.module('playgroundApp')
 			});
 		});
 
-
     angular.extend($scope, {
       map: {
         center: {
@@ -84,10 +84,33 @@ angular.module('playgroundApp')
         },
         zoom: 7,
         markers: $scope.markerList,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
         events: {
-        }
+        },
+        control:{}
       }
     });
 
+    $scope.getDirections = function(){
+
+      var map = $scope.map.control.getGMap();    // get map object through $scope.map.control getGMap() function
+      var directionsService = new google.maps.DirectionsService(),
+        directionsDisplay = new google.maps.DirectionsRenderer();
+      directionsDisplay.setMap(map);
+      directionsDisplay.setPanel(document.getElementById("map-directions"));
+      var start = '37.7683909618184, -122.51089453697205';
+      var end = '41.850033, -87.6500523';
+      var travel = {
+        origin : start,
+        destination : end,
+        travelMode: google.maps.DirectionsTravelMode.DRIVING
+      };
+      directionsService.route(travel,function(result, status) {
+        var dir = document.getElementById("map-directions").innerHTML = "lol";
+        if (status === google.maps.DirectionsStatus.OK) {
+          directionsDisplay.setDirections(result);
+        }
+      });
+    }
 
   });

@@ -100,9 +100,9 @@ angular
 
 angular.module('playgroundApp').config(function (uiGmapGoogleMapApiProvider) {
   uiGmapGoogleMapApiProvider.configure({
-    key: '',
+    key: 'AIzaSyD169v2fy1ptsLoahXLOpN5zVZqRpKy3co',
     v: '3',
-    libraries: ''
+    libraries: 'weather,geometry,visualization'
   });
 });
 

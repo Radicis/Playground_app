@@ -7,7 +7,7 @@
     </form>
   </div>
   <div class="col-md-7">
-  <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="true" events="map.events" >
+  <ui-gmap-google-map center='map.center' control="map.control" zoom='map.zoom' draggable="true" events="map.events" >
     <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" icon="m.icon" idkey="m.id" options="m.options" click="selectMarker(this)"></ui-gmap-marker>
   </ui-gmap-google-map>
     </div>
@@ -33,7 +33,11 @@
     </ul>
   </div>
 
+  <div id="map-directions"></div>
+  <button ng-click="getDirections()">foo</button>
 </div>
+
+
 
 
 
