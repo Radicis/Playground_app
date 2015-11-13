@@ -53,6 +53,16 @@ angular
         caseInsensitiveMatch: true,
         controller: 'LoadingCtrl',
        })
+      .when('/view/:id', {
+        templateUrl: 'views/view.html',
+        caseInsensitiveMatch: true,
+        controller: 'PlaygroundViewCtrl',
+      })
+      .when('/edit/:id', {
+        templateUrl: 'views/edit.html',
+        caseInsensitiveMatch: true,
+        controller: 'PlaygroundViewCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });

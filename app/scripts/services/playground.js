@@ -17,6 +17,14 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     return deferred.promise;
   };
 
+  this.getPlayground = function(id){
+    var deferred = $q.defer();
+    $http.get('http://playground.betterfrog.com/rest/api/playground/playgrounds/' + id).then(function(data){
+      deferred.resolve(data);
+    });
+    return deferred.promise;
+  };
+
   this.deletePlayground = function(id){
 
     var deferred = $q.defer();

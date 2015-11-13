@@ -26,6 +26,10 @@ angular.module('playgroundApp')
         ready=true;
         callListeners();
       },
+      unReady:function(){
+        ready=false;
+        callListeners();
+      },
       registerListener:function(callback){
         if(ready) callback();
         else registeredListeners.push(callback);

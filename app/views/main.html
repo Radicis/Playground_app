@@ -2,8 +2,6 @@
   <div class="col-md-2">
     <form>
       <input type="text" name="search" />
-
-
     </form>
   </div>
   <div class="col-md-7">
@@ -22,7 +20,11 @@
       <p><strong>Age:</strong> {{selectedMarker.age}}</p>
       <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
       <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
+      <p><a ng-href="#/view/{{selectedMarker.id}}">View</a></p>
+      <button ng-click="getDirections()">Get Directions</button><br>
+      <button ng-click="setTravelMode('DRIVING')">Driving</button><button ng-click="setTravelMode('WALKING')">Walking</button><button ng-click="setTravelMode('CYCLING')">Cycling</button>
       <hr>
+      <div id="map-directions"></div>
       </div>
     <ul>
       <li ng-repeat="marker in markerList">
@@ -32,9 +34,6 @@
       </li>
     </ul>
   </div>
-
-  <div id="map-directions"></div>
-  <button ng-click="getDirections()">foo</button>
 </div>
 
 

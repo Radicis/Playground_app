@@ -204,7 +204,7 @@ ul{
 }
 
 .playground-list{
-  height:400px;
+  height:600px;
   overflow-y: auto;
 }
 .playground-list ul li{

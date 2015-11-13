@@ -55,7 +55,7 @@ angular.module('playgroundApp')
           $cookies.put('myToken', data.message);
           $cookies.put('username', username);
           $rootScope.$broadcast('login-done');
-          $location.path("/");
+          $location.path('/');
           return true;
         }).error(function (data) {
           console.log(data);
