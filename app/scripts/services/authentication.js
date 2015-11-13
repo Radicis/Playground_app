@@ -51,14 +51,12 @@ angular.module('playgroundApp')
           data: loginString,
           headers: {'Content-type': 'application/x-www-form-urlencoded'}
         }).success(function (data) {
-          console.log(data);
           $cookies.put('myToken', data.message);
           $cookies.put('username', username);
           $rootScope.$broadcast('login-done');
           $location.path('/');
           return true;
         }).error(function (data) {
-          console.log(data);
           return false;
         });
       };

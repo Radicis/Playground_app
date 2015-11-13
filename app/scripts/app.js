@@ -18,29 +18,30 @@ angular
     'ngSanitize',
     'ngTouch',
     'uiGmapgoogle-maps',
+    'angular-loading-bar'
   ])
-  .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+  .config(['$routeProvider', '$locationProvider', function ($routeProvider) {
 
 
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'PlaygroundCtrl',
+        controller: 'PlaygroundCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         caseInsensitiveMatch: true,
-        controller: 'AboutCtrl',
+        controller: 'AboutCtrl'
       })
       .when('/login', {
         templateUrl: 'views/login.html',
         caseInsensitiveMatch: true,
-        controller: 'AuthCtrl',
+        controller: 'AuthCtrl'
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
         caseInsensitiveMatch: true,
-        controller: 'AuthCtrl',
+        controller: 'AuthCtrl'
       })
       .when('/admin', {
         templateUrl: 'views/admin.html',
@@ -51,17 +52,17 @@ angular
       .when('/loading', {
         templateUrl: 'views/loading.html',
         caseInsensitiveMatch: true,
-        controller: 'LoadingCtrl',
+        controller: 'LoadingCtrl'
        })
       .when('/view/:id', {
         templateUrl: 'views/view.html',
         caseInsensitiveMatch: true,
-        controller: 'PlaygroundViewCtrl',
+        controller: 'PlaygroundViewCtrl'
       })
       .when('/edit/:id', {
         templateUrl: 'views/edit.html',
         caseInsensitiveMatch: true,
-        controller: 'PlaygroundViewCtrl',
+        controller: 'PlaygroundViewCtrl'
       })
       .otherwise({
         redirectTo: '/'
@@ -70,9 +71,6 @@ angular
     //$locationProvider.html5Mode(true);
   }])
   .run(function(playgroundService, application, $rootScope, $location, authentication){
-    playgroundService.getPlaygrounds().then(function(){
-      application.makeReady();
-    });
 
     //comes back undefined due to promise. Set listener
     var verifyPromise = authentication.verifyToken();
@@ -98,13 +96,6 @@ angular
       if($location.path() ==='/admin' && !$rootScope.userIsAdmin) {
         $location.path('login');
       }
-
-     if ($location.path() === '/loading') {
-        return;
-      }
-      if(!application.isReady()){
-        $location.path('loading');
-      }
     });
   });
 
@@ -116,19 +107,11 @@ angular.module('playgroundApp').config(function (uiGmapGoogleMapApiProvider) {
   });
 });
 
-/*
-angular.module('playgroundApp').service('authInterceptor', function ($cookies) {
-  return{
-    request: function(config){
-      config.headers = config.headers || {};
-      if($cookies.get('myToken')){
-        config.headers.token =  $cookies.get('myToken');
-      }
-      return config;
-    }
-  }
-}).config(function($httpProvider){
-  $httpProvider.interceptors.push('authInterceptor');
-});
-*/
+angular.module('playgroundApp')
+  .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = false;
+    //cfpLoadingBarProvider.includeBar = false;
+  }]);
+
+
 

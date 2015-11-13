@@ -1,3 +1,7 @@
+<div ng-if="!playgrounds" class="loading">
+  <img src="images/loading.gif" alt="loading" />
+</div>
+<div ng-if="playgrounds">
 <h2>Admin Section</h2>
 
 <ul>
@@ -5,3 +9,4 @@
     {{playground.name}} | <a ng-href="#/view/{{playground.id}}">View</a> | <a ng-href="#/edit/{{playground.id}}">Edit</a> | <button ng-click="deletePlayground(playground.id)">Delete</button>
   </li>
 </ul>
+  </div>

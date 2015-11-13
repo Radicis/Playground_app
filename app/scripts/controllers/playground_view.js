@@ -11,9 +11,10 @@
 angular.module('playgroundApp')
 	.controller('PlaygroundViewCtrl', function ($scope, playgroundService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams) {
 
-    $scope.playground = {};
+
       var viewPromise = playgroundService.getPlayground($routeParams.id);
       viewPromise.then(function (response) {
+        $scope.playground = {};
         $scope.playground.title = response.data.name;
         $scope.playground.location = response.data.county;
         $scope.playground.county = response.data.county;

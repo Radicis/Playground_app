@@ -11,12 +11,12 @@
 angular.module('playgroundApp')
 	.controller('PlaygroundCtrl', function ($scope, playgroundService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams) {
 
-
     $scope.markerList = [];
     $scope.markers = [];
 
     $scope.selectedMarker = {};
     $scope.showSelectedMarker = false;
+    $scope.travelMode = google.maps.TravelMode.DRIVING;
 
     var directionsService = new google.maps.DirectionsService(),
       directionsDisplay = new google.maps.DirectionsRenderer();
@@ -80,6 +80,7 @@ angular.module('playgroundApp')
         };
         $scope.markerList.push(marker);
       });
+      $scope.showMap = true;
     });
 
 
@@ -140,11 +141,12 @@ angular.module('playgroundApp')
       switch(mode){
         case 'DRIVING': $scope.travelMode = google.maps.TravelMode.DRIVING; break;
         case 'WALKING': $scope.travelMode = google.maps.TravelMode.WALKING; break;
-        case 'CYCLING': $scope.travelMode = google.maps.TravelMode.CYCLING; break;
+        case 'CYCLING': $scope.travelMode = google.maps.TravelMode.BICYCLING; break;
+        case 'TRANSIT': $scope.travelMode = google.maps.TravelMode.TRANSIT; break;
         default: $scope.travelMode = google.maps.TravelMode.DRIVING; break;
       }
       $scope.getDirections();
-    }
+    };
 
 
    $scope.getDirections = function(){

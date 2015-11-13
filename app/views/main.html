@@ -1,4 +1,7 @@
-<div class="row">
+<div ng-if="!showMap" class="loading">
+  <img src="images/loading.gif" alt="loading" />
+</div>
+<div ng-if="showMap" class="row">
   <div class="col-md-2">
     <form>
       <input type="text" name="search" />
@@ -23,6 +26,7 @@
       <p><a ng-href="#/view/{{selectedMarker.id}}">View</a></p>
       <button ng-click="getDirections()">Get Directions</button><br>
       <button ng-click="setTravelMode('DRIVING')">Driving</button><button ng-click="setTravelMode('WALKING')">Walking</button><button ng-click="setTravelMode('CYCLING')">Cycling</button>
+      <button ng-click="setTravelMode('TRANSIT')">Transit</button>
       <hr>
       <div id="map-directions"></div>
       </div>
