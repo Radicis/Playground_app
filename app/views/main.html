@@ -8,14 +8,14 @@
     </form>
   </div>
   <div class="app-background">
-    <ui-gmap-google-map center='map.center' control="map.control" zoom='map.zoom' draggable="true" events="map.events"  options="options">
-      <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" icon="m.icon" idkey="m.id" options="m.options" click="selectMarker(this)" ></ui-gmap-marker>
+    <ui-gmap-google-map center='map.center' control="map.control" zoom='map.zoom' draggable="true" events="map.events" bounds="map.bounds"  options="options">
+      <ui-gmap-markers type="'cluster'" fit="true" chunk='1000' typeOptions='{maxZoom: 8, title:"Click To Zoom", styles:[{url:"images/icons/playground.png", height:50, width:50, textSize:20}]}' click="onClick" models="markers" icon="'icon'" coords="'coords'" idkey="markers.id" events="markers.events" modelsbyref="false"></ui-gmap-markers>
     </ui-gmap-google-map>
   </div>
   <div class="col-md-7"> </div>
   <div class="col-md-3 no-padding scroller">
     <ul class="playground-list">
-      <li ng-repeat="marker in markerList">
+      <li ng-repeat="marker in markers">
         <div ng-if="!(marker.id==selectedMarker.id)">
           <h4 ng-click="selectMarkerById(marker.id)" class="playground-click">
             {{marker.options.title}}

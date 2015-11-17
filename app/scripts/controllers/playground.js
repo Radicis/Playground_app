@@ -9,9 +9,8 @@
  */
 
 angular.module('playgroundApp')
-	.controller('PlaygroundCtrl', function ($scope, playgroundService,weatherService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams) {
+  .controller('PlaygroundCtrl', function ($scope, playgroundService,weatherService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams) {
 
-    $scope.markerList = [];
     $scope.markers = [];
 
     $scope.selectedMarker = {};
@@ -27,58 +26,33 @@ angular.module('playgroundApp')
       $scope.map.center.longitude = lng;
     };
 
-    $scope.selectMarker = function (marker) {
-      directionsDisplay.setMap(null);
-      $scope.directions=false;
-      if(document.getElementById("map-directions")){
-        document.getElementById("map-directions").innerHTML = "";
-      }
-
-      $scope.selectedMarker.title = marker.m.options.title;
-      $scope.selectedMarker.location = marker.m.options.location;
-      $scope.selectedMarker.county = marker.m.options.county;
-      $scope.selectedMarker.surface = marker.m.options.surface;
-      $scope.selectedMarker.age = marker.m.options.age;
-      $scope.selectedMarker.facilities = marker.m.options.facilities;
-      $scope.selectedMarker.description = marker.m.options.description;
-      $scope.selectedMarker.images = marker.m.options.images;
-      $scope.selectedMarker.isEnclosed = marker.m.options.isEnclosed;
-      $scope.selectedMarker.latitude = parseFloat(marker.m.coords.latitude);
-      $scope.selectedMarker.longitude = parseFloat(marker.m.coords.longitude);
-      $scope.showSelectedMarker = true;
-      $scope.selectedMarker.id = marker.m.id;
-
-      $scope.setCenter($scope.selectedMarker.latitude,$scope.selectedMarker.longitude);
-
-      $scope.$apply();
-
-    };
 
     $scope.selectMarkerById = function (id) {
+      console.log(id);
       directionsDisplay.setMap(null);
       $scope.directions=false;
       if(document.getElementById("map-directions")){
         document.getElementById("map-directions").innerHTML = "";
       }
-      $.each($scope.markerList, function (index) {
-        if ($scope.markerList[index].id == id) {
-          $scope.selectedMarker.title = $scope.markerList[index].options.title;
-          $scope.selectedMarker.location = $scope.markerList[index].options.location;
-          $scope.selectedMarker.county = $scope.markerList[index].options.county;
-          $scope.selectedMarker.surface = $scope.markerList[index].options.surface;
-          $scope.selectedMarker.age = $scope.markerList[index].options.age;
-          $scope.selectedMarker.facilities = $scope.markerList[index].options.facilities;
-          $scope.selectedMarker.description = $scope.markerList[index].options.description;
-          $scope.selectedMarker.images = $scope.markerList[index].options.images;
-          $scope.selectedMarker.isEnclosed = $scope.markerList[index].options.isEnclosed;
-          $scope.selectedMarker.latitude = parseFloat($scope.markerList[index].coords.latitude);
-          $scope.selectedMarker.longitude = parseFloat($scope.markerList[index].coords.longitude);
-          $scope.selectedMarker.id = parseInt($scope.markerList[index].id);
+      $.each($scope.markers, function (index) {
+        if ($scope.markers[index].id == id) {
+          $scope.selectedMarker.title = $scope.markers[index].options.title;
+          $scope.selectedMarker.location = $scope.markers[index].options.location;
+          $scope.selectedMarker.county = $scope.markers[index].options.county;
+          $scope.selectedMarker.surface = $scope.markers[index].options.surface;
+          $scope.selectedMarker.age = $scope.markers[index].options.age;
+          $scope.selectedMarker.facilities = $scope.markers[index].options.facilities;
+          $scope.selectedMarker.description = $scope.markers[index].options.description;
+          $scope.selectedMarker.images = $scope.markers[index].options.images;
+          $scope.selectedMarker.isEnclosed = $scope.markers[index].options.isEnclosed;
+          $scope.selectedMarker.latitude = parseFloat($scope.markers[index].coords.latitude);
+          $scope.selectedMarker.longitude = parseFloat($scope.markers[index].coords.longitude);
+          $scope.selectedMarker.id = parseInt($scope.markers[index].id);
           $scope.showSelectedMarker = true;
         }
       });
       $scope.setCenter($scope.selectedMarker.latitude,$scope.selectedMarker.longitude);
-     // $scope.$apply();
+      // $scope.$apply();
     };
 
     var promise = playgroundService.getPlaygrounds();
@@ -96,14 +70,28 @@ angular.module('playgroundApp')
             images: response.data[index].images,
             isEnclosed: response.data[index].isEnclosed
           },
+          icon: {
+            url: "images/icons/playground.png",
+            size: new google.maps.Size(30,28),
+            scaledSize: new google.maps.Size(30,28),
+            origin: new google.maps.Point(0,0),
+            anchor: new google.maps.Point(0,37/2)
+          },
           coords: {
             latitude: response.data[index].geoLat,
             longitude: response.data[index].geoLng
           }
         };
-        $scope.markerList.push(marker);
+        $scope.markers.push(marker);
       });
       $scope.showMap = true;
+
+      //Adds onclick event to all markers
+      angular.forEach($scope.markers, function (value, key) {
+        value.onClick = function () {
+          $scope.selectMarkerById(value.id);
+        };
+      });
 
     });
 
@@ -134,7 +122,6 @@ angular.module('playgroundApp')
     ];
 
 
-
     angular.extend($scope, {
       map: {
         center: {
@@ -142,18 +129,21 @@ angular.module('playgroundApp')
           longitude: -8.24389
         },
         zoom: 7,
+        bounds: {},
         markers: $scope.markerList,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         events: {},
         control: {}
       },
       options : {
-      styles: $scope.styleArray,
+        styles: $scope.styleArray,
         scrollwheel: false,
         navigationControl: false,
-    }
+        markers: {
+          selected: {}
+        }
+      }
     });
-
 
 
     $scope.waitForLocation = function() {
@@ -202,14 +192,14 @@ angular.module('playgroundApp')
     };
 
 
-   $scope.getDirections = function(){
-     if($scope.selectedMarker){
-       if(!$scope.initialLocation) {
-         $scope.getLocation();
-       }
-       $scope.targetLocation = new google.maps.LatLng($scope.selectedMarker.latitude, $scope.selectedMarker.longitude);
-       $scope.waitForLocation();
-     }
+    $scope.getDirections = function(){
+      if($scope.selectedMarker){
+        if(!$scope.initialLocation) {
+          $scope.getLocation();
+        }
+        $scope.targetLocation = new google.maps.LatLng($scope.selectedMarker.latitude, $scope.selectedMarker.longitude);
+        $scope.waitForLocation();
+      }
     };
 
     $scope.getLocation = function(){
