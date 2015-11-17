@@ -17,11 +17,23 @@ angular.module('playgroundApp')
     $scope.selectedMarker = {};
     $scope.showSelectedMarker = false;
     $scope.travelMode = google.maps.TravelMode.DRIVING;
+    $scope.directions = false;
 
     var directionsService = new google.maps.DirectionsService(),
       directionsDisplay = new google.maps.DirectionsRenderer();
 
+    $scope.setCenter = function(lat, lng){
+      $scope.map.center.latitude = lat;
+      $scope.map.center.longitude = lng;
+    };
+
     $scope.selectMarker = function (marker) {
+      directionsDisplay.setMap(null);
+      $scope.directions=false;
+      if(document.getElementById("map-directions")){
+        document.getElementById("map-directions").innerHTML = "";
+      }
+
       $scope.selectedMarker.title = marker.m.options.title;
       $scope.selectedMarker.location = marker.m.options.location;
       $scope.selectedMarker.county = marker.m.options.county;
@@ -35,10 +47,19 @@ angular.module('playgroundApp')
       $scope.selectedMarker.longitude = parseFloat(marker.m.coords.longitude);
       $scope.showSelectedMarker = true;
       $scope.selectedMarker.id = marker.m.id;
+
+      $scope.setCenter($scope.selectedMarker.latitude,$scope.selectedMarker.longitude);
+
       $scope.$apply();
+
     };
 
     $scope.selectMarkerById = function (id) {
+      directionsDisplay.setMap(null);
+      $scope.directions=false;
+      if(document.getElementById("map-directions")){
+        document.getElementById("map-directions").innerHTML = "";
+      }
       $.each($scope.markerList, function (index) {
         if ($scope.markerList[index].id == id) {
           $scope.selectedMarker.title = $scope.markerList[index].options.title;
@@ -56,6 +77,8 @@ angular.module('playgroundApp')
           $scope.showSelectedMarker = true;
         }
       });
+      $scope.setCenter($scope.selectedMarker.latitude,$scope.selectedMarker.longitude);
+     // $scope.$apply();
     };
 
     var promise = playgroundService.getPlaygrounds();
@@ -81,7 +104,12 @@ angular.module('playgroundApp')
         $scope.markerList.push(marker);
       });
       $scope.showMap = true;
+
     });
+
+    $scope.styleArray= [
+      {"featureType":"water","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#aee2e0"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#abce83"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#769E72"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#7B8758"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"color":"#EBF4A4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#8dab68"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#5B5B3F"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ABCE83"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#A4C67D"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#9BBF72"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#EBF4A4"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#87ae79"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#7f2200"},{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"visibility":"on"},{"weight":4.1}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#495421"}]},{"featureType":"administrative.neighborhood","elementType":"labels","stylers":[{"visibility":"off"}]}
+    ];
 
 
 
@@ -89,21 +117,26 @@ angular.module('playgroundApp')
       map: {
         center: {
           latitude: 53.41291,
-          longitude:-8.24389
+          longitude: -8.24389
         },
         zoom: 7,
         markers: $scope.markerList,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        events: {
-        },
-        control:{}
-      }
+        events: {},
+        control: {}
+      },
+      options : {
+      styles: $scope.styleArray,
+        scrollwheel: false,
+        navigationControl: false,
+    }
     });
+
+
 
     $scope.waitForLocation = function() {
 
       if (typeof $scope.initialLocation !== 'undefined') {
-        console.log("getting directions..");
         var map = $scope.map.control.getGMap();    // get map object through $scope.map.control getGMap() function
         directionsDisplay.setMap(map);
         directionsDisplay.setPanel(document.getElementById("map-directions"));
@@ -112,10 +145,7 @@ angular.module('playgroundApp')
         if(typeof $scope.travelMode==='undefined') {
           var travelMode = google.maps.TravelMode.DRIVING;
         }
-        else{
-          //console.log($scope.travelMode);
-        }
-        console.log($scope.travelMode);
+
 
         var travel = {
           origin: start,
@@ -126,6 +156,7 @@ angular.module('playgroundApp')
           var dir = document.getElementById("map-directions").innerHTML = "";
           if (status === google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(result);
+            $scope.directions=true;
           }
         });
       }
@@ -153,7 +184,6 @@ angular.module('playgroundApp')
      if($scope.selectedMarker){
        if(!$scope.initialLocation) {
          $scope.getLocation();
-         console.log("getting location..");
        }
        $scope.targetLocation = new google.maps.LatLng($scope.selectedMarker.latitude, $scope.selectedMarker.longitude);
        $scope.waitForLocation();

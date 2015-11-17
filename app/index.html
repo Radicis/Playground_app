@@ -9,10 +9,11 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.7.1/loading-bar.min.css' type='text/css' media='all' />
+
         <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -57,16 +58,11 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container app-container">
 
     <div ng-view=""></div>
     </div>
 
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> Group Project 2015</p>
-      </div>
-    </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -84,20 +80,21 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src='bower_components/jquery/dist/jquery.js'></script>
-    <script src='bower_components/angular/angular.js'></script>
-    <script src='bower_components/angular-animate/angular-animate.js'></script>
-    <script src='bower_components/angular-cookies/angular-cookies.js'></script>
-    <script src='bower_components/angular-simple-logger/dist/angular-simple-logger.js'></script>
-    <script src='bower_components/lodash/lodash.js'></script>
-    <script src='bower_components/angular-google-maps/dist/angular-google-maps.js'></script>
-    <script src='bower_components/angular-messages/angular-messages.js'></script>
-    <script src='bower_components/angular-resource/angular-resource.js'></script>
-    <script src='bower_components/angular-route/angular-route.js'></script>
-    <script src='bower_components/angular-sanitize/angular-sanitize.js'></script>
-    <script src='bower_components/angular-touch/angular-touch.js'></script>
-    <script src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
-    <script src='bower_components/ng-cookies/dist/ng-cookies.min.js'></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/ng-cookies/dist/ng-cookies.min.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD169v2fy1ptsLoahXLOpN5zVZqRpKy3co&v=3.21"></script>
@@ -116,7 +113,8 @@
         <script src="scripts/directives/playgroundmap.js"></script>
         <script src="scripts/controllers/loading.js"></script>
         <script src="scripts/services/application.js"></script>
-    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.7.1/loading-bar.min.js'></script>
         <!-- endbuild -->
+
+
 </body>
 </html>

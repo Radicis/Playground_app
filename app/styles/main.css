@@ -19,8 +19,7 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -65,14 +64,30 @@ body {
    Author's custom styles
    ========================================================================== */
 
-html, body{
+html, body, #map_canvas{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight:700;
-  height:100%;
+  min-height:100%;
+}
+
+.no-padding{
+  padding:0;
 }
 
 p{
   font-weight:300;
+}
+
+.container{
+  width:100% !important;
+}
+
+.app-background{
+  position:absolute;
+  display:block;
+  min-height:100%;
+  width:100%;
+  opacity:0.5;
 }
 
 .ui-widget, .btn{
@@ -83,19 +98,15 @@ p{
 
 .app-background{
   position:absolute;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
   display:block;
   height:100%;
   width:100%;
-  opacity:0.5;
+  opacity:1;
 }
 
+
 .app-container{
-  height:100%;
+  min-height:100%;
 
 }
 
@@ -142,12 +153,7 @@ p{
 
 .navbar.transparent.navbar-inverse .navbar-inner {
   border-width: 0px;
-  -webkit-box-shadow: 0px 0px;
-  box-shadow: 0px 0px;
-  background-color: rgba(0,0,0,0.0);
-  background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-  background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-  background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+
 }
 
 .navbar-right{
@@ -162,14 +168,47 @@ p{
 
 .navbar{
   margin-bottom:0px;
+  position:absolute;
+  z-index:999;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background:#e6ffcc;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
   background-color: transparent;
 }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: transparent;
+}
 
-.angular-google-map-container { height: 400px; }
+.angular-google-map,
+.angular-google-map-container{
+  height: 100%;
+  min-height:100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#map_canvas {
+  position: relative;
+}
+
+.angular-google-map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
 
 #map-controls{
   width:400px;
@@ -206,15 +245,32 @@ ul{
 .playground-list{
   height:600px;
   overflow-y: auto;
+  background:#d9ffb3;
+  font-size:1em;
+  border:1px solid #ccc;
+  margin-top:30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
-.playground-list ul li{
+.playground-list li >div{
   border-bottom:1px solid #ccc;
+  padding:10px;
 }
 
 .playground-list img{
   float:right;
   max-width:120px;
   max-height:120px;
+  border:1px solid #ccc;
+}
+
+.playground-list .selected-marker{
+  background:#e6ffcc;
+  padding:10px;
 }
 
 .playground-click{

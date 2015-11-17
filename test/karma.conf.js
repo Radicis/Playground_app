@@ -36,6 +36,7 @@ module.exports = function(config) {
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/ng-cookies/dist/ng-cookies.min.js',
+      'bower_components/angular-loading-bar/build/loading-bar.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",
