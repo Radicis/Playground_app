@@ -31,12 +31,15 @@
           <p><strong>Age:</strong> {{selectedMarker.age}}</p>
           <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
           <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
-          <p><a ng-href="#/view/{{selectedMarker.id}}">View</a></p>
-          <button ng-click="getDirections()">Get Directions</button><br>
+          <a class="btn btn-default" ng-href="#/view/{{selectedMarker.id}}">View</a>
+          <button  class="btn btn-default" ng-click="getDirections()">Directions</button>
+          <button  class="btn btn-default" ng-click="getWeather()">Weather</button><br>
           <div ng-if="directions">
-            <button ng-click="setTravelMode('DRIVING')">Driving</button><button ng-click="setTravelMode('WALKING')">Walking</button><button ng-click="setTravelMode('CYCLING')">Cycling</button>
-            <button ng-click="setTravelMode('TRANSIT')">Transit</button>
+            <button  class="btn btn-default" ng-click="setTravelMode('DRIVING')">Driving</button><button class="btn btn-default" ng-click="setTravelMode('WALKING')">Walking</button>
+            <button class="btn btn-default" ng-click="setTravelMode('CYCLING')">Cycling</button>
+            <button class="btn btn-default" ng-click="setTravelMode('TRANSIT')">Transit</button>
           </div>
+          <div id="weather"></div>
           <hr>
           <div id="map-directions"></div>
         </div>

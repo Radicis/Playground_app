@@ -46,7 +46,7 @@
               <li ng-if="displayUsername && userIsAdmin"><a ng-href="#/admin">Admin</a></li>
             </ul>
 
-            <span class="pull-right" ng-if="displayUsername">Hello {{ displayUsername }} | <a ng-href='#here' ng-click="logout()">Log Out</a></span>
+            <span class="pull-right" ng-if="displayUsername">{{ displayUsername }} | <a ng-href='#here' ng-click="logout()">Log Out</a></span>
             <span class="pull-right" ng-if="!displayUsername">
               <a ng-href="#/login">Log In</a>
               or
@@ -113,6 +113,7 @@
         <script src="scripts/directives/playgroundmap.js"></script>
         <script src="scripts/controllers/loading.js"></script>
         <script src="scripts/services/application.js"></script>
+        <script src="scripts/services/weather.js"></script>
         <!-- endbuild -->
 
 
