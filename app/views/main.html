@@ -33,6 +33,7 @@
           <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
           <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
           <a class="btn btn-default" ng-href="#/view/{{selectedMarker.id}}">View</a>
+          <a ng-if="isCreator(selectedMarker.userID)" class="btn btn-default" ng-href="#/edit/{{selectedMarker.id}}">Edit</a>
           <button  class="btn btn-default" ng-click="getDirections()">Directions</button>
           <button  class="btn btn-default" ng-click="getWeather()">Weather</button><br>
           <div ng-if="directions">

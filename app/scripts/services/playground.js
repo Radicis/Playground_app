@@ -50,6 +50,8 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     loginString += '&images=' + formData.images;
     loginString += '&surface=' + formData.surface;
     loginString += '&age=' + formData.age;
+    loginString += '&userID=' + formData.userID;
+
 
     loginString += '&username=root&token=aaa42296669b958c3cee6c0475c8093e';
 

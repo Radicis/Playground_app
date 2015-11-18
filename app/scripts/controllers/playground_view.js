@@ -9,7 +9,9 @@
  */
 
 angular.module('playgroundApp')
-	.controller('PlaygroundViewCtrl', function ($scope, playgroundService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams) {
+	.controller('PlaygroundViewCtrl', function ($scope, playgroundService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams, $cookies) {
+
+      $scope.userID = $cookies.get('userID');
 
       $scope.addPlayground = function() {
         var formData = {
@@ -23,8 +25,10 @@ angular.module('playgroundApp')
           'images': $('input[name=images]').val(),
           'surface'  : $('input[name=surface]').val(),
           'age'  : $('input[name=age]').val(),
+          'userID'  : $('input[name=userID]').val(),
         };
 
+        
         var addPromise = playgroundService.addPlayground(formData);
         addPromise.then(function (repsonse) {
           console.log(repsonse);

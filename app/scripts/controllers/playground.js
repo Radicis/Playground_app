@@ -9,7 +9,7 @@
  */
 
 angular.module('playgroundApp')
-  .controller('PlaygroundCtrl', function ($scope, playgroundService,weatherService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams) {
+  .controller('PlaygroundCtrl', function ($scope, playgroundService,weatherService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams, $cookies) {
 
     $scope.markers = [];
 
@@ -48,6 +48,7 @@ angular.module('playgroundApp')
           $scope.selectedMarker.latitude = parseFloat($scope.markers[index].coords.latitude);
           $scope.selectedMarker.longitude = parseFloat($scope.markers[index].coords.longitude);
           $scope.selectedMarker.id = parseInt($scope.markers[index].id);
+          $scope.selectedMarker.userID = parseInt($scope.markers[index].options.userID);
           $scope.showSelectedMarker = true;
         }
       });
@@ -68,7 +69,8 @@ angular.module('playgroundApp')
             facilities: response.data[index].facilities,
             description: response.data[index].description,
             images: response.data[index].images,
-            isEnclosed: response.data[index].isEnclosed
+            isEnclosed: response.data[index].isEnclosed,
+            userID: response.data[index].userID
           },
           icon: {
             url: "images/icons/playground.png",
@@ -94,6 +96,14 @@ angular.module('playgroundApp')
       });
 
     });
+
+      $scope.isCreator = function(id){
+        console.log("user: " + $cookies.get('userID'));
+        console.log("playground: " + id);
+        if(id==$cookies.get('userID')){
+          return true;
+        }
+      }
 
 
     $scope.getWeather = function() {

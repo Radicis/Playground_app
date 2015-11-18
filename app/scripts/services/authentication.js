@@ -18,12 +18,6 @@ angular.module('playgroundApp')
 
      */
 
-
-
-
-
-
-
     this.verifyToken =  function() {
       var deferred = $q.defer();
       $http({
@@ -47,12 +41,13 @@ angular.module('playgroundApp')
 
         $http({
           method: 'PUT',
-          url: 'http://localhost/playground/rest/api//auth/auth',
+          url: 'http://localhost/playground/rest/api/auth/auth',
           data: loginString,
           headers: {'Content-type': 'application/x-www-form-urlencoded'}
         }).success(function (data) {
-          $cookies.put('myToken', data.message);
+          $cookies.put('myToken', data.token);
           $cookies.put('username', username);
+          $cookies.put('userID', data.userID);
           $rootScope.$broadcast('login-done');
           $location.path('/');
           return true;
@@ -77,7 +72,7 @@ angular.module('playgroundApp')
       var deferred = $q.defer();
       $http({
         method: 'POST',
-        url: 'http://localhost/playground/rest/api//auth/auth',
+        url: 'http://localhost/playground/rest/api/auth/auth',
         data: 'token=' + $cookies.get('myToken'),
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
       }).then(function (data) {
@@ -85,4 +80,5 @@ angular.module('playgroundApp')
       });
       return deferred.promise;
       };
+
   });

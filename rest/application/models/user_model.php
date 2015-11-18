@@ -64,6 +64,13 @@ class User_model extends CI_Model
         return $query->result();
     }
 
+    public function getByUsername($username){
+
+        $this->db->where('username', $username);
+        $query = $this->db->get('users');
+        return $query->row_array();
+    }
+
 
     function create($data)
     {

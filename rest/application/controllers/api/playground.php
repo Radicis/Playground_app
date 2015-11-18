@@ -136,6 +136,7 @@ class Playground extends REST_Controller {
                 'geoLng' => $this->put('geoLng'),
                 'surface' => $this->put('surface'),
                 'description' => $this->put('description'),
+                'userID' => $this->put('userID'),
             ];
 
             $this->playground_model->create($data);

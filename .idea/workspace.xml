@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="886783e5-603b-4093-beee-f252f9fc2332" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/add.html" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.147cad5c.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.d655010a.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\vendor.772eaf75.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.d0729eda.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.f979afbb.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\vendor.a542cc6a.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/rest/application/libraries/REST_Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/add.html" afterPath="$PROJECT_DIR$/app/views/add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/controllers/api/auth.php" afterPath="$PROJECT_DIR$/rest/application/controllers/api/auth.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/authentication.js" afterPath="$PROJECT_DIR$/app/scripts/services/authentication.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/edit.html" afterPath="$PROJECT_DIR$/app/views/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/main.html" afterPath="$PROJECT_DIR$/dist/views/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/playground.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/playground.js" afterPath="$PROJECT_DIR$/app/scripts/services/playground.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/controllers/api/playground.php" afterPath="$PROJECT_DIR$/rest/application/controllers/api/playground.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/models/playground_model.php" afterPath="$PROJECT_DIR$/rest/application/models/playground_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/controllers/api/user.php" afterPath="$PROJECT_DIR$/rest/application/controllers/api/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/models/user_model.php" afterPath="$PROJECT_DIR$/rest/application/models/user_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -47,40 +45,48 @@
       <file leaf-file-name="playground_view.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.703703">
-              <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playground.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/playground.php">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.269231">
-              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
-              <folding>
-                <element signature="n#playgrounds_get#0;n#Playground#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/application/models/user_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.23077">
-              <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+            <state vertical-scroll-proportion="-2.471698">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/application/config/database.php">
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="34.53846">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.2452831">
+              <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="69" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.444445">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,27 +96,17 @@
         <entry file="file://$PROJECT_DIR$/rest/application/models/playground_model.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-15.038462">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/edit.html">
+      <file leaf-file-name="playground.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46229914">
-              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.1320753">
-              <caret line="16" column="125" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.6296296">
+              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -119,19 +115,21 @@
       <file leaf-file-name="playground.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/playground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.925926">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.037037">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authentication.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/authentication.js">
+      <file leaf-file-name="playground.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/playground.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="79" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="79" />
-              <folding />
+            <state vertical-scroll-proportion="1.1590909">
+              <caret line="138" column="46" selection-start-line="138" selection-start-column="46" selection-end-line="138" selection-end-column="46" />
+              <folding>
+                <element signature="n#playgrounds_get#0;n#Playground#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,7 +154,6 @@
         <option value="$PROJECT_DIR$/rest/application/config/rest.php" />
         <option value="$PROJECT_DIR$/app/views/signup.html" />
         <option value="$PROJECT_DIR$/app/views/loading.html" />
-        <option value="$PROJECT_DIR$/rest/application/controllers/api/auth.php" />
         <option value="$PROJECT_DIR$/rest/application/models/auth_model.php" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/admin.js" />
         <option value="$PROJECT_DIR$/app/views/login.html" />
@@ -172,18 +169,20 @@
         <option value="$PROJECT_DIR$/app/scripts/services/weather.js" />
         <option value="$PROJECT_DIR$/app/styles/main.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/rest/application/libraries/REST_Controller.php" />
+        <option value="$PROJECT_DIR$/rest/application/models/playground_model.php" />
+        <option value="$PROJECT_DIR$/app/views/edit.html" />
+        <option value="$PROJECT_DIR$/rest/application/controllers/api/auth.php" />
+        <option value="$PROJECT_DIR$/rest/application/models/user_model.php" />
+        <option value="$PROJECT_DIR$/rest/application/controllers/api/user.php" />
+        <option value="$PROJECT_DIR$/app/scripts/services/authentication.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/rest/application/libraries/REST_Controller.php" />
-        <option value="$PROJECT_DIR$/rest/application/models/user_model.php" />
-        <option value="$PROJECT_DIR$/rest/application/models/playground_model.php" />
-        <option value="$PROJECT_DIR$/app/scripts/services/authentication.js" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/views/add.html" />
         <option value="$PROJECT_DIR$/app/scripts/services/playground.js" />
-        <option value="$PROJECT_DIR$/rest/application/controllers/api/playground.php" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" />
-        <option value="$PROJECT_DIR$/app/views/edit.html" />
+        <option value="$PROJECT_DIR$/rest/application/controllers/api/playground.php" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
       </list>
     </option>
   </component>
@@ -196,8 +195,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
-    <option name="y" value="40" />
+    <option name="x" value="9" />
+    <option name="y" value="36" />
     <option name="width" value="1513" />
     <option name="height" value="999" />
   </component>
@@ -610,7 +609,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="40" width="1513" height="999" extended-state="0" />
+    <frame x="9" y="36" width="1513" height="999" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16766867" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -740,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1878453">
@@ -765,13 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0904872">
-          <caret line="106" column="48" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -852,14 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -883,25 +860,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47331786">
-          <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40835267">
           <caret line="330" column="0" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,10 +915,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/models/user_model.php">
+    <entry file="file://$PROJECT_DIR$/app/views/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077">
-          <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -964,66 +926,109 @@
     <entry file="file://$PROJECT_DIR$/rest/application/models/playground_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.038462">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+    <entry file="file://$PROJECT_DIR$/rest/application/models/user_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-41.62963">
-          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
+        <state vertical-scroll-proportion="-18.115385">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.576923">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.471698">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/authentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19721578">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="e#559#964#0" expanded="false" />
+            <element signature="e#1827#2064#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1320753">
-          <caret line="16" column="125" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.2452831">
+          <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/playground.php">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.269231">
-          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
-          <folding>
-            <element signature="n#playgrounds_get#0;n#Playground#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/authentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="79" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="79" />
+        <state vertical-scroll-proportion="-0.6296296">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/playground.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.925926">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.037037">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.444445">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.703703">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/edit.html">
+    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/playground.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46229914">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding />
+        <state vertical-scroll-proportion="1.1590909">
+          <caret line="138" column="46" selection-start-line="138" selection-start-column="46" selection-end-line="138" selection-end-column="46" />
+          <folding>
+            <element signature="n#playgrounds_get#0;n#Playground#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

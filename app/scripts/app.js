@@ -98,10 +98,14 @@ angular
       }
     });
 
-    $rootScope.$on('$locationChangeStart', function(scope, next, current){
+    $rootScope.$on('$locationChangeStart', function(scope, next, current, $cookies){
 
       if($location.path() ==='/admin' && !$rootScope.userIsAdmin) {
         $location.path('login');
+      }
+
+      if($location.path() ==='/edit/:id' && !$rootScope.userLoggedIn) {
+         $location.path('login');
       }
 
       //if($location.path() ==='/playground/add' && !$rootScope.userLoggedIn) {

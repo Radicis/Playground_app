@@ -55,13 +55,15 @@ class Auth extends REST_Controller {
 
 
         $token = $this->user_model->login($username, $password);
+        $user = $this->user_model->getByUsername($username);
         $test = $token;
         //$isAdmin = $this->auth_model->verify_admin($username, $token);
         if($token!=FALSE){
 
             //Return the token as JSON so the client can set a cookie.
             $message = [
-                'message' => $token,
+                'token' => $token,
+                'userID' => $user['id']
             ];
 
             $this->set_response($message, REST_Controller::HTTP_CREATED); // CREATED (201) being the HTTP response code
