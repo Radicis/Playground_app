@@ -54,6 +54,16 @@ class User_model extends CI_Model
 
     }
 
+    public function get($id=null){
+        if (!$id)
+        {
+            $query = $this->db->get('users');
+            return $query->result_array();
+        }
+        $query = $this->db->get_where('users', array('id' => $id));
+        return $query->result();
+    }
+
 
     function create($data)
     {

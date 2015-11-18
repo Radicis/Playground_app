@@ -11,6 +11,49 @@
 angular.module('playgroundApp')
 	.controller('PlaygroundViewCtrl', function ($scope, playgroundService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams) {
 
+      $scope.addPlayground = function() {
+        var formData = {
+          'name'  : $('input[name=name]').val(),
+          'county': $('input[name=county]').val(),
+          'geoLat'  : $('input[name=geoLat]').val(),
+          'geoLng': $('input[name=geoLng]').val(),
+          'description'  : $('input[name=description]').val(),
+          'isEnclosed': 0,
+          'facilities'  : $('input[name=facilities]').val(),
+          'images': $('input[name=images]').val(),
+          'surface'  : $('input[name=surface]').val(),
+          'age'  : $('input[name=age]').val(),
+        };
+
+        var addPromise = playgroundService.addPlayground(formData);
+        addPromise.then(function (repsonse) {
+          console.log(repsonse);
+        });
+      }
+
+      $scope.updatePlayground = function(){
+        var formData = {
+          'name'  : $('input[name=name]').val(),
+          'county': $('input[name=county]').val(),
+          'geoLat'  : $('input[name=geoLat]').val(),
+          'geoLng': $('input[name=geoLng]').val(),
+          'description'  : $('input[name=description]').val(),
+          'isEnclosed': 0,
+          'facilities'  : $('input[name=facilities]').val(),
+          'images': $('input[name=images]').val(),
+          'surface'  : $('input[name=surface]').val(),
+          'age'  : $('input[name=age]').val(),
+          'id'  : $('input[name=pid]').val(),
+        };
+
+        console.log(formData.id);
+
+        var addPromise = playgroundService.updatePlayground(formData);
+        addPromise.then(function (repsonse) {
+          console.log(repsonse);
+        });
+      }
+
 
       var viewPromise = playgroundService.getPlayground($routeParams.id);
       viewPromise.then(function (response) {
@@ -24,8 +67,8 @@ angular.module('playgroundApp')
         $scope.playground.description = response.data.description;
         $scope.playground.images = response.data.images;
         $scope.playground.isEnclosed = response.data.isEnclosed;
-        $scope.playground.latitude = response.data.latitude;
-        $scope.playground.longitude = response.data.longitude;
+        $scope.playground.geoLat = response.data.geoLat;
+        $scope.playground.geoLng = response.data.geoLng;
         $scope.playground.id = response.data.id;
       });
   });

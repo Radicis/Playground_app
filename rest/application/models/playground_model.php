@@ -14,6 +14,16 @@ class Playground_model extends CI_Model
         return $query->result();
     }
 
+    public function get($id=null){
+        if (!$id)
+        {
+            $query = $this->db->get('playgrounds');
+            return $query->result_array();
+        }
+        $query = $this->db->get_where('playgrounds', array('id' => $id));
+        return $query->row_array();
+    }
+
 
     function create($data)
     {

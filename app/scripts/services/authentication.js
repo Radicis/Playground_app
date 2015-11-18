@@ -28,7 +28,7 @@ angular.module('playgroundApp')
       var deferred = $q.defer();
       $http({
         method: 'GET',
-        url: 'http://playground.betterfrog.com/rest/api/auth/auth?token=' + $cookies.get('myToken') + '&username=' + $cookies.get('username'),
+        url: 'http://localhost/playground/rest/api//auth/auth?token=' + $cookies.get('myToken') + '&username=' + $cookies.get('username'),
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
       }).then(function (data) {
         deferred.resolve(data.data.message);
@@ -47,7 +47,7 @@ angular.module('playgroundApp')
 
         $http({
           method: 'PUT',
-          url: 'http://playground.betterfrog.com/rest/api/auth/auth',
+          url: 'http://localhost/playground/rest/api//auth/auth',
           data: loginString,
           headers: {'Content-type': 'application/x-www-form-urlencoded'}
         }).success(function (data) {
@@ -77,7 +77,7 @@ angular.module('playgroundApp')
       var deferred = $q.defer();
       $http({
         method: 'POST',
-        url: 'http://playground.betterfrog.com/rest/api/auth/auth',
+        url: 'http://localhost/playground/rest/api//auth/auth',
         data: 'token=' + $cookies.get('myToken'),
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
       }).then(function (data) {

@@ -64,6 +64,11 @@ angular
         caseInsensitiveMatch: true,
         controller: 'PlaygroundViewCtrl'
       })
+      .when('/playground/add', {
+        templateUrl: 'views/add.html',
+        caseInsensitiveMatch: true,
+        controller: 'PlaygroundViewCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -79,6 +84,7 @@ angular
         var username = authentication.getUsername();
         if (username) {
           $rootScope.displayUsername = username;
+          $rootScope.userLoggedIn = true;
           var adminPromise = authentication.isAdmin();
           adminPromise.then(function (isAdmin) {
                $rootScope.userIsAdmin = isAdmin;
@@ -88,6 +94,7 @@ angular
       else{
         $rootScope.displayUsername = null;
         $rootScope.userIsAdmin = false;
+        $rootScope.userLoggedIn = false;
       }
     });
 
@@ -96,6 +103,10 @@ angular
       if($location.path() ==='/admin' && !$rootScope.userIsAdmin) {
         $location.path('login');
       }
+
+      //if($location.path() ==='/playground/add' && !$rootScope.userLoggedIn) {
+       // $location.path('login');
+      //}
     });
   });
 
@@ -113,5 +124,10 @@ angular.module('playgroundApp')
     //cfpLoadingBarProvider.includeBar = false;
   }]);
 
+
+angular.module('playgroundApp').config(function($httpProvider) {
+  $httpProvider.defaults.useXDomain = true;
+  delete $httpProvider.defaults.headers.common['X-Requested-With'];
+});
 
 
