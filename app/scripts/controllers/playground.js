@@ -18,6 +18,8 @@ angular.module('playgroundApp')
     $scope.travelMode = google.maps.TravelMode.DRIVING;
     $scope.directions = false;
 
+    $scope.showRightControls = true;
+
     var directionsService = new google.maps.DirectionsService(),
       directionsDisplay = new google.maps.DirectionsRenderer();
 
@@ -53,6 +55,7 @@ angular.module('playgroundApp')
         }
       });
       $scope.setCenter($scope.selectedMarker.latitude,$scope.selectedMarker.longitude);
+      $scope.showRightControls = true;
       // $scope.$apply();
     };
 
@@ -103,7 +106,27 @@ angular.module('playgroundApp')
         if(id==$cookies.get('userID')){
           return true;
         }
+      };
+
+    $scope.viewPlayground = function(){
+      if($scope.showView) {
+        $scope.showView = false;
       }
+      else{
+        $scope.showView = true;
+      }
+    };
+
+
+    $scope.toggleRight = function(){
+      if($scope.showRightControls) {
+        $scope.showRightControls = false;
+      }
+      else{
+        $scope.showRightControls = true;
+      }
+    };
+
 
 
     $scope.getWeather = function() {
@@ -151,7 +174,8 @@ angular.module('playgroundApp')
         navigationControl: false,
         markers: {
           selected: {}
-        }
+        },
+        disableDefaultUI: true
       }
     });
 
@@ -175,7 +199,8 @@ angular.module('playgroundApp')
           travelMode: $scope.travelMode
         };
         directionsService.route(travel, function (result, status) {
-          var dir = document.getElementById("map-directions").innerHTML = "";
+          document.getElementById("map-directions").innerHTML = "";
+          document.getElementById("map-directions-view").innerHTML = "";
           if (status === google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(result);
             $scope.directions=true;

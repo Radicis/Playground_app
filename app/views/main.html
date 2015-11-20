@@ -2,9 +2,62 @@
   <img src="images/loading.gif" alt="loading" />
 </div>
 <div ng-if="showMap" class="row">
-  <div class="col-md-2">
+  <div class="col-md-2 no-padding scroller" id="filters">
     <form>
-      <input type="text" name="search" />
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search...">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only">Search...</span>
+								</span>
+              </button>
+						</span>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          Default
+          <div class="material-switch pull-right">
+            <input id="someSwitchOptionDefault" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionDefault" class="label-default"></label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          Primary
+          <div class="material-switch pull-right">
+            <input id="someSwitchOptionPrimary" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionPrimary" class="label-primary"></label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          Success
+          <div class="material-switch pull-right">
+            <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionSuccess" class="label-success"></label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          Info
+          <div class="material-switch pull-right">
+            <input id="someSwitchOptionInfo" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionInfo" class="label-info"></label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          Warning
+          <div class="material-switch pull-right">
+            <input id="someSwitchOptionWarning" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionWarning" class="label-warning"></label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          Danger
+          <div class="material-switch pull-right">
+            <input id="someSwitchOptionDanger" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionDanger" class="label-danger"></label>
+          </div>
+        </li>
+      </ul>
     </form>
   </div>
   <div class="app-background">
@@ -12,9 +65,27 @@
       <ui-gmap-markers type="'cluster'" fit="true" chunk='1000'  labelContent="'title'" typeOptions='{maxZoom: 8, title:"Click To Zoom", styles:[{url:"images/icons/playground.png", height:50, width:50, textSize:20}]}' click="onClick" models="markers" icon="'icon'" coords="'coords'" idkey="markers.id" events="markers.events" modelsbyref="false"></ui-gmap-markers>
     </ui-gmap-google-map>
   </div>
-  <div class="col-md-7"> </div>
+  <div class="col-md-7">
+    <div ng-if="showView" class="playground-view">
+      <button type="button" id="close" class="close" ng-click="viewPlayground()">Close</button>
+      <div>
+      <h3>
+        {{selectedMarker.title}}
+      </h3>
+      <img class="thumbnail" src="images/playgrounds/{{selectedMarker.images}}" />
+      <p><strong>County:</strong> {{selectedMarker.county}}</p>
+      <p><strong>Surface:</strong> {{selectedMarker.surface}}</p>
+      <p><strong>Age:</strong> {{selectedMarker.age}}</p>
+      <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
+      <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
+      </div>
+
+    </div>
+  </div>
   <div class="col-md-3 no-padding scroller">
-    <ul class="playground-list">
+    <button type="button" id="close-right" class="close" ng-click="toggleRight()">Close</button>
+    <div class="side-control">
+    <ul class="playground-list" ng-if="showRightControls">
       <li><a ng-href="#/playground/add">Add New</a></li>
       <li ng-repeat="marker in markers">
         <div ng-if="!(marker.id==selectedMarker.id)">
@@ -32,7 +103,7 @@
           <p><strong>Age:</strong> {{selectedMarker.age}}</p>
           <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
           <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
-          <a class="btn btn-default" ng-href="#/view/{{selectedMarker.id}}">View</a>
+          <a class="btn btn-default" ng-click="viewPlayground()">Details</a>
           <a ng-if="isCreator(selectedMarker.userID)" class="btn btn-default" ng-href="#/edit/{{selectedMarker.id}}">Edit</a>
           <button  class="btn btn-default" ng-click="getDirections()">Directions</button>
           <button  class="btn btn-default" ng-click="getWeather()">Weather</button><br>
@@ -47,6 +118,7 @@
         </div>
       </li>
     </ul>
+      </div>
   </div>
 </div>
 

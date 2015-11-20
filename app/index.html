@@ -46,12 +46,15 @@
               <li ng-if="displayUsername && userIsAdmin"><a ng-href="#/admin">Admin</a></li>
             </ul>
 
+            <div class="user-controls">
             <span class="pull-right" ng-if="displayUsername">{{ displayUsername }} | <a ng-href='#here' ng-click="logout()">Log Out</a></span>
             <span class="pull-right" ng-if="!displayUsername">
               <a ng-href="#/login">Log In</a>
               or
               <a ng-href="#/signup">Signup</a>
+
             </span>
+            </div>
           </div>
         </div>
 
