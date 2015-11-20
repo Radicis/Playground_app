@@ -91,6 +91,13 @@ class User_model extends CI_Model
         }
     }
 
+    function getUsername($id){
+        $this->db->select('username');
+        $this->db->where('id', $id);
+        $query = $this->db->get('users');
+        return $query->result();
+    }
+
 
     function update($id, $data)
     {

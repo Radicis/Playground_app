@@ -15,6 +15,7 @@ angular.module('playgroundApp')
 
     $scope.selectedMarker = {};
     $scope.showSelectedMarker = false;
+    $scope.selectedMarker.reviews = [];
     $scope.travelMode = google.maps.TravelMode.DRIVING;
     $scope.directions = false;
 
@@ -30,7 +31,6 @@ angular.module('playgroundApp')
 
 
     $scope.selectMarkerById = function (id) {
-      console.log(id);
       directionsDisplay.setMap(null);
       $scope.directions=false;
       if(document.getElementById("map-directions")){
@@ -38,6 +38,7 @@ angular.module('playgroundApp')
       }
       $.each($scope.markers, function (index) {
         if ($scope.markers[index].id == id) {
+          $scope.selectedMarker.reviews = [];
           $scope.selectedMarker.title = $scope.markers[index].options.title;
           $scope.selectedMarker.location = $scope.markers[index].options.location;
           $scope.selectedMarker.county = $scope.markers[index].options.county;
@@ -52,11 +53,23 @@ angular.module('playgroundApp')
           $scope.selectedMarker.id = parseInt($scope.markers[index].id);
           $scope.selectedMarker.userID = parseInt($scope.markers[index].options.userID);
           $scope.showSelectedMarker = true;
+          $scope.getReviews($scope.selectedMarker.id);
         }
       });
       $scope.setCenter($scope.selectedMarker.latitude,$scope.selectedMarker.longitude);
       $scope.showRightControls = true;
       // $scope.$apply();
+    };
+
+    $scope.getReviews = function(id){
+      var reviewPromise = playgroundService.getReviews(id);
+      var reviews = [];
+      reviewPromise.then(function(response){
+        $.each(response.data, function(index){
+          reviews.push(response.data[index]);
+        });
+        $scope.selectedMarker.reviews =  reviews;
+      })
     };
 
     var promise = playgroundService.getPlaygrounds();
@@ -101,8 +114,6 @@ angular.module('playgroundApp')
     });
 
       $scope.isCreator = function(id){
-        console.log("user: " + $cookies.get('userID'));
-        console.log("playground: " + id);
         if(id==$cookies.get('userID')){
           return true;
         }

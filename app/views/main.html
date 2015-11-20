@@ -69,15 +69,26 @@
     <div ng-if="showView" class="playground-view">
       <button type="button" id="close" class="close" ng-click="viewPlayground()">Close</button>
       <div>
-      <h3>
-        {{selectedMarker.title}}
-      </h3>
-      <img class="thumbnail" src="images/playgrounds/{{selectedMarker.images}}" />
-      <p><strong>County:</strong> {{selectedMarker.county}}</p>
-      <p><strong>Surface:</strong> {{selectedMarker.surface}}</p>
-      <p><strong>Age:</strong> {{selectedMarker.age}}</p>
-      <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
-      <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
+        <h3>
+          {{selectedMarker.title}}
+        </h3>
+        <img class="thumbnail" src="images/playgrounds/{{selectedMarker.images}}" />
+        <p><strong>County:</strong> {{selectedMarker.county}}</p>
+        <p><strong>Surface:</strong> {{selectedMarker.surface}}</p>
+        <p><strong>Age:</strong> {{selectedMarker.age}}</p>
+        <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
+        <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
+        <div class="reviews">
+          <h3>Reviews</h3>
+          <ul>
+            <li ng-repeat="review in selectedMarker.reviews">
+              <h4>{{ review.username }}</h4>
+              <blockquote>{{review.body}}</blockquote>
+              <strong>{{ review.date }}</strong>
+            </li>
+          </ul>
+
+        </div>
       </div>
 
     </div>

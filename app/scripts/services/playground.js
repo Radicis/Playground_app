@@ -96,6 +96,19 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
   };
 
 
+  this.getReviews = function(id){
+    var deferred = $q.defer();
+    $http({
+      method: 'GET',
+      data: {},
+      url: 'http://localhost/playground/rest/api/review/reviews/id/' + id,
+      headers: {'Content-type': 'application/x-www-form-urlencoded'}
+    }).then(function(data) {
+      deferred.resolve(data);
+    });
+    return deferred.promise;
+  }
+
 
 });
 
