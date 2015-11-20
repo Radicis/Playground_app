@@ -96,6 +96,7 @@ p{
   height:100%;
   width:100%;
   opacity:1;
+  background: #fefefe;
 }
 
 
@@ -218,6 +219,17 @@ p{
   bottom: 0;
   right: 0;
   left: 0;
+  transition:all 0.4s;
+}
+
+.blur{
+  background: #222;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  opacity: 0.7;
 }
 
 #map-controls{
@@ -370,12 +382,52 @@ img{
   -moz-border-radius: 20px;
   border-radius: 20px;
   margin-top:60px;
+
 }
 
 .playground-view > div{
   padding:40px;
 }
 
+.reviews{
+
+}
+
+blockquote{
+  border-left:none
+}
+
+.quote-badge{
+  background-color: #555555;
+}
+
+.quote-box{
+
+  overflow: hidden;
+  margin-top: -50px;
+  padding-top: -100px;
+  border-radius: 17px;
+  background-color: #fefefe;
+  margin-top: 25px;
+  color:#222;
+  box-shadow: 2px 2px 2px 2px #E0E0E0;
+
+}
+
+.quotation-mark{
+
+  margin-top: -10px;
+  font-weight: bold;
+  font-size:50px;
+  color:#999;
+  font-family: "Times New Roman", Georgia, Serif;
+
+}
+
+.quote-text{
+  font-size: 14px;
+  margin-top: -15px;
+}
 
 
 .material-switch > input[type="checkbox"] {

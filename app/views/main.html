@@ -11,50 +11,36 @@
 								<span class="glyphicon glyphicon-search">
 									<span class="sr-only">Search...</span>
 								</span>
-              </button>
+                            </button>
 						</span>
       </div>
       <ul class="list-group">
         <li class="list-group-item">
-          Default
-          <div class="material-switch pull-right">
-            <input id="someSwitchOptionDefault" name="someSwitchOption001" type="checkbox"/>
-            <label for="someSwitchOptionDefault" class="label-default"></label>
-          </div>
-        </li>
-        <li class="list-group-item">
-          Primary
-          <div class="material-switch pull-right">
-            <input id="someSwitchOptionPrimary" name="someSwitchOption001" type="checkbox"/>
-            <label for="someSwitchOptionPrimary" class="label-primary"></label>
-          </div>
-        </li>
-        <li class="list-group-item">
-          Success
+          Test1
           <div class="material-switch pull-right">
             <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox"/>
             <label for="someSwitchOptionSuccess" class="label-success"></label>
           </div>
         </li>
         <li class="list-group-item">
-          Info
+          Surface
           <div class="material-switch pull-right">
-            <input id="someSwitchOptionInfo" name="someSwitchOption001" type="checkbox"/>
-            <label for="someSwitchOptionInfo" class="label-info"></label>
+            <input id="someSwitchOptionSuccess1" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionSuccess" class="label-success"></label>
           </div>
         </li>
         <li class="list-group-item">
-          Warning
+          Surface
           <div class="material-switch pull-right">
-            <input id="someSwitchOptionWarning" name="someSwitchOption001" type="checkbox"/>
-            <label for="someSwitchOptionWarning" class="label-warning"></label>
+            <input id="someSwitchOptionSuccess2" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionSuccess" class="label-success"></label>
           </div>
         </li>
         <li class="list-group-item">
-          Danger
+          Surface
           <div class="material-switch pull-right">
-            <input id="someSwitchOptionDanger" name="someSwitchOption001" type="checkbox"/>
-            <label for="someSwitchOptionDanger" class="label-danger"></label>
+            <input id="someSwitchOptionSuccess3" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionSuccess" class="label-success"></label>
           </div>
         </li>
       </ul>
@@ -79,12 +65,25 @@
         <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
         <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
         <div class="reviews">
-          <h3>Reviews</h3>
-          <ul>
+          <ul ng-if="selectedMarker.reviews">
             <li ng-repeat="review in selectedMarker.reviews">
-              <h4>{{ review.username }}</h4>
-              <blockquote>{{review.body}}</blockquote>
-              <strong>{{ review.date }}</strong>
+              <blockquote class="quote-box">
+                <p class="quotation-mark">
+                  “
+                </p>
+                <p class="quote-text">
+                 {{ review.body }}
+                </p>
+                <hr>
+                <div class="blog-post-actions">
+                  <p class="blog-post-bottom pull-left">
+                    {{ review.username }}
+                  </p>
+                  <p class="blog-post-bottom pull-right">
+                    <span class="badge quote-badge">{{review.date}}</span>
+                  </p>
+                </div>
+              </blockquote>
             </li>
           </ul>
 

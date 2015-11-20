@@ -21,17 +21,21 @@ angular.module('playgroundApp')
 
     $scope.showRightControls = true;
 
+    var defaultZoom = 8;
+
     var directionsService = new google.maps.DirectionsService(),
       directionsDisplay = new google.maps.DirectionsRenderer();
 
     $scope.setCenter = function(lat, lng){
       $scope.map.center.latitude = lat;
       $scope.map.center.longitude = lng;
+      $scope.map.zoom = defaultZoom;
     };
 
 
     $scope.selectMarkerById = function (id) {
       directionsDisplay.setMap(null);
+      $scope.selectedMarker.reviews = [];
       $scope.directions=false;
       if(document.getElementById("map-directions")){
         document.getElementById("map-directions").innerHTML = "";
@@ -57,6 +61,7 @@ angular.module('playgroundApp')
         }
       });
       $scope.setCenter($scope.selectedMarker.latitude,$scope.selectedMarker.longitude);
+
       $scope.showRightControls = true;
       // $scope.$apply();
     };
@@ -122,9 +127,11 @@ angular.module('playgroundApp')
     $scope.viewPlayground = function(){
       if($scope.showView) {
         $scope.showView = false;
+        $('.angular-google-map-container').removeClass('blur');
       }
       else{
         $scope.showView = true;
+        $('.angular-google-map-container').addClass('blur');
       }
     };
 
@@ -211,7 +218,6 @@ angular.module('playgroundApp')
         };
         directionsService.route(travel, function (result, status) {
           document.getElementById("map-directions").innerHTML = "";
-          document.getElementById("map-directions-view").innerHTML = "";
           if (status === google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(result);
             $scope.directions=true;
