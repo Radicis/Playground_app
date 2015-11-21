@@ -1,7 +1,7 @@
 <div ng-if="!playground" class="loading">
   <img src="images/loading.gif" alt="loading" />
 </div>
-<div ng-show="playground">
+<div ng-show="playground" class="static">
   <form class="login-form" ng-submit="updatePlayground()" name="editForm" >
     <input type="hidden" id="pid" name="pid" ng-model="playground.id" value="{{playground.id}}" />
 

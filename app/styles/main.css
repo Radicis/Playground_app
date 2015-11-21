@@ -168,7 +168,7 @@ p{
 
 .navbar{
   margin-bottom:0px;
-  width:500px;
+  width:600px;
   position:fixed;
   z-index:999;
   background: rgb(245,255,234); /* Old browsers */
@@ -478,6 +478,11 @@ blockquote{
 .list-group-item {
   background-color: transparent;
   border: none;
+}
+
+
+.static{
+  margin-top:50px;
 }
 
 

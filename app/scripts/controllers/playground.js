@@ -12,9 +12,13 @@ angular.module('playgroundApp')
   .controller('PlaygroundCtrl', function ($scope, playgroundService,weatherService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams, $cookies) {
 
     $scope.markers = [];
+    $scope.allMarkers = [];
 
     $scope.selectedMarker = {};
     $scope.showSelectedMarker = false;
+
+    $scope.filterForm = {};
+
     $scope.selectedMarker.reviews = [];
     $scope.travelMode = google.maps.TravelMode.DRIVING;
     $scope.directions = false;
@@ -106,6 +110,7 @@ angular.module('playgroundApp')
           }
         };
         $scope.markers.push(marker);
+        $scope.allMarkers.push(marker);
       });
       $scope.showMap = true;
 
@@ -134,6 +139,63 @@ angular.module('playgroundApp')
         $('.angular-google-map-container').addClass('blur');
       }
     };
+
+    $scope.playgroundFilter = function(form){
+      var searchTerm = form.searchFilter.$modelValue;
+      var enclosed = form.enclosedFilter.$modelValue;
+      var surface = form.surfaceFilter.$modelValue;
+
+      $scope.filterPlaygrounds(searchTerm, enclosed, surface);
+    };
+
+      $scope.filterPlaygrounds = function(term, enclosed, surface, age){
+        if(typeof term == 'undefined'){
+          term = " ";
+        }
+
+        if(typeof surface == 'undefined'){
+          surface = " ";
+        }
+
+        if(typeof age == 'undefined'){
+          age = " ";
+        }
+
+        if(typeof enclosed == 'undefined'){
+          enclosed = " ";
+        }
+        var filteredPlaygrounds = [];
+        $scope.markers = $scope.allMarkers;
+        $.each($scope.markers, function(index) {
+
+          if(
+              (((term.toUpperCase() == $scope.markers[index].options.county.toUpperCase()) || (term === " "))
+                 || (($scope.markers[index].options.title.toUpperCase().indexOf(term.toUpperCase())>-1)))
+
+                 && ((surface.toUpperCase() == $scope.markers[index].options.surface.toUpperCase()) || (surface === " "))
+              && ((age.toUpperCase() == $scope.markers[index].options.age.toUpperCase()) || (age ===" "))
+              && ((enclosed == $scope.markers[index].options.isEnclosed) || (enclosed === " "))
+          )
+          {
+            filteredPlaygrounds.push($scope.markers[index]);
+          }
+        });
+
+        if(filteredPlaygrounds.length==0){
+          $scope.markers = $scope.allMarkers;
+          alert("No matching playgrounds in database");
+        }else{
+          $scope.markers = filteredPlaygrounds;
+        }
+      };
+
+      $scope.resetMap = function(){
+        $scope.map.center.latitude = 53.41291;
+        $scope.map.center.longitude = -8.24389;
+        $scope.map.zoom = defaultZoom;
+        $scope.markers = $scope.allMarkers;
+      };
+
 
 
     $scope.toggleRight = function(){
@@ -181,7 +243,7 @@ angular.module('playgroundApp')
         },
         zoom: 7,
         bounds: {},
-        markers: $scope.markerList,
+        markers: $scope.markers,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         events: {},
         control: {}

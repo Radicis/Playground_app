@@ -26,11 +26,11 @@
     <file url="file://$PROJECT_DIR$/rest/application/config/config.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest/application/config/rest.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest/application/controllers/Rest_server.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rest/application/controllers/api/auth.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rest/application/controllers/api/playground.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rest/application/controllers/api/review.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest/application/controllers/api/Auth.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest/application/controllers/api/Playground.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest/application/controllers/api/Review.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest/application/libraries/REST_Controller.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rest/application/models/auth_model.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rest/application/models/user_model.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest/application/models/Auth_model.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest/application/models/User_model.php" charset="UTF-8" />
   </component>
 </project>

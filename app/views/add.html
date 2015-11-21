@@ -1,7 +1,7 @@
 <div ng-if="!playground" class="loading">
   <img src="images/loading.gif" alt="loading" />
 </div>
-<div ng-show="playground">
+<div ng-show="playground" class="static">
 <form class="login-form" ng-submit="addPlayground()" name="editForm" >
 
   <input type="text" id="name" name="name" placeholder="Name" class="form-control" required ng-model="playground.title">

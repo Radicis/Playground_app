@@ -3,9 +3,9 @@
 </div>
 <div ng-if="showMap" class="row">
   <div class="col-md-2 no-padding scroller" id="filters">
-    <form>
+    <form ng-submit="playgroundFilter(filterForm)" name="filterForm" id="filterForm">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search...">
+        <input type="text" name="searchFilter" class="form-control" placeholder="Search..." ng-model="searchFilter">
 						<span class="input-group-btn">
 							<button type="submit" class="btn btn-default">
 								<span class="glyphicon glyphicon-search">
@@ -14,36 +14,41 @@
                             </button>
 						</span>
       </div>
+
       <ul class="list-group">
         <li class="list-group-item">
-          Test1
+          Enclosed
           <div class="material-switch pull-right">
-            <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox"/>
+            <input id="someSwitchOptionSuccess" name="enclosedFilter" type="checkbox" ng-model="enclosedFilter"/>
             <label for="someSwitchOptionSuccess" class="label-success"></label>
           </div>
         </li>
         <li class="list-group-item">
           Surface
-          <div class="material-switch pull-right">
-            <input id="someSwitchOptionSuccess1" name="someSwitchOption001" type="checkbox"/>
-            <label for="someSwitchOptionSuccess" class="label-success"></label>
+          <div class="radio">
+            <label><input type="radio" name="surfaceFilter" ng-model="surfaceFilter" value="grass">Grass</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio"  name="surfaceFilter" ng-model="surfaceFilter" value="Sand">Sand</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio"  name="surfaceFilter" ng-model="surfaceFilter" value="Padded">Padded</label>
           </div>
         </li>
         <li class="list-group-item">
-          Surface
-          <div class="material-switch pull-right">
-            <input id="someSwitchOptionSuccess2" name="someSwitchOption001" type="checkbox"/>
-            <label for="someSwitchOptionSuccess" class="label-success"></label>
+          Age Range
+          <div class="radio">
+            <label><input type="radio" name="ageFilter" ng-model="ageFilter" value="03" />0-3</label>
           </div>
-        </li>
-        <li class="list-group-item">
-          Surface
-          <div class="material-switch pull-right">
-            <input id="someSwitchOptionSuccess3" name="someSwitchOption001" type="checkbox"/>
-            <label for="someSwitchOptionSuccess" class="label-success"></label>
+          <div class="radio">
+            <label><input type="radio" name="ageFilter" ng-model="ageFilter" value="36"/>3-6</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="ageFilter" ng-model="ageFilter" value="6" />6+</label>
           </div>
         </li>
       </ul>
+      <button class="btn btn-success" ng-click="resetMap()"  >Reset</button>  <input class="btn btn-success" type="submit" value="Filter">
     </form>
   </div>
   <div class="app-background">
