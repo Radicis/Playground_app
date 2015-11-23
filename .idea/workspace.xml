@@ -1,29 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/styles/main.css" description="&#10;" line="272" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="886783e5-603b-4093-beee-f252f9fc2332" name="Default" comment="">
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\404.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\icons\playground.5836ce9a.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\loading.3c271a0e.gif" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Ballydehob.b83a78b1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Ballynacally.a9068e29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Bandon.0bbdec2b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\BernardMcGlincheyPark.01b6a532.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Doughiska.d38cd2f7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\FitzgeraldPark.b723a2a5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\MarleyPark.a363f56b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Monivea.b1d13920.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\StStephensGreen.3dde34bf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\TheTimSmythePark.7ba2fc99.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_0.5b6c1fb4.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_1.5b6c1fb4.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_10.f1c30d9b.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_11.8c4f5414.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_12.e4927360.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_13.0d78aba7.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_14.20b83205.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_15.b8ee687b.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_16.443928f4.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_17.5b6c1fb4.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_18.97cabc6e.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_19.ee0d4622.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_2.5b6c1fb4.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_20.4b8ef95f.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_21.a75cd1dc.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_22.021577b0.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_23.6973889c.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_24.6973889c.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_25.db8abd66.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_26.b9e4d650.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_27.b56fc9c5.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_28.d79d5a56.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_29.e193d81d.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_3.5b6c1fb4.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_30.99e0173f.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_31.bca844e6.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_32.99ad35d2.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_33.e3b22b2d.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_34.984e5c12.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_35.5b6c1fb4.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_36.c5dc412d.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_37.57bed640.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_38.57bed640.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_39.f8a351b5.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_4.5b6c1fb4.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_40.e4927360.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_41.ae602b56.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_42.443928f4.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_43.b8ee687b.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_44.b86abd7b.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_45.ee5e8dd0.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_46.1400e662.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_47.bf0eca7c.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_5.11daab8c.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_6.7b038800.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_7.f2630bda.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_8.98db6944.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_9.06693105.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\na.b86abd7b.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\yeoman.c582c4d1.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\index.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\robots.txt" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.02caeef3.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.147cad5c.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.68d4ba8c.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.b576ddf9.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.ce4e90d6.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.d655010a.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\vendor.350a5478.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\vendor.772eaf75.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.22e9d93e.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.3befef96.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.4b16c747.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.b093eff2.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.d0729eda.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.f979afbb.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\vendor.1d0739a1.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\vendor.a542cc6a.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/about.html" afterPath="$PROJECT_DIR$/dist/views/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/add.html" afterPath="$PROJECT_DIR$/dist/views/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/edit.html" afterPath="$PROJECT_DIR$/dist/views/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/login.html" afterPath="$PROJECT_DIR$/dist/views/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/main.html" afterPath="$PROJECT_DIR$/dist/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/signup.html" afterPath="$PROJECT_DIR$/dist/views/signup.html" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\views\about.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\views\add.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\views\admin.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\views\edit.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\views\loading.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\views\login.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\views\main.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\views\signup.html" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\views\view.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/favicon.ico" afterPath="$PROJECT_DIR$/app/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/about.html" afterPath="$PROJECT_DIR$/app/views/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/authentication.js" afterPath="$PROJECT_DIR$/app/scripts/services/authentication.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/playground.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/playground.js" afterPath="$PROJECT_DIR$/app/scripts/services/playground.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="playground.iws" />
@@ -46,31 +130,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/signup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+            <state vertical-scroll-proportion="-0.3207547">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,8 +143,28 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.444445">
-              <caret line="170" column="10" selection-start-line="170" selection-start-column="10" selection-end-line="170" selection-end-column="10" />
+            <state vertical-scroll-proportion="-2.3035715">
+              <caret line="173" column="32" selection-start-line="173" selection-start-column="32" selection-end-line="173" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authentication.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/authentication.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -89,8 +173,48 @@
       <file leaf-file-name="playground.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/playground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60556847">
-              <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+            <state vertical-scroll-proportion="-0.18329467">
+              <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/Auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Playground.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/Playground.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-117.5">
+              <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Auth_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest/application/models/Auth_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -99,44 +223,9 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.1320753">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state vertical-scroll-proportion="-6.09434">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playground.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.185184">
-              <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
-              <folding>
-                <element signature="e#1032#2777#0" expanded="false" />
-                <element signature="e#2816#3116#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weather.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/weather.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="141" selection-start-line="17" selection-start-column="141" selection-end-line="17" selection-end-column="141" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3076923">
-              <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
-              <folding>
-                <element signature="n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -176,23 +265,25 @@
         <option value="$PROJECT_DIR$/rest/application/models/playground_model.php" />
         <option value="$PROJECT_DIR$/rest/application/controllers/api/auth.php" />
         <option value="$PROJECT_DIR$/rest/application/controllers/api/user.php" />
-        <option value="$PROJECT_DIR$/app/scripts/services/authentication.js" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/rest/application/controllers/api/playground.php" />
         <option value="$PROJECT_DIR$/rest/application/models/review_model.php" />
-        <option value="$PROJECT_DIR$/app/scripts/services/playground.js" />
         <option value="$PROJECT_DIR$/rest/application/models/user_model.php" />
         <option value="$PROJECT_DIR$/rest/application/controllers/api/review.php" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" />
         <option value="$PROJECT_DIR$/app/views/signup.html" />
         <option value="$PROJECT_DIR$/app/views/add.html" />
         <option value="$PROJECT_DIR$/app/views/edit.html" />
-        <option value="$PROJECT_DIR$/app/views/login.html" />
-        <option value="$PROJECT_DIR$/app/views/about.html" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.css" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
+        <option value="$PROJECT_DIR$/app/views/about.html" />
+        <option value="$PROJECT_DIR$/app/views/login.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.css" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/rest/application/models/Auth_model.php" />
+        <option value="$PROJECT_DIR$/rest/application/controllers/api/Auth.php" />
+        <option value="$PROJECT_DIR$/app/scripts/services/authentication.js" />
+        <option value="$PROJECT_DIR$/app/scripts/services/playground.js" />
       </list>
     </option>
   </component>
@@ -208,8 +299,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="31" />
+    <option name="x" value="-7" />
+    <option name="y" value="108" />
     <option name="width" value="1513" />
     <option name="height" value="999" />
   </component>
@@ -236,7 +327,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -577,6 +667,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -638,8 +729,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="31" width="1513" height="999" extended-state="0" />
-    <editor active="false" />
+    <frame x="-7" y="108" width="1513" height="999" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1482966" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -789,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/loading.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -845,31 +929,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/models/Auth_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.26923">
-          <caret line="60" column="50" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/models/Playground_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.576923">
-          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -880,13 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/authentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19721578">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6153846">
@@ -894,19 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/Playground.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest/application/models/Review_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
           <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,15 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
           <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.444445">
-          <caret line="170" column="10" selection-start-line="170" selection-start-column="10" selection-end-line="170" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -982,22 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3773584">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1320753">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1006,40 +1027,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="80" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3076923">
-          <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
-          <folding>
-            <element signature="n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.185184">
-          <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
-          <folding>
-            <element signature="e#1032#2777#0" expanded="false" />
-            <element signature="e#2816#3116#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,10 +1043,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.962963">
+          <caret line="218" column="34" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
+          <folding>
+            <element signature="e#1068#2813#0" expanded="false" />
+            <element signature="e#2852#3152#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2452831">
+          <caret line="7" column="83" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="83" />
+          <folding>
+            <element signature="n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.09434">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3207547">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3035715">
+          <caret line="173" column="32" selection-start-line="173" selection-start-column="32" selection-end-line="173" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/models/Playground_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.73077">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/Playground.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-117.5">
+          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/models/Auth_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/authentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/playground.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60556847">
-          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+        <state vertical-scroll-proportion="-0.18329467">
+          <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
           <folding />
         </state>
       </provider>

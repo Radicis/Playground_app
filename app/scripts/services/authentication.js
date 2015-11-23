@@ -10,19 +10,11 @@
 angular.module('playgroundApp')
   .service('authentication', function ($cookies, $http, $rootScope, $q, $location) {
 
-
-    /*
-
-    Consider removing need to provide username is a lot of these requests. Just use token to get username and admin on session start
-       then store it so it would just be 1 request and the token would is all that would need ot be sent.
-
-     */
-
     this.verifyToken =  function() {
       var deferred = $q.defer();
       $http({
         method: 'GET',
-        url: 'http://localhost/playground/rest/api//auth/auth?token=' + $cookies.get('myToken') + '&username=' + $cookies.get('username'),
+        url: 'http://playground.betterfrog.com/rest/api/auth/auth/token/' + $cookies.get('myToken') + '/username/' + $cookies.get('username'),
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
       }).then(function (data) {
         deferred.resolve(data.data.message);
@@ -41,7 +33,7 @@ angular.module('playgroundApp')
 
         $http({
           method: 'PUT',
-          url: 'http://localhost/playground/rest/api/auth/auth',
+          url: 'http://playground.betterfrog.com/rest/api/auth/auth',
           data: loginString,
           headers: {'Content-type': 'application/x-www-form-urlencoded'}
         }).success(function (data) {
@@ -72,7 +64,7 @@ angular.module('playgroundApp')
       var deferred = $q.defer();
       $http({
         method: 'POST',
-        url: 'http://localhost/playground/rest/api/auth/auth',
+        url: 'http://playground.betterfrog.com/rest/api/auth/auth',
         data: 'token=' + $cookies.get('myToken'),
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
       }).then(function (data) {

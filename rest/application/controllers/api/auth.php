@@ -13,6 +13,7 @@ class Auth extends REST_Controller {
         parent::__construct();
 
         $this->load->model('user_model');
+        $this->load->model('auth_model');
     }
 
     public function auth_get()
@@ -33,8 +34,6 @@ class Auth extends REST_Controller {
     public function auth_post()
     {
         $token = $this->post('token');
-
-        //$token = "aaa42296669b958c3cee6c0475c8093e";
 
         $isAdmin = $this->auth_model->is_admin($token);
 

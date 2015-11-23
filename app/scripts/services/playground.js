@@ -11,7 +11,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
 
   this.getPlaygrounds = function(){
     var deferred = $q.defer();
-    $http.get('http://localhost/playground/rest/api/playground/playgrounds').then(function(data){
+    $http.get('http://playground.betterfrog.com/rest/api/playground/playgrounds').then(function(data){
       deferred.resolve(data);
     });
     return deferred.promise;
@@ -19,7 +19,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
 
   this.getPlayground = function(id){
     var deferred = $q.defer();
-    $http.get('http://localhost/playground/rest/api/playground/playgrounds/' + id).then(function(data){
+    $http.get('http://playground.betterfrog.com/rest/api/playground/playgrounds/' + id).then(function(data){
       deferred.resolve(data);
     });
     return deferred.promise;
@@ -31,7 +31,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     $http({
       method: 'DELETE',
       data: 'username=root&token=aaa42296669b958c3cee6c0475c8093e',
-      url: 'http://localhost/playground/rest/api/playground/playgrounds/id/' + id,
+      url: 'http://playground.betterfrog.com/rest/api/playground/playgrounds/id/' + id,
       headers: {'Content-type': 'application/x-www-form-urlencoded'}
     }).then(function(data) {
       deferred.resolve(data);
@@ -59,7 +59,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     $http({
       method: 'PUT',
       data: loginString,
-      url: 'http://localhost/playground/rest/api/playground/playgrounds',
+      url: 'http://playground.betterfrog.com/rest/api/playground/playgrounds',
       headers: {'Content-type': 'application/x-www-form-urlencoded'}
     }).then(function(data) {
       deferred.resolve(data);
@@ -87,7 +87,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     $http({
       method: 'POST',
       data: loginString,
-      url: 'http://localhost/playground/rest/api/playground/playgrounds/' + id,
+      url: 'http://playground.betterfrog.com/rest/api/playground/playgrounds/' + id,
       headers: {'Content-type': 'application/x-www-form-urlencoded'}
     }).then(function(data) {
       deferred.resolve(data);
@@ -101,7 +101,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     $http({
       method: 'GET',
       data: {},
-      url: 'http://localhost/playground/rest/api/review/reviews/id/' + id,
+      url: 'http://playground.betterfrog.com/rest/api/review/reviews/id/' + id,
       headers: {'Content-type': 'application/x-www-form-urlencoded'}
     }).then(function(data) {
       deferred.resolve(data);

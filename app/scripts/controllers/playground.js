@@ -24,6 +24,7 @@ angular.module('playgroundApp')
     $scope.directions = false;
 
     $scope.showRightControls = true;
+    $scope.showLeftControls = true;
 
     var defaultZoom = 8;
 
@@ -201,11 +202,34 @@ angular.module('playgroundApp')
     $scope.toggleRight = function(){
       if($scope.showRightControls) {
         $scope.showRightControls = false;
+        $('#right-controls').slideUp();
+        $('#close-icon').removeClass('glyphicon-minus');
+        $('#close-icon').addClass('glyphicon-plus');
       }
       else{
         $scope.showRightControls = true;
+        $('#right-controls').slideDown();
+        $('#close-icon').removeClass('glyphicon-plus');
+        $('#close-icon').addClass('glyphicon-minus');
+
       }
     };
+
+      $scope.toggleLeft = function(){
+        if($scope.showLeftControls) {
+          $scope.showLeftControls = false;
+          $('#filterForm').slideUp();
+          $('#close-icon-left').removeClass('glyphicon-minus');
+          $('#close-icon-left').addClass('glyphicon-plus');
+        }
+        else{
+          $scope.showLeftControls = true;
+          $('#filterForm').slideDown();
+          $('#close-icon-left').removeClass('glyphicon-plus');
+          $('#close-icon-left').addClass('glyphicon-minus');
+
+        }
+      };
 
 
 

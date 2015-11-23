@@ -2,7 +2,9 @@
   <img src="images/loading.gif" alt="loading" />
 </div>
 <div ng-if="showMap" class="row">
-  <div class="col-md-2 no-padding scroller" id="filters">
+  <div class="col-md-2 no-padding" id="filters">
+    <a ng-click="toggleLeft()" id="close-left" class="btn btn-primary btn-success close-button-left"><span id="close-icon-left" class="glyphicon glyphicon-minus"></span> </a>
+    <div class="scroller">
     <form ng-submit="playgroundFilter(filterForm)" name="filterForm" id="filterForm">
       <div class="input-group">
         <input type="text" name="searchFilter" class="form-control" placeholder="Search..." ng-model="searchFilter">
@@ -50,6 +52,7 @@
       </ul>
       <button class="btn btn-success" ng-click="resetMap()"  >Reset</button>  <input class="btn btn-success" type="submit" value="Filter">
     </form>
+    </div>
   </div>
   <div class="app-background">
     <ui-gmap-google-map center='map.center' control="map.control" zoom='map.zoom' draggable="true" events="map.events" bounds="map.bounds"  options="options">
@@ -97,16 +100,19 @@
 
     </div>
   </div>
-  <div class="col-md-3 no-padding scroller">
-    <button type="button" id="close-right" class="close" ng-click="toggleRight()">Close</button>
-    <div class="side-control">
-    <ul class="playground-list" ng-if="showRightControls">
-      <li><a ng-href="#/playground/add">Add New</a></li>
+  <div class="col-md-3 no-padding ">
+    <a ng-click="toggleRight()" id="close-right" class="btn btn-primary btn-success close-button"><span id="close-icon" class="glyphicon glyphicon-minus"></span> </a>
+    <a ng-href="#/playground/add" class="btn btn-primary btn-success add-button"><span class="glyphicon glyphicon-plus"></span></a>
+    <div class="side-control scroller">
+    <ul class="playground-list" id="right-controls">
       <li ng-repeat="marker in markers">
-        <div ng-if="!(marker.id==selectedMarker.id)">
-          <h4 ng-click="selectMarkerById(marker.id)" class="playground-click">
+        <div ng-if="!(marker.id==selectedMarker.id)" ng-click="selectMarkerById(marker.id)">
+          <img class="list-image pull-right" src="images/playgrounds/{{marker.options.images }}" />
+          <h4 class="playground-click">
             {{marker.options.title}}
           </h4>
+          <span class="county">{{marker.options.county}}</span>
+
         </div>
         <div ng-if="marker.id==selectedMarker.id" class="selected-marker">
           <h3>

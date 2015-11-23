@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>PlayFindr - Find and Play</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -35,7 +35,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">playground</a>
+            <a class="navbar-brand" href="#/"><img src="images/findr.png" alt="PlayFindr" /></a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -48,7 +48,7 @@
             </ul>
 
             <div class="user-controls">
-            <span class="pull-right" ng-if="displayUsername">{{ displayUsername }} | <a ng-href='#here' ng-click="logout()">Log Out</a></span>
+            <span class="pull-right" ng-if="displayUsername">Hello {{ displayUsername }} | <a ng-href='#here' ng-click="logout()">Log Out</a></span>
             <span class="pull-right" ng-if="!displayUsername">
               <a ng-href="#/login">Log In</a>
               or

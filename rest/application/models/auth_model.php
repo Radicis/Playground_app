@@ -31,9 +31,6 @@ class Auth_model extends CI_Model
 
     public function verify($username, $token)
     {
-
-        //return TRUE;
-
         $this->db->where('username', $username);
         $query = $this->db->get('users');
 
