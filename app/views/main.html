@@ -3,6 +3,7 @@
 </div>
 <div ng-if="showMap" class="row">
   <div class="col-md-2 no-padding" id="filters">
+    <h4 class="side-top">Filters</h4>
     <a ng-click="toggleLeft()" id="close-left" class="btn btn-primary btn-success close-button-left"><span id="close-icon-left" class="glyphicon glyphicon-minus"></span> </a>
     <div class="scroller">
     <form ng-submit="playgroundFilter(filterForm)" name="filterForm" id="filterForm">
@@ -61,7 +62,8 @@
   </div>
   <div class="col-md-7">
     <div ng-if="showView" class="playground-view">
-      <button type="button" id="close" class="close" ng-click="viewPlayground()">Close</button>
+
+      <a ng-click="viewPlayground()" id="close-button-view" class="btn btn-primary btn-success close-button-view"><span id="close-view-icon" class="glyphicon glyphicon-minus"></span> </a>
       <div>
         <h3>
           {{selectedMarker.title}}
@@ -101,8 +103,9 @@
     </div>
   </div>
   <div class="col-md-3 no-padding ">
+    <h4 class="side-top">Playground List</h4>
     <a ng-click="toggleRight()" id="close-right" class="btn btn-primary btn-success close-button"><span id="close-icon" class="glyphicon glyphicon-minus"></span> </a>
-    <a ng-href="#/playground/add" class="btn btn-primary btn-success add-button"><span class="glyphicon glyphicon-plus"></span></a>
+    <a ng-href="#/playground/add" class="btn btn-primary btn-success add-button"><span class="glyphicon glyphicon-cloud-upload"></span></a>
     <div class="side-control scroller">
     <ul class="playground-list" id="right-controls">
       <li ng-repeat="marker in markers">

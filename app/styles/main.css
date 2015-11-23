@@ -176,6 +176,24 @@ p{
   padding-bottom:50px;
 }
 
+.footrip{
+  height:40px;
+  position: absolute;
+  bottom:0;
+  min-height:80px;
+  min-width:100%;
+  background:url(../images/ripbottom.png) repeat-x;
+  background-position: 0px 15px;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.footrip p{
+  position: relative;
+  bottom:-50px;
+
+}
+
 .navbar-default{
   border-color:transparent;
 }
@@ -268,11 +286,9 @@ ul{
   padding:0;
 }
 
-#filters{
-  padding:10px;
-}
 
 .scroller, .playground-view{
+  padding-top:30px;
   overflow-y: auto;
   font-size:1em;
   border:2px solid #584b30;
@@ -295,8 +311,28 @@ ul{
   position: relative;
 }
 
+.side-top{
+  position:absolute;
+  text-align: center;
+  top:-8px;
+  z-index:999999;
+  display:block;
+  width:100%;
+  border-bottom:1px solid #222;
+  padding-bottom:3px;
+  background:#EFD14E;
+  color:#222;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  line-height:28px;
+}
+
 .playground-list{
-  height:600px;
+  max-height:75vh;
   position: relative;
 
 }
@@ -310,10 +346,10 @@ ul{
   position:absolute;
   z-index:999999;
   right:0px;
-  top:-20px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  top:0px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-right-radius: 20px;
   border:1px solid #222;
 }
 
@@ -321,22 +357,34 @@ ul{
   position:absolute;
   z-index:999999;
   left:0px;
-  top:-10px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  top:0px;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+  border:1px solid #222;
+}
+
+.close-button-view{
+  position:absolute;
+  z-index:999999;
+  left:0px;
+  top:0px;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
   border:1px solid #222;
 }
 
 
 .add-button{
   position:absolute;
-  top:-20px;
-  left:-10px;
+  top:0px;
+  left:0px;
   z-index:999999;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
   border:1px solid #222;
 
 }
@@ -386,9 +434,9 @@ ul{
 .playground-list .selected-marker{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5ffea+0,e6ffcc+100 */
   background: rgb(245,255,234); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(245,255,234,1) 0%, rgba(230,255,204,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(245,255,234,1) 0%,rgba(230,255,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(245,255,234,1) 0%,rgba(230,255,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top,  rgba(245,255,234,0.5) 0%, rgba(230,255,204,0.5) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(245,255,234,0.5) 0%,rgba(230,255,204,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(245,255,234,0.5) 0%,rgba(230,255,204,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5ffea', endColorstr='#e6ffcc',GradientType=0 ); /* IE6-9 */
   overflow:auto;
   padding:10px;
@@ -427,6 +475,10 @@ img{
   max-width:500px;
 }
 
+.playground-view{
+  max-height:75vh;
+  overflow-y: auto;
+}
 
 .playground-view > div{
   padding:40px;
