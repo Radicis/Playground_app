@@ -34,7 +34,7 @@ angular.module('playgroundApp')
     $scope.setCenter = function(lat, lng){
       $scope.map.center.latitude = lat;
       $scope.map.center.longitude = lng;
-      $scope.map.zoom = defaultZoom;
+      //$scope.map.zoom = defaultZoom;
     };
 
 
@@ -68,6 +68,19 @@ angular.module('playgroundApp')
       $scope.setCenter($scope.selectedMarker.latitude,$scope.selectedMarker.longitude);
 
       $scope.showRightControls = true;
+
+      //$('#playgrounds').scrollTop();
+      var contactTopPosition = $("#playground_" + $scope.selectedMarker.id).position().top;
+      $('#playgrounds').animate({ scrollTop: contactTopPosition }, "slow");
+
+
+      //$('#playground_' + $scope.selectedMarker.id).scrollIntoView(true);
+        // var scrollTop = $('#playground_' + id).offset().top;
+
+
+
+
+
       // $scope.$apply();
     };
 
@@ -239,13 +252,13 @@ angular.module('playgroundApp')
         var forecast = response.data.query.results.channel.item.forecast;
         var weather = $('#weather');
         weather.html("");
-        var html = "<h4>Weather</h4><ul class='weather'>";
+        var html = "<ul class='weather'>";
         $.each(forecast, function(index){
           html += "<li class='weekday'><div>";
-          html += forecast[index].day;
+          html += forecast[index].day ;
           html += "</div><div>";
           html += "<img src='images/weather/icon_" + forecast[index].code + ".png' /></div><div>";
-          html += forecast[index].high;
+          html += forecast[index].high + "&deg;c";
           html += "</div></li>";
         });
         html += "</ul>";
@@ -351,5 +364,6 @@ angular.module('playgroundApp')
         $scope.initialLocation =  new google.maps.LatLng(51.896892, -8.486316);
       }
     }
+
 
   });
