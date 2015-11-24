@@ -34,7 +34,7 @@ angular.module('playgroundApp')
     $scope.setCenter = function(lat, lng){
       $scope.map.center.latitude = lat;
       $scope.map.center.longitude = lng;
-      //$scope.map.zoom = defaultZoom;
+      $scope.map.zoom = 12;
     };
 
 
@@ -69,19 +69,10 @@ angular.module('playgroundApp')
 
       $scope.showRightControls = true;
 
-      //$('#playgrounds').scrollTop();
       var contactTopPosition = $("#playground_" + $scope.selectedMarker.id).position().top;
       $('#playgrounds').animate({ scrollTop: contactTopPosition }, "slow");
 
 
-      //$('#playground_' + $scope.selectedMarker.id).scrollIntoView(true);
-        // var scrollTop = $('#playground_' + id).offset().top;
-
-
-
-
-
-      // $scope.$apply();
     };
 
     $scope.getReviews = function(id){
