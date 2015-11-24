@@ -616,6 +616,14 @@ text-align: center;
   float:left;
 }
 
+.zoom-controls{
+  position: absolute;
+  z-index: 9999999;
+  bottom:150px;
+  left:50px;
+
+}
+
 
 
 

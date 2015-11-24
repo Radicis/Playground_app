@@ -278,14 +278,21 @@ angular.module('playgroundApp')
       },
       options : {
         styles: $scope.styleArray,
+        disableDefaultUI: true,
         scrollwheel: false,
-        navigationControl: false,
         markers: {
           selected: {}
-        },
-        disableDefaultUI: true
+        }
       }
     });
+
+
+      $scope.zoomIn = function(){
+        $scope.map.zoom = $scope.map.zoom + 1;
+      };
+      $scope.zoomOut = function(){
+        $scope.map.zoom = $scope.map.zoom - 1;
+      };
 
 
     $scope.waitForLocation = function() {
