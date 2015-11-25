@@ -63,6 +63,7 @@ angular.module('playgroundApp')
           $scope.selectedMarker.userID = parseInt($scope.markers[index].options.userID);
           $scope.showSelectedMarker = true;
           $scope.getReviews($scope.selectedMarker.id);
+          $scope.reviewID = id;
         }
       });
       $scope.setCenter($scope.selectedMarker.latitude,$scope.selectedMarker.longitude);
@@ -144,6 +145,17 @@ angular.module('playgroundApp')
         $('.angular-google-map-container').addClass('blur');
       }
     };
+
+      $scope.addReview = function(form){
+        var review = form.review.$modelValue;
+        var userID = $cookies.get('userID');
+        var playgroundID = form.reviewID.$modelValue;
+
+        var reviewPromise = playgroundService.addReview(review, playgroundID, userID);
+        reviewPromise.then(function (response) {
+          $scope.getReviews($scope.selectedMarker.id);
+        });
+      };
 
     $scope.playgroundFilter = function(form){
       var searchTerm = form.searchFilter.$modelValue;

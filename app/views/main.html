@@ -79,6 +79,21 @@
         <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
         <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
         <p>{{selectedMarker.description}}</p>
+        <div ng-if="displayUsername" class="add-review">
+          <form ng-submit="addReview(reviewForm)" name="reviewForm" id="reviewForm">
+            <div class="input-group">
+            <input type="text" id="review" name="review" placeholder="Say something about this playground.." class="form-control" required ng-model="review">
+            <span class="input-group-btn">
+							<button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-pencil">
+									<span class="sr-only">Write a review..</span>
+								</span>
+                            </button>
+						</span>
+              </div>
+            <input type="hidden" id="reviewID" name="reviewID" value="{{selectedMarker.id}}"  ng-model="reviewID" />
+          </form>
+        </div>
         <div class="reviews">
           <ul ng-if="selectedMarker.reviews">
             <li ng-repeat="review in selectedMarker.reviews">
