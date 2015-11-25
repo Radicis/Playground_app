@@ -134,7 +134,11 @@
             {{marker.options.title}}
           </h4>
           <span class="county">{{marker.options.county}}</span>
-
+          <span ng-if="marker.options.rating>0" class="glyphicon glyphicon-star"></span>
+          <span ng-if="marker.options.rating>1" class="glyphicon glyphicon-star"></span>
+          <span ng-if="marker.options.rating>2" class="glyphicon glyphicon-star"></span>
+          <span  ng-if="marker.options.rating>3" class="glyphicon glyphicon-star"></span>
+          <span ng-if="marker.options.rating>4"  class="glyphicon glyphicon-star"></span>
         </div>
         <div ng-if="marker.id==selectedMarker.id" class="selected-marker">
           <h3>

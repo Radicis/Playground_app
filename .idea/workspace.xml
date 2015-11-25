@@ -73,6 +73,7 @@
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.ce4e90d6.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.d655010a.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.dc5681e7.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.e86c4c4a.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.e91a0b52.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\vendor.772eaf75.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.072f00f0.css" afterPath="" />
@@ -87,19 +88,11 @@
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.d7994c7c.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.f979afbb.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\vendor.a542cc6a.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/about.html" afterPath="$PROJECT_DIR$/app/views/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/about.html" afterPath="$PROJECT_DIR$/dist/views/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/add.html" afterPath="$PROJECT_DIR$/dist/views/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/admin.html" afterPath="$PROJECT_DIR$/dist/views/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/edit.html" afterPath="$PROJECT_DIR$/dist/views/edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/login.html" afterPath="$PROJECT_DIR$/dist/views/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/main.html" afterPath="$PROJECT_DIR$/dist/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/playground.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/playground.js" afterPath="$PROJECT_DIR$/app/scripts/services/playground.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/signup.html" afterPath="$PROJECT_DIR$/dist/views/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/view.html" afterPath="$PROJECT_DIR$/dist/views/view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="playground.iws" />
@@ -136,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-17.0">
-              <caret line="50" column="89" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="89" />
+              <caret line="50" column="45" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -162,11 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playground.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="playground.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.214286">
-              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5012407">
+              <caret line="92" column="46" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -202,11 +195,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44128555">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.509434">
+              <caret line="147" column="5" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -265,8 +258,8 @@
         <option value="$PROJECT_DIR$/app/views/edit.html" />
         <option value="$PROJECT_DIR$/app/styles/main.css" />
         <option value="$PROJECT_DIR$/app/views/about.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/playground.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
       </list>
     </option>
@@ -284,7 +277,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="55" />
-    <option name="width" value="1541" />
+    <option name="width" value="1875" />
     <option name="height" value="999" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -672,10 +665,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="55" width="1541" height="999" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="55" width="1875" height="999" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14491804" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11888112" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1036,7 +1029,7 @@
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.0">
-          <caret line="50" column="89" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="89" />
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="89" />
           <folding />
         </state>
       </provider>
@@ -1057,14 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="45" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/playground.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2222223">
@@ -1073,18 +1058,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.214286">
-          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44128555">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.509434">
+          <caret line="147" column="5" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5012407">
+          <caret line="92" column="46" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
           <folding />
         </state>
       </provider>

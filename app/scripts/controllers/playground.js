@@ -60,6 +60,7 @@ angular.module('playgroundApp')
           $scope.selectedMarker.latitude = parseFloat($scope.markers[index].coords.latitude);
           $scope.selectedMarker.longitude = parseFloat($scope.markers[index].coords.longitude);
           $scope.selectedMarker.id = parseInt($scope.markers[index].id);
+          $scope.selectedMarker.rating = parseInt($scope.markers.options.rating);
           $scope.selectedMarker.userID = parseInt($scope.markers[index].options.userID);
           $scope.showSelectedMarker = true;
           $scope.getReviews($scope.selectedMarker.id);
@@ -101,7 +102,8 @@ angular.module('playgroundApp')
             description: response.data[index].description,
             images: response.data[index].images,
             isEnclosed: response.data[index].isEnclosed,
-            userID: response.data[index].userID
+            userID: response.data[index].userID,
+            rating: parseInt(response.data[index].rating)
           },
           icon: {
             url: "images/icons/playground.png",
