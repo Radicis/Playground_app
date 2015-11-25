@@ -64,7 +64,7 @@ angular.module('playgroundApp')
       var deferred = $q.defer();
       $http({
         method: 'POST',
-        url: 'http://playground.betterfrog.com/rest/api/auth/auth',
+        url: 'http://playground.betterfrog.com/rest/api/auth/auth/',
         data: 'token=' + $cookies.get('myToken'),
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
       }).then(function (data) {

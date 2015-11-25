@@ -9,7 +9,7 @@
  */
 
 angular.module('playgroundApp')
-	.controller('PlaygroundViewCtrl', function ($scope, playgroundService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams, $cookies) {
+	.controller('PlaygroundViewCtrl', function ($scope, playgroundService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams, $cookies, $location) {
 
       $scope.userID = $cookies.get('userID');
 
@@ -31,7 +31,7 @@ angular.module('playgroundApp')
         
         var addPromise = playgroundService.addPlayground(formData);
         addPromise.then(function (repsonse) {
-          console.log(repsonse);
+          $location.path('/');
         });
       }
 
@@ -54,7 +54,7 @@ angular.module('playgroundApp')
 
         var addPromise = playgroundService.updatePlayground(formData);
         addPromise.then(function (repsonse) {
-          console.log(repsonse);
+          $location.path('/');
         });
       }
 

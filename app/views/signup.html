@@ -1,5 +1,6 @@
 <div class="static">
 <form class="login-form" ng-submit="signup(signupForm.$valid)" name="signupForm" >
+  <H2>Sign Up</H2>
 
   <input type="text" id="inputUsername" name="inputUsername" placeholder="Username" class="form-control" required ng-model="inputData.username">
 
@@ -9,7 +10,7 @@
 
   <input type="password" id="inputPassword2" placeholder="Password confirm" name="inputPassword2" class="form-control" required ng-model="inputData.password2"  compare-to="inputData.password" >
 
-  <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign Up">
+  <input class="btn btn-lg btn-success btn-block" type="submit" value="Sign Up">
 
   <div class="help-block" ng-messages="signupForm.inputUsername.$error" ng-show="signupForm.inputUsername.$touched">
     <div ng-message="required">

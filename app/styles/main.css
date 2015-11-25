@@ -4,43 +4,40 @@
   color: #000;
   padding: 0.2em 0;
 }
-
 body {
   padding: 0;
 }
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /* Custom page header */
-.header {
 
-}
+.header {}
 /* Make the masthead heading the same height as the navigation */
+
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
 }
-
 /* Custom page footer */
+
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
-
 .container-narrow > hr {
   margin: 30px 0;
 }
-
 /* Main marketing message and sign up button */
+
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
@@ -49,87 +46,134 @@ body {
   font-size: 21px;
   padding: 14px 24px;
 }
-
 /* Supporting marketing content */
+
 .marketing {
   margin: 40px 0;
 }
 .marketing p + h4 {
   margin-top: 28px;
 }
-
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-html, body, #map_canvas{
+html,
+body,
+#map_canvas {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight:700;
-  min-height:100%;
+  font-weight: 700;
+  min-height: 100%;
   background: #abce83;
 }
-
-.no-padding{
-  padding:0;
+.no-padding {
+  padding: 0;
 }
-
-p{
-  font-weight:300;
+p {
+  font-weight: 300;
 }
-
-.container{
-  width:100% !important;
+.container {
+  width: 100% !important;
 }
-
-
-
-.ui-widget, .btn{
+.ui-widget,
+.btn {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight:700;
+  font-weight: 700;
 }
+.loading {
+  text-align: center;
+  margin: 0 auto;
+}
+.warnbox-content,
+.adp-warnbox {
+  display: none;
+}
+/* ==========================================================================
+   HEader and Nav Styling
+   ========================================================================== */
 
+.header,
+.marketing,
+.footer {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.navbar.transparent.navbar-inverse .navbar-inner {
+  border-width: 0px;
+}
+.navbar-right {
+  margin-right: 10%;
+  font-size: 1.5em;
+}
+.navbar-brand {
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+.navbar {
+  margin-bottom: 0px;
+  z-index: 999;
+  background: #6f534a;
+  background: url(../images/ripped2.png) repeat-x;
+  background-position: 0px -5px;
+  padding-bottom: 50px;
+}
+.navbar-default {
+  border-color: transparent;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #222;
+}
+.navbar-nav {
+  margin-top: 8px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #222;
+  background-color: transparent;
+  border-color: transparent;
+}
+/* ==========================================================================
+   Map Container Styling
+   ========================================================================== */
 
-.app-background{
+.app-background {
   position: fixed;
-  display:block;
-  height:100%;
-  width:100%;
-  opacity:1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
   background: #fefefe;
-  margin-top:-50px;
+  margin-top: -50px;
 }
-
-
-.app-container{
-  min-height:100%;
+.app-container {
+  min-height: 100%;
 }
-
-.splash{
-  background:rgba(255,255,255,255.7);
-  width:100%;
-  height:100%;
+.splash {
+  background: rgba(255, 255, 255, 255.7);
+  width: 100%;
+  height: 100%;
 }
-
-.splash input{
-  padding:20px;
-  width:100%;
+.splash input {
+  padding: 20px;
+  width: 100%;
 }
-
-.splash-form > div{
-  margin-bottom:10px;
+.splash-form > div {
+  margin-bottom: 10px;
 }
-
-.splash h1{
+.splash h1 {
   margin: 0px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  color:#555;
+  color: #555;
   font-size: 4em;
 }
-
-
-.splash-form{
+.splash-form {
   display: inline-block;
   position: fixed;
   top: 0;
@@ -139,112 +183,30 @@ p{
   width: 650px;
   height: 200px;
   margin: auto;
-  overflow:auto;
-  padding:20px;
+  overflow: auto;
+  padding: 20px;
 }
-
-.splash-input{
-
-}
-
-.header, .marketing, .footer {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.navbar.transparent.navbar-inverse .navbar-inner {
-  border-width: 0px;
-
-}
-
-.navbar-right{
-  margin-right:10%;
-  font-size:1.5em;
-}
-
-.navbar-brand{
-  font-size:1.5em;
-  margin-left:20px;
-}
-
-.navbar{
-  margin-bottom:0px;
-  z-index:999;
-  background:#6f534a;
-  background:url(../images/ripped2.png) repeat-x;
-  background-position: 0px -5px;
-  padding-bottom:50px;
-}
-
-.footrip{
-  height:40px;
-  position: absolute;
-  bottom:0;
-  min-height:80px;
-  min-width:100%;
-  background:url(../images/ripbottom.png) repeat-x;
-  background-position: 0px 15px;
-  vertical-align: bottom;
-  text-align: center;
-}
-
-.footrip p{
-  position: relative;
-  bottom:-50px;
-
-}
-
-.navbar-default{
-  border-color:transparent;
-}
-
-.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-  color: #222;
-}
-
-.navbar-nav{
-  margin-top:8px;
-}
-
-
-.nav > li > a:hover, .nav > li > a:focus {
-  text-decoration: none;
-  background-color: transparent;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #222;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.user-controls{
-  margin-top:15px;
-}
-
-.angular-google-map,
-.angular-google-map-container{
-  height: 100%;
-  min-height:100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
+.splash-input {} .angular-google-map,
+                 .angular-google-map-container {
+                   height: 100%;
+                   min-height: 100%;
+                   top: 0;
+                   bottom: 0;
+                   right: 0;
+                   left: 0;
+                 }
 #map_canvas {
   position: relative;
 }
-
 .angular-google-map-container {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  transition:all 0.4s;
+  transition: all 0.4s;
 }
-
-.blur{
+.blur {
   background: #222;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -253,300 +215,324 @@ p{
   filter: blur(5px);
   opacity: 0.7;
 }
-
-#map-controls{
-  width:400px;
-  padding:20px;
+#map-controls {
+  width: 400px;
+  padding: 20px;
   position: absolute;
-  z-index:9;
-  background-color:#fefefe;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.55);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.55);
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.55);
+  z-index: 9;
+  background-color: #fefefe;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
   -webkit-border-bottom-right-radius: 30px;
   -moz-border-radius-bottomright: 30px;
   border-bottom-right-radius: 30px;
 }
-
-#inner-controls{
+#inner-controls {
   transition: top 0.2s ease-in-out;
 }
+/* ==========================================================================
+   Footer Styling
+   ========================================================================== */
 
-.login-form{
-  width:400px;
-  margin:0 auto;
+.footrip {
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  min-height: 80px;
+  min-width: 100%;
+  background: url(../images/ripbottom.png) repeat-x;
+  background-position: 0px 15px;
+  vertical-align: bottom;
+  text-align: center;
 }
-.form-control{
-  margin-bottom:20px;
+.footrip p {
+  position: relative;
+  bottom: -50px;
 }
-
-ul{
-  list-style:none;
-  margin:0;
-  padding:0;
+.user-controls {
+  margin-top: 15px;
 }
+.login-form {
+  width: 400px;
+  margin: 0 auto;
+}
+.form-control {
+  margin-bottom: 20px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* ==========================================================================
+   Map controls/windows Styling
+   ========================================================================== */
 
-
-.scroller, .playground-view{
-  padding-top:30px;
+.scroller,
+.playground-view {
+  padding-top: 30px;
   overflow-y: auto;
-  font-size:1em;
-  border:2px solid #584b30;
-  position:relative;
-  z-index:99999;
+  font-size: 1em;
+  border: 2px solid #584b30;
+  position: relative;
+  z-index: 99999;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  background:url(../images/tile.png) repeat;
-  max-height:70vh;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  background: url(../images/tile.png) repeat;
+  max-height: 70vh;
 }
-
-#right-controls{
-
+.playground-view {
+  padding: 40px;
+  margin-bottom: 20px;
 }
-
-#filters{
+.playground-view > div {
+  background: #fefefe;
+  border: 1px solid #222;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+#filters {
   position: relative;
 }
-
-.side-top{
-  position:absolute;
+.side-top {
+  position: absolute;
   text-align: center;
-  top:-8px;
-  z-index:999999;
-  display:block;
-  width:100%;
-  border-bottom:1px solid #222;
-  padding-bottom:3px;
-  background:#EFD14E;
-  color:#222;
+  top: -8px;
+  z-index: 999999;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #222;
+  padding-bottom: 3px;
+  background: #EFD14E;
+  color: #222;
   -webkit-border-top-left-radius: 20px;
   -webkit-border-top-right-radius: 20px;
   -moz-border-radius-topleft: 20px;
   -moz-border-radius-topright: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  line-height:28px;
+  line-height: 28px;
 }
-
-.playground-list{
-  max-height:75vh;
+.playground-list {
+  max-height: 75vh;
   position: relative;
-
 }
-.playground-list > li >div{
-  border-bottom:2px solid #674f2a;
-  padding:10px;
+.playground-list > li >div {
+  border-bottom: 2px solid #674f2a;
+  padding: 10px;
 }
-
-
-.close-button{
-  position:absolute;
-  z-index:999999;
-  right:0px;
-  top:0px;
+.close-button {
+  position: absolute;
+  z-index: 999999;
+  right: 0px;
+  top: 0px;
   -webkit-border-top-right-radius: 20px;
   -moz-border-radius-topright: 20px;
   border-top-right-radius: 20px;
-  border:1px solid #222;
+  border: 1px solid #222;
 }
-
-.close-button-left{
-  position:absolute;
-  z-index:999999;
-  left:0px;
-  top:0px;
+.close-button-left {
+  position: absolute;
+  z-index: 999999;
+  left: 0px;
+  top: 0px;
   -webkit-border-top-left-radius: 20px;
   -moz-border-radius-topleft: 20px;
   border-top-left-radius: 20px;
-  border:1px solid #222;
+  border: 1px solid #222;
 }
-
-.close-button-view{
-  position:absolute;
-  z-index:999999;
-  left:0px;
-  top:0px;
+.close-button-view {
+  position: absolute;
+  z-index: 999999;
+  left: 0px;
+  top: 0px;
   -webkit-border-top-left-radius: 20px;
   -moz-border-radius-topleft: 20px;
   border-top-left-radius: 20px;
-  border:1px solid #222;
+  border: 1px solid #222;
 }
-
-
-.add-button{
-  position:absolute;
-  top:0px;
-  left:0px;
-  z-index:999999;
-
+.add-button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 999999;
   -webkit-border-top-left-radius: 20px;
   -moz-border-radius-topleft: 20px;
   border-top-left-radius: 20px;
-  border:1px solid #222;
-
+  border: 1px solid #222;
 }
-
-#filterForm{
-  margin-top:20px;
+#filterForm {
+  margin-top: 20px;
 }
-
-
-
-
-.county{
-  position:relative;
-  color:#efd14e;
+.county {
+  position: relative;
+  color: #efd14e;
   text-transform: uppercase;
 }
-
-.list-image{
-  max-width:80px!important;
-  border:1px solid #222!important
+.list-image {
+  max-width: 80px!important;
+  border: 1px solid #222!important
 }
-
-.playground-list >li{
-  clear:both;
-  overflow:auto;
- }
-
-.playground-list > li:hover{
-  background: -moz-linear-gradient(top,  rgba(50,50,50,0.5) 0%, rgba(50,50,100,0.5) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(50,50,50,0.5) 0%,rgba(50,50,100,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(50,50,50,0.5) 0%,rgba(50,50,100,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebffd8', endColorstr='#d9ffb3',GradientType=0 ); /* IE6-9 */
+.playground-list >li {
+  clear: both;
+  overflow: auto;
 }
+.playground-list > li:hover {
+  background: -moz-linear-gradient(top, rgba(50, 50, 50, 0.5) 0%, rgba(50, 50, 100, 0.5) 100%);
+  /* FF3.6-15 */
 
-.playground-list >li:hover .playground-click{
+  background: -webkit-linear-gradient(top, rgba(50, 50, 50, 0.5) 0%, rgba(50, 50, 100, 0.5) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(to bottom, rgba(50, 50, 50, 0.5) 0%, rgba(50, 50, 100, 0.5) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ebffd8', endColorstr='#d9ffb3', GradientType=0);
+  /* IE6-9 */
+}
+.playground-list >li:hover .playground-click {
   color: #fefefe;
 }
-
-.playground-list >li >div >img{
-  float:right;
-  max-width:120px;
-  max-height:120px;
-  border:1px solid #ccc;
+.playground-list >li >div >img {
+  float: right;
+  max-width: 120px;
+  max-height: 120px;
+  border: 1px solid #ccc;
 }
-
-.playground-list .selected-marker{
+.playground-list .selected-marker {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5ffea+0,e6ffcc+100 */
-  background: rgb(245,255,234); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(245,255,234,0.5) 0%, rgba(230,255,204,0.5) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(245,255,234,0.5) 0%,rgba(230,255,204,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(245,255,234,0.5) 0%,rgba(230,255,204,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5ffea', endColorstr='#e6ffcc',GradientType=0 ); /* IE6-9 */
-  overflow:auto;
-  padding:10px;
-}
 
-.playground-list li  .selected-marker:hover{
-  background: rgb(245,255,234); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(245,255,234,0.5) 0%, rgba(230,255,204,0.5) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(245,255,234,0.5) 0%,rgba(230,255,204,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(245,255,234,0.5) 0%,rgba(230,255,204,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5ffea', endColorstr='#e6ffcc',GradientType=0 ); /* IE6-9 */
-}
+  background: rgb(245, 255, 234);
+  /* Old browsers */
 
-.playground-click{
-  font-size:1.4em;
+  background: -moz-linear-gradient(top, rgba(245, 255, 234, 0.5) 0%, rgba(230, 255, 204, 0.5) 100%);
+  /* FF3.6-15 */
+
+  background: -webkit-linear-gradient(top, rgba(245, 255, 234, 0.5) 0%, rgba(230, 255, 204, 0.5) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(to bottom, rgba(245, 255, 234, 0.5) 0%, rgba(230, 255, 204, 0.5) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f5ffea', endColorstr='#e6ffcc', GradientType=0);
+  /* IE6-9 */
+
+  overflow: auto;
+  padding: 10px;
+}
+.playground-list li .selected-marker:hover {
+  background: rgb(245, 255, 234);
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, rgba(245, 255, 234, 0.5) 0%, rgba(230, 255, 204, 0.5) 100%);
+  /* FF3.6-15 */
+
+  background: -webkit-linear-gradient(top, rgba(245, 255, 234, 0.5) 0%, rgba(230, 255, 204, 0.5) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(to bottom, rgba(245, 255, 234, 0.5) 0%, rgba(230, 255, 204, 0.5) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f5ffea', endColorstr='#e6ffcc', GradientType=0);
+  /* IE6-9 */
+}
+.playground-click {
+  font-size: 1.4em;
   cursor: pointer;
   color: #111;
 }
-
-
-.loading{
-  text-align: center;
-  margin:0 auto;
-}
-
-.warnbox-content, .adp-warnbox{
-  display:none;
-}
-
-#weather{
+#weather {
   text-align: center;
 }
-
-.weather{
-  display:inline-block;
+.weather {
+  display: inline-block;
 }
-
-.weather img{
-  max-width:50px;
+.weather img {
+  max-width: 50px;
 }
-
-.weekday{
+.weekday {
   text-align: center;
-  float:left;
+  float: left;
 }
-
-img{
-  max-width:500px;
+img {
+  max-width: 400px;
 }
-
-.playground-view{
-
+.playground-view {
   overflow-y: auto;
 }
-
-.playground-view > div{
-  padding:40px;
+.playground-view > div {
+  padding: 40px;
 }
-
-.reviews{
-
+.tooltip {
+  z-index: 9999999;
+  position: absolute;
 }
-
-blockquote{
-  border-left:none
+.buttons {
+  text-align: center;
 }
+.buttons > ul {
+  display: inline-block;
+}
+.buttons li {
+  margin-right: 10px;
+  float: left;
+}
+.zoom-controls {
+  position: absolute;
+  z-index: 9999999;
+  bott: 150px;
+  left: 50px;
+}
+/* ==========================================================================
+   Review box Styling
+   ========================================================================== */
 
-.quote-badge{
+.reviews {} blockquote {
+              border-left: none
+            }
+.quote-badge {
   background-color: #555555;
 }
-
-.quote-box{
-
+.quote-box {
   overflow: hidden;
   padding-top: -100px;
   border-radius: 17px;
   background-color: #fefefe;
   margin-top: 25px;
-  color:#222;
+  color: #222;
+  border: 1px solid #222;
   box-shadow: 2px 2px 2px 2px #E0E0E0;
-
 }
-
-.quotation-mark{
-
+.quotation-mark {
   margin-top: -10px;
   font-weight: bold;
-  font-size:50px;
-  color:#999;
+  font-size: 50px;
+  color: #999;
   font-family: "Times New Roman", Georgia, Serif;
-
 }
-
-.quote-text{
+.quote-text {
   font-size: 14px;
   margin-top: -15px;
 }
-
+/* ==========================================================================
+   Custom Form controls Styling
+   ========================================================================== */
 
 .material-switch > input[type="checkbox"] {
   display: none;
 }
-
 .material-switch > label {
   cursor: pointer;
   height: 0px;
   position: relative;
   width: 40px;
 }
-
 .material-switch > label::before {
   background: rgb(100, 100, 100);
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -554,7 +540,7 @@ blockquote{
   content: '';
   height: 16px;
   margin-top: -8px;
-  position:absolute;
+  position: absolute;
   opacity: 0.3;
   transition: all 0.4s ease-in-out;
   width: 40px;
@@ -580,59 +566,44 @@ blockquote{
   background: inherit;
   left: 26px;
 }
-
 .list-group-item {
   background-color: transparent;
   border: none;
 }
+/* ==========================================================================
+   Static pages Styling
+   ========================================================================== */
 
+.static {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
 
-.static{
-  background:#fefefe;
-  padding:50px;
+  background: rgb(238, 238, 238);
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%);
+  /* FF3.6-15 */
+
+  background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0);
+  /* IE6-9 */
+
+  margin-bottom: 80px;
+  border: 4px solid #c79810;
+  padding: 50px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  margin-lefT:50px;
-  margin-right:50px;
+  margin-lefT: 50px;
+  margin-right: 50px;
 }
-
-
-.tooltip{
-  z-index:9999999;
-  position:absolute;
+.profiles {
+  text-align: center;
 }
-
-.buttons{
-text-align: center;
+.img-circle {
+  border: 4px double #ccc;
 }
-
-.buttons > ul{
-  display:inline-block;
-}
-
-.buttons li{
-  margin-right:10px;
-  float:left;
-}
-
-.zoom-controls{
-  position: absolute;
-  z-index: 9999999;
-  bottom:150px;
-  left:50px;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

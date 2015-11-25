@@ -9,7 +9,7 @@
  */
 
 angular.module('playgroundApp')
-  .controller('PlaygroundCtrl', function ($scope, playgroundService,weatherService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams, $cookies) {
+  .controller('PlaygroundCtrl', function ($rootScope, $scope, playgroundService,weatherService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams, $cookies) {
 
     $scope.markers = [];
     $scope.allMarkers = [];
@@ -129,7 +129,7 @@ angular.module('playgroundApp')
     });
 
       $scope.isCreator = function(id){
-        if(id==$cookies.get('userID')){
+        if(id==$cookies.get('userID') || $rootScope.userIsAdmin){
           return true;
         }
       };

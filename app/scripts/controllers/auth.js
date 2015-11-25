@@ -16,7 +16,7 @@ angular.module('playgroundApp')
 
       authentication.login(username, password);
 
-    }
+    };
 
     $scope.signup = function(isValid){
 

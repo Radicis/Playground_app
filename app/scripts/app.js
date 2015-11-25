@@ -33,6 +33,11 @@ angular
         caseInsensitiveMatch: true,
         controller: 'AboutCtrl'
       })
+        .when('/contact', {
+          templateUrl: 'views/contact.html',
+          caseInsensitiveMatch: true,
+          controller: 'AboutCtrl'
+        })
       .when('/login', {
         templateUrl: 'views/login.html',
         caseInsensitiveMatch: true,

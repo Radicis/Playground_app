@@ -52,16 +52,14 @@
         </li>
       </ul>
       <button class="btn btn-success" ng-click="resetMap()"  >Reset</button>  <input class="btn btn-success" type="submit" value="Filter">
-    </form>
-    </div>
-  </div>
-  <div class="app-background">
-    <div class="zoom-controls">
       <a ng-click="zoomIn()" title="Zoom In" data-toggle="tooltip" data-placement="top" tooltip class="btn btn-primary btn-success">
         <span class="glyphicon glyphicon-zoom-in"></span> </a>
       <a ng-click="zoomOut()" title="Zoom Out" data-toggle="tooltip" data-placement="top" tooltip class="btn btn-primary btn-success">
         <span class="glyphicon glyphicon-zoom-out"></span> </a>
+    </form>
     </div>
+  </div>
+  <div class="app-background">
     <ui-gmap-google-map center='map.center' control="map.control" zoom='map.zoom' draggable="true" events="map.events" bounds="map.bounds"  options="options">
       <ui-gmap-markers type="'cluster'" fit="true" chunk='1000'  labelContent="'title'" typeOptions='{maxZoom: 8, title:"Click To Zoom", styles:[{url:"images/icons/playground.png", height:50, width:50, textSize:20}]}' click="onClick" models="markers" icon="'icon'" coords="'coords'" idkey="markers.id" events="markers.events" modelsbyref="false"></ui-gmap-markers>
     </ui-gmap-google-map>
@@ -80,6 +78,7 @@
         <p><strong>Age:</strong> {{selectedMarker.age}}</p>
         <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
         <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
+        <p>{{selectedMarker.description}}</p>
         <div class="reviews">
           <ul ng-if="selectedMarker.reviews">
             <li ng-repeat="review in selectedMarker.reviews">
@@ -110,7 +109,7 @@
   <div class="col-md-3 no-padding ">
     <h4 class="side-top">Playground List</h4>
     <a ng-click="toggleRight()" id="close-right"  title="Close" data-toggle="tooltip" data-placement="left" tooltip class="btn btn-primary btn-success close-button"><span id="close-icon" class="glyphicon glyphicon-minus"></span> </a>
-    <a ng-href="#/playground/add"  title="Add New" data-toggle="tooltip" data-placement="right" tooltip class="btn btn-primary btn-success add-button"><span class="glyphicon glyphicon-cloud-upload"></span></a>
+    <a ng-href="#/playground/add"  title="Add New" data-toggle="tooltip" data-placement="right" tooltip class="btn btn-primary btn-success add-button"><span class="glyphicon glyphicon-plus"></span></a>
     <div class="side-control scroller" id="playgrounds">
     <ul class="playground-list" id="right-controls" >
       <li ng-repeat="marker in markers" id="playground_{{marker.id}}">

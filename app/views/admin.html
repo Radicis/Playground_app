@@ -1,12 +1,36 @@
 <div ng-if="!playgrounds" class="loading">
   <img src="images/loading.gif" alt="loading" />
 </div>
-<div ng-if="playgrounds">
+<div ng-if="playgrounds" class="static">
+  <div class="row">
+    <div class="col-md-3 admin-sidebar">
+      <ul>
+      <li>
+        <a class="btn btn-primary btn-success "><span class="glyphicon glyphicon-globe"></span> Playgrounds</a></li>
+        <li><a class="btn btn-primary btn-success "><span class="glyphicon glyphicon-user"></span> Users</a></li>
+       <li><a class="btn btn-primary btn-success "><span class="glyphicon glyphicon-pencil"></span> Reviews</a></li>
+      </ul>
+    </div>
+    <div class="col-md-9">
 <h2>Admin Section</h2>
 
-<ul>
-  <li ng-repeat="playground in playgrounds">
-    {{playground.name}} | <a ng-href="#/view/{{playground.id}}">View</a> | <a ng-href="#/edit/{{playground.id}}">Edit</a> | <button ng-click="deletePlayground(playground.id)">Delete</button>
-  </li>
-</ul>
-  </div>
+      <table class="table table-striped item-list">
+        <tr>
+          <th>Name</th>
+          <th>County</th>
+          <th>Surface</th>
+          <th>Operations</th>
+        </tr>
+        <tr ng-repeat="playground in playgrounds">
+          <td>{{playground.name}} </td>
+          <td>{{playground.county}} </td>
+          <td>{{playground.surface}} </td>
+          <td><a ng-href="#/view/{{playground.id}}">View</a> | <a ng-href="#/edit/{{playground.id}}">Edit</a> | <a ng-click="deletePlayground({{playground.id}})">Delete</a></td>
+
+        </tr>
+
+      </table>
+
+
+    </div>
+    </div></div>

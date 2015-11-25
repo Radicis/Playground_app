@@ -8,16 +8,30 @@
     <input type="text" id="name" name="name" placeholder="Name" class="form-control" required ng-model="playground.title">
 
     <input type="text" id="county" name="county" placeholder="county" class="form-control" required ng-model="playground.county">
-    <input type="text" id="geoLat" name="geoLat" placeholder="Lat" class="form-control" required ng-model="playground.geoLat">
-    <input type="text" id="geoLng" name="geoLng" placeholder="Lng" class="form-control" required ng-model="playground.geoLng">
+    <input type="number" id="geoLat" name="geoLat" placeholder="Lat" class="form-control" required ng-model="playground.geoLat">
+    <input type="number" id="geoLng" name="geoLng" placeholder="Lng" class="form-control" required ng-model="playground.geoLng">
     <input type="text" id="surface" name="surface" placeholder="surface" class="form-control" required ng-model="playground.surface">
-    <input type="text" id="isEnclosed" name="isEnclosed" placeholder="isEnclosed" class="form-control" required ng-model="playground.isEnclosed">
+    <select class="form-control">
+      <option>Grass</option>
+      <option>Sand</option>
+      <option>Padded</option>
+    </select>
+    <input type="number" id="isEnclosed" name="isEnclosed" placeholder="isEnclosed" class="form-control" required ng-model="playground.isEnclosed">
+    <select class="form-control">
+      <option>Yes</option>
+      <option>No</option>
+    </select>
     <input type="text" id="age" name="age" placeholder="age" class="form-control" required ng-model="playground.age">
+    <select class="form-control">
+      <option>1-3</option>
+      <option>3-6</option>
+      <option>6+</option>
+    </select>
     <input type="text" id="facilities" name="facilities" placeholder="facilities" class="form-control" required ng-model="playground.facilities">
     <input type="text" id="description" name="description" placeholder="description" class="form-control" required ng-model="playground.description">
     <input type="text" id="images" name="images" placeholder="images" class="form-control" required ng-model="playground.images">
 
-    <input class="btn btn-lg btn-primary btn-block" type="submit" value="Update Playground">
+    <input class="btn btn-lg btn-success btn-block" type="submit" value="Update Playground">
 
   </form>
 </div>

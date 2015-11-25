@@ -24,8 +24,8 @@ angular.module('playgroundApp')
           var playground = {};
           playground.id = response.data[index].id;
           playground.name = response.data[index].name;
-          playground.location = response.data[index].location;
-          playground.size = response.data[index].size;
+          playground.county = response.data[index].county;
+          playground.surface = response.data[index].surface;
           $scope.playgrounds.push(playground);
         })
       });
