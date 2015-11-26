@@ -38,7 +38,7 @@ class Auth extends REST_Controller {
         $isAdmin = $this->auth_model->is_admin($token);
 
         $message = [
-            'message' => $isAdmin,
+            'message' => $isAdmin
         ];
 
         $this->set_response($message, REST_Controller::HTTP_CREATED);

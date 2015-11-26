@@ -56,12 +56,18 @@ angular.module('playgroundApp')
         });
       }
 
+      $scope.deleteUser = function(id){
+        var delUserPromise = authentication.deleteUser(id);
+        delUserPromise.then(function (response) {
+          $scope.getUsers();
+        });
+      }
+
     $scope.getPlaygrounds();
       $scope.getUsers();
 
     $scope.deletePlayground = function(id) {
       var delPromise = playgroundService.deletePlayground(id);
-
       delPromise.then(function (response) {
         $scope.getPlaygrounds();
       });

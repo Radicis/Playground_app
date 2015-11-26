@@ -32,6 +32,20 @@ class Playground_model extends CI_Model
         return  $insert_id;
     }
 
+	function setRating($id, $reviews){
+		$currentRating = 0;
+		$total = 0;
+		foreach($reviews as $review){
+			$currentRating += $review['rating'];
+			$total+=1;
+		}
+
+		$data = array(
+			'rating'=>($currentRating/$total)
+		);
+		$this->db->where('id', $id);
+        $this->db->update('playgrounds', $data);
+	}
 
     function update($id, $data)
     {

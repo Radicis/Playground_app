@@ -23,7 +23,12 @@ class Review_model extends CI_Model
         $query = $this->db->get_where('reviews', array('id' => $id));
         return $query->row_array();
     }
-
+	
+	public function get_by_playgroundID($id){
+		$this->db->where('playgroundID', $id); 
+		$query = $this->db->get('reviews');
+		return $query->result_array();	
+	}
 
     function create($data)
     {

@@ -86,4 +86,17 @@ angular.module('playgroundApp')
             return deferred.promise;
         };
 
+        this.deleteUser = function(id){
+            var deferred = $q.defer();
+            $http({
+                method: 'DELETE',
+                url: 'http://playground.betterfrog.com/rest/api/user/users/id/' + id,
+                data: 'username=' + $cookies.get('username') + '&token=' + $cookies.get('myToken'),
+                headers: {'Content-type': 'application/x-www-form-urlencoded'}
+            }).then(function (data) {
+                deferred.resolve(data.data);
+            });
+            return deferred.promise;
+        }
+
   });

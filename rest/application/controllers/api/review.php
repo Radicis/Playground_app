@@ -123,27 +123,28 @@ class Review extends REST_Controller {
 
     public function reviews_put()
     {
-
         $username = $this->put('username');
         $token = $this->put('token');
+		$playgroundID = $this->put('playgroundID');
+		$userID = $this->put('userID');
+		
+		$rating = $this->put('rating');
 
         if ($this->auth_model->verify($username, $token)) {
 
 
             $data = [
-                'name' => $this->put('name'),
-                'county' => $this->put('county'),
-                'geoLat' => $this->put('geoLat'),
-                'isEnclosed' => $this->put('isEnclosed'),
-                'geoLng' => $this->put('geoLng'),
-                'surface' => $this->put('surface'),
-                'description' => $this->put('description'),
-                'userID' => $this->put('userID'),
+                'userID' => $userID,
+                'body' => $this->put('body'),
+				'playgroundID' => $playgroundID,
+				'rating' => $rating
             ];
 
-            $this->playground_model->create($data);
+            $this->review_model->create($data);
+			$reviews = $this->review_model->get_by_playgroundID($playgroundID);
+			$this->playground_model->setRating($playgroundID, $reviews);
 
-            $this->set_response("Created!", REST_Controller::HTTP_CREATED); // CREATED (201) being the HTTP response code
+            $this->set_response($reviews, REST_Controller::HTTP_CREATED); // CREATED (201) being the HTTP response code
         }
         else{
             $this->response(NULL, REST_Controller::HTTP_BAD_REQUEST); // BAD_REQUEST (400) being the HTTP response code
@@ -156,7 +157,7 @@ class Review extends REST_Controller {
         $id = (int) $this->get('id');
         $username = $this->delete('username');
         $token = $this->delete('token');
-
+	
 
         if($this->auth_model->verify_admin($username, $token)){
             // Validate the id.
@@ -166,7 +167,10 @@ class Review extends REST_Controller {
                 $this->response(NULL, REST_Controller::HTTP_BAD_REQUEST); // BAD_REQUEST (400) being the HTTP response code
             }
 
-            $this->playground_model->delete($id);
+            $this->review_model->delete($id);
+			$reviews = $this->review_model->get_by_playgroundID($playgroundID);
+			$this->playground_model->setRating($playgroundID, $reviews);
+			
             $message = [
                 'id' => $id,
                 'message' => 'Deleted the resource'
@@ -180,7 +184,7 @@ class Review extends REST_Controller {
                 'message' => 'Unauthorized: ' . $username
             ];
         }
-        //$this->set_response($message, REST_Controller::HTTP_FORBIDDEN); // NO_CONTENT (204) being the HTTP response code
+        $this->set_response($message, REST_Controller::HTTP_FORBIDDEN); // NO_CONTENT (204) being the HTTP response code
     }
 
 }

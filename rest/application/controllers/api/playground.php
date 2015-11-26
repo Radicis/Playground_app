@@ -155,7 +155,6 @@ class Playground extends REST_Controller {
         $username = $this->delete('username');
         $token = $this->delete('token');
 
-
         if($this->auth_model->verify_admin($username, $token)){
             // Validate the id.
             if ($id <= 0)

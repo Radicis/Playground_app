@@ -40,7 +40,7 @@
         <tr ng-repeat="user in users">
           <td>{{user.username}} </td>
           <td>{{user.email}} </td>
-           <td><a ng-click="">Delete</a></td>
+           <td><a ng-click="deleteUser(user.id)">Delete</a></td>
         </tr>
       </table>
         </div>
