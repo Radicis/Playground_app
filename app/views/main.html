@@ -91,6 +91,13 @@
                             </button>
 						</span>
               </div>
+            <select id="rating" name="rating"  ng-model="rating" ng-init="rating = rating || options[1].value">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" >5</option>
+            </select>
             <input type="hidden" id="reviewID" name="reviewID" value="{{selectedMarker.id}}"  ng-model="reviewID" />
           </form>
         </div>
@@ -104,11 +111,17 @@
                 <p class="quote-text">
                  {{ review.body }}
                 </p>
+                <span ng-if="review.rating>0" class="glyphicon glyphicon-star"></span>
+                <span ng-if="review.rating>1" class="glyphicon glyphicon-star"></span>
+                <span ng-if="review.rating>2" class="glyphicon glyphicon-star"></span>
+                <span  ng-if="review.rating>3" class="glyphicon glyphicon-star"></span>
+                <span ng-if="review.rating>4"  class="glyphicon glyphicon-star"></span>
                 <hr>
                 <div class="blog-post-actions">
                   <p class="blog-post-bottom pull-left">
                     {{ review.username }}
                   </p>
+
                   <p class="blog-post-bottom pull-right">
                     <span class="badge quote-badge">{{review.date}}</span>
                   </p>

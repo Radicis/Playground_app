@@ -109,12 +109,12 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     return deferred.promise;
   };
 
-  this.addReview = function(body, playgroundID, userID){
+  this.addReview = function(body, playgroundID, userID, rating){
     console.log(body + playgroundID);
     var deferred = $q.defer();
     $http({
       method: 'PUT',
-      data: 'username=root&token=aaa42296669b958c3cee6c0475c8093e&body=' + body + '&playgroundID=' + playgroundID + '&userID=' + userID,
+      data: 'username=root&token=aaa42296669b958c3cee6c0475c8093e&body=' + body + '&playgroundID=' + playgroundID + '&userID=' + userID + '&rating=' + rating,
       url: 'http://playground.betterfrog.com/rest/api/review/reviews',
       headers: {'Content-type': 'application/x-www-form-urlencoded'}
     }).then(function(data) {

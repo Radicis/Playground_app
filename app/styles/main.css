@@ -61,8 +61,8 @@ body {
 html,
 body,
 #map_canvas {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   min-height: 100%;
   background: #abce83;
 }
@@ -70,14 +70,13 @@ body,
   padding: 0;
 }
 p {
-  font-weight: 300;
+  font-weight: 400;
 }
 .container {
   width: 100% !important;
 }
 .ui-widget,
 .btn {
-  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
 }
 .loading {
@@ -122,7 +121,7 @@ p {
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-  color: #222;
+  color: #444;
 }
 .navbar-nav {
   margin-top: 8px;

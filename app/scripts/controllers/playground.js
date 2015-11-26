@@ -39,6 +39,7 @@ angular.module('playgroundApp')
 
 
     $scope.selectMarkerById = function (id) {
+
       directionsDisplay.setMap(null);
       $scope.selectedMarker.reviews = [];
       $scope.directions=false;
@@ -60,7 +61,7 @@ angular.module('playgroundApp')
           $scope.selectedMarker.latitude = parseFloat($scope.markers[index].coords.latitude);
           $scope.selectedMarker.longitude = parseFloat($scope.markers[index].coords.longitude);
           $scope.selectedMarker.id = parseInt($scope.markers[index].id);
-          $scope.selectedMarker.rating = parseInt($scope.markers.options.rating);
+          $scope.selectedMarker.rating = parseInt($scope.markers[index].options.rating);
           $scope.selectedMarker.userID = parseInt($scope.markers[index].options.userID);
           $scope.showSelectedMarker = true;
           $scope.getReviews($scope.selectedMarker.id);
@@ -152,8 +153,13 @@ angular.module('playgroundApp')
         var review = form.review.$modelValue;
         var userID = $cookies.get('userID');
         var playgroundID = form.reviewID.$modelValue;
+        var rating = form.rating.$modelValue;
 
-        var reviewPromise = playgroundService.addReview(review, playgroundID, userID);
+        console.log(form.rating);
+
+        console.log(rating);
+
+        var reviewPromise = playgroundService.addReview(review, playgroundID, userID, rating);
         reviewPromise.then(function (response) {
           $scope.getReviews($scope.selectedMarker.id);
         });
