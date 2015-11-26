@@ -155,12 +155,15 @@ angular.module('playgroundApp')
         var playgroundID = form.reviewID.$modelValue;
         var rating = form.rating.$modelValue;
 
-        console.log(form.rating);
-
-        console.log(rating);
-
         var reviewPromise = playgroundService.addReview(review, playgroundID, userID, rating);
         reviewPromise.then(function (response) {
+          $scope.getReviews($scope.selectedMarker.id);
+        });
+      };
+
+      $scope.deleteReview = function(id){
+          var delReviewPromise = playgroundService.deleteReview(id);
+        delReviewPromise.then(function (response) {
           $scope.getReviews($scope.selectedMarker.id);
         });
       };
@@ -259,6 +262,8 @@ angular.module('playgroundApp')
 
     $scope.getWeather = function() {
       var weatherPromise = weatherService.getWeather($scope.selectedMarker.county);
+      var weather = $('#weather');
+      weather.html('<img src="images/loading_small.gif"/>');
       weatherPromise.then(function (response) {
         var forecast = response.data.query.results.channel.item.forecast;
         var weather = $('#weather');
@@ -316,6 +321,9 @@ angular.module('playgroundApp')
 
 
     $scope.waitForLocation = function() {
+
+      var directions = $('#map-directions');
+      directions.html('<img src="images/loading_small.gif"/>');
 
       if (typeof $scope.initialLocation !== 'undefined') {
         var map = $scope.map.control.getGMap();    // get map object through $scope.map.control getGMap() function

@@ -4,15 +4,15 @@
 <div ng-if="playgrounds" class="static">
   <div class="row">
     <div class="col-md-3 admin-sidebar">
-      <ul>
+      <ul class="admin-menu">
       <li>
-        <a class="btn btn-primary btn-success "><span class="glyphicon glyphicon-globe"></span> Playgrounds</a></li>
-        <li><a class="btn btn-primary btn-success "><span class="glyphicon glyphicon-user"></span> Users</a></li>
-       <li><a class="btn btn-primary btn-success "><span class="glyphicon glyphicon-pencil"></span> Reviews</a></li>
+        <a ng-click="switchView()" class="btn btn-primary btn-success "><span class="glyphicon glyphicon-globe"></span> Playgrounds</a></li>
+        <li><a ng-click="switchView()" class="btn btn-primary btn-success "><span class="glyphicon glyphicon-user"></span> Users</a></li>
       </ul>
     </div>
     <div class="col-md-9">
-<h2>Admin Section</h2>
+      <div ng-if="showPlaygrounds">
+      <h2>Playground Admin</h2>
 
       <table class="table table-striped item-list">
         <tr>
@@ -26,10 +26,24 @@
           <td>{{playground.county}} </td>
           <td>{{playground.surface}} </td>
           <td><a ng-href="#/view/{{playground.id}}">View</a> | <a ng-href="#/edit/{{playground.id}}">Edit</a> | <a ng-click="deletePlayground({{playground.id}})">Delete</a></td>
-
         </tr>
-
       </table>
+        </div>
+      <div ng-if="showUsers">
+      <h2>User Admin</h2>
+      <table class="table table-striped item-list">
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Operations</th>
+        </tr>
+        <tr ng-repeat="user in users">
+          <td>{{user.username}} </td>
+          <td>{{user.email}} </td>
+           <td><a ng-click="">Delete</a></td>
+        </tr>
+      </table>
+        </div>
 
 
     </div>

@@ -73,4 +73,17 @@ angular.module('playgroundApp')
       return deferred.promise;
       };
 
+        this.getUsers = function(){
+            var deferred = $q.defer();
+            $http({
+                method: 'GET',
+                url: 'http://playground.betterfrog.com/rest/api/user/users/username/' + $cookies.get('username') + '/token/' + $cookies.get('myToken'),
+                data: {},
+                headers: {'Content-type': 'application/x-www-form-urlencoded'}
+            }).then(function (data) {
+                deferred.resolve(data.data);
+            });
+            return deferred.promise;
+        };
+
   });

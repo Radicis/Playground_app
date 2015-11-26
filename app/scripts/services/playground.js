@@ -7,7 +7,7 @@
  * # playground
  * Service in the playgroundApp.
  */
-angular.module('playgroundApp').service('playgroundService', function($rootScope, $http, $q){
+angular.module('playgroundApp').service('playgroundService', function($rootScope, $http, $q, $cookies){
 
   this.getPlaygrounds = function(){
     var deferred = $q.defer();
@@ -30,7 +30,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     var deferred = $q.defer();
     $http({
       method: 'DELETE',
-      data: 'username=root&token=aaa42296669b958c3cee6c0475c8093e',
+      data: 'username=' + $cookies.get('username') + '&token='+ $cookies.get('myToken'),
       url: 'http://playground.betterfrog.com/rest/api/playground/playgrounds/id/' + id,
       headers: {'Content-type': 'application/x-www-form-urlencoded'}
     }).then(function(data) {
@@ -52,8 +52,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     loginString += '&age=' + formData.age;
     loginString += '&userID=' + formData.userID;
 
-
-    loginString += '&username=root&token=aaa42296669b958c3cee6c0475c8093e';
+    loginString += '&username=' + $cookies.get('username') + '&token='+ $cookies.get('myToken');
 
     var deferred = $q.defer();
     $http({
@@ -81,7 +80,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
     loginString += '&surface=' + formData.surface;
     loginString += '&age=' + formData.age;
 
-    loginString += '&username=root&token=aaa42296669b958c3cee6c0475c8093e';
+    loginString += '&username=' + $cookies.get('username') + '&token='+ $cookies.get('myToken');
 
     var deferred = $q.defer();
     $http({
@@ -110,12 +109,24 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
   };
 
   this.addReview = function(body, playgroundID, userID, rating){
-    console.log(body + playgroundID);
     var deferred = $q.defer();
     $http({
       method: 'PUT',
-      data: 'username=root&token=aaa42296669b958c3cee6c0475c8093e&body=' + body + '&playgroundID=' + playgroundID + '&userID=' + userID + '&rating=' + rating,
+      data: 'username=' + $cookies.get('username') + '&token='+ $cookies.get('myToken') +'&body=' + body + '&playgroundID=' + playgroundID + '&userID=' + userID + '&rating=' + rating,
       url: 'http://playground.betterfrog.com/rest/api/review/reviews',
+      headers: {'Content-type': 'application/x-www-form-urlencoded'}
+    }).then(function(data) {
+      deferred.resolve(data);
+    });
+    return deferred.promise;
+  }
+
+  this.deleteReview = function(id){
+    var deferred = $q.defer();
+    $http({
+      method: 'DELETE',
+      data: 'username=' + $cookies.get('username') + '&token='+ $cookies.get('myToken'),
+      url: 'http://playground.betterfrog.com/rest/api/review/reviews/id/' + id,
       headers: {'Content-type': 'application/x-www-form-urlencoded'}
     }).then(function(data) {
       deferred.resolve(data);

@@ -8,11 +8,22 @@
  * Controller of the playgroundApp
  */
 angular.module('playgroundApp')
-  .controller('AdminCtrl', function ($scope, playgroundService, $location) {
+  .controller('AdminCtrl', function ($scope, playgroundService, $location, authentication) {
 
-    //Check if admin before getting here on this route
+    $scope.showUsers = false;
+      $scope.showPlaygrounds=true;
 
-    //User playground service to pull objects
+      $scope.switchView = function(){
+        if($scope.showUsers == false){
+          $scope.showUsers = true;
+          $scope.showPlaygrounds=false;
+        }
+        else{
+          $scope.showPlaygrounds=true;
+          $scope.showUsers = false;
+        }
+
+      };
 
     $scope.playgrounds = [];
 
@@ -29,9 +40,24 @@ angular.module('playgroundApp')
           $scope.playgrounds.push(playground);
         })
       });
-    }
+    };
+
+      $scope.getUsers = function() {
+        $scope.users = [];
+        var userPromise = authentication.getUsers();
+        userPromise.then(function (response) {
+          $.each(response, function (index) {
+            var user = {};
+            user.id = response[index].id;
+            user.username = response[index].username;
+            user.email = response[index].email;
+             $scope.users.push(user);
+          })
+        });
+      }
 
     $scope.getPlaygrounds();
+      $scope.getUsers();
 
     $scope.deletePlayground = function(id) {
       var delPromise = playgroundService.deletePlayground(id);

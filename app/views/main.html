@@ -72,6 +72,11 @@
         <h3>
           {{selectedMarker.title}}
         </h3>
+        <span ng-if="selectedMarker.rating>0" class="glyphicon glyphicon-star"></span>
+        <span ng-if="selectedMarker.rating>1" class="glyphicon glyphicon-star"></span>
+        <span ng-if="selectedMarker.rating>2" class="glyphicon glyphicon-star"></span>
+        <span  ng-if="selectedMarker.rating>3" class="glyphicon glyphicon-star"></span>
+        <span ng-if="selectedMarker.rating>4"  class="glyphicon glyphicon-star"></span>
         <img class="thumbnail" src="images/playgrounds/{{selectedMarker.images}}" />
         <p><strong>County:</strong> {{selectedMarker.county}}</p>
         <p><strong>Surface:</strong> {{selectedMarker.surface}}</p>
@@ -79,8 +84,9 @@
         <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
         <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
         <p>{{selectedMarker.description}}</p>
-        <div ng-if="displayUsername" class="add-review">
-          <form ng-submit="addReview(reviewForm)" name="reviewForm" id="reviewForm">
+        <hr>
+        <div ng-if="displayUsername" class="add-review clearfix">
+          <form ng-submit="addReview(reviewForm)" name="reviewForm" id="reviewForm" >
             <div class="input-group">
             <input type="text" id="review" name="review" placeholder="Say something about this playground.." class="form-control" required ng-model="review">
             <span class="input-group-btn">
@@ -91,25 +97,29 @@
                             </button>
 						</span>
               </div>
-            <select id="rating" name="rating"  ng-model="rating" ng-init="rating = rating || options[1].value">
+            <div class="input-group">
+            <select id="rating" name="rating"  ng-model="rating" class="form-control"  required>
+              <option value="">Please select rating</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5" >5</option>
             </select>
+              </div>
             <input type="hidden" id="reviewID" name="reviewID" value="{{selectedMarker.id}}"  ng-model="reviewID" />
           </form>
         </div>
-        <div class="reviews">
+        <hr>
+        <div class="reviews clearfix">
+          <h4>Reviews</h4>
           <ul ng-if="selectedMarker.reviews">
             <li ng-repeat="review in selectedMarker.reviews">
+              <a ng-click="deleteReview(review.id)"  ng-if="isCreator(review.userID)" title="Delete" data-toggle="tooltip" data-placement="right" tooltip class="btn btn-primary btn-danger delete-button"><span class="glyphicon glyphicon-minus "></span> </a>
+              <div>
               <blockquote class="quote-box">
-                <p class="quotation-mark">
-                  “
-                </p>
-                <p class="quote-text">
-                 {{ review.body }}
+                <p>
+                 {{ review.body }}  <span class="text-muted">by {{ review.username }} on {{review.date}} </span>
                 </p>
                 <span ng-if="review.rating>0" class="glyphicon glyphicon-star"></span>
                 <span ng-if="review.rating>1" class="glyphicon glyphicon-star"></span>
@@ -117,15 +127,6 @@
                 <span  ng-if="review.rating>3" class="glyphicon glyphicon-star"></span>
                 <span ng-if="review.rating>4"  class="glyphicon glyphicon-star"></span>
                 <hr>
-                <div class="blog-post-actions">
-                  <p class="blog-post-bottom pull-left">
-                    {{ review.username }}
-                  </p>
-
-                  <p class="blog-post-bottom pull-right">
-                    <span class="badge quote-badge">{{review.date}}</span>
-                  </p>
-                </div>
               </blockquote>
             </li>
           </ul>
@@ -157,6 +158,11 @@
           <h3>
             {{selectedMarker.title}}
           </h3>
+          <span ng-if="selectedMarker.rating>0" class="glyphicon glyphicon-star"></span>
+          <span ng-if="selectedMarker.rating>1" class="glyphicon glyphicon-star"></span>
+          <span ng-if="selectedMarker.rating>2" class="glyphicon glyphicon-star"></span>
+          <span  ng-if="selectedMarker.rating>3" class="glyphicon glyphicon-star"></span>
+          <span ng-if="selectedMarker.rating>4"  class="glyphicon glyphicon-star"></span>
           <img src="images/playgrounds/{{selectedMarker.images}}" />
           <p><strong>County:</strong> {{selectedMarker.county}}</p>
           <p><strong>Surface:</strong> {{selectedMarker.surface}}</p>
@@ -171,6 +177,7 @@
           <li><a ng-click="getWeather()" data-toggle="tooltip" title="Weather"  data-placement="bottom" tooltip class="btn btn-primary btn-success"><span class="glyphicon glyphicon glyphicon-certificate"></span></a></li>
           </ul>
           </div>
+          <div id="weather"></div>
           <div class="clearfix"></div>
             <div ng-if="directions">
               <div class="buttons">
@@ -181,8 +188,6 @@
                   <a class="btn btn-primary btn-warning" title="Public Transit" data-toggle="tooltip" data-placement="bottom" tooltip ng-click="setTravelMode('TRANSIT')"><span class="glyphicon glyphicon-random"></span></a>
                 </ul></div>
           </div>
-          <div id="weather"></div>
-          <div class="clearfix"></div>
           <div id="map-directions"></div>
         </div>
       </li>

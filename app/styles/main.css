@@ -87,6 +87,9 @@ p {
 .adp-warnbox {
   display: none;
 }
+.clearfix{
+  clear:both;
+}
 /* ==========================================================================
    HEader and Nav Styling
    ========================================================================== */
@@ -296,6 +299,9 @@ ul {
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
+.playground-view img{
+  float:right;
+}
 #filters {
   position: relative;
 }
@@ -488,6 +494,9 @@ img {
   bott: 150px;
   left: 50px;
 }
+#map-directions{
+  text-align: center;
+}
 /* ==========================================================================
    Review box Styling
    ========================================================================== */
@@ -495,33 +504,36 @@ img {
 .reviews {} blockquote {
               border-left: none
             }
-.quote-badge {
-  background-color: #555555;
-}
-.quote-box {
-  overflow: hidden;
-  padding-top: -100px;
-  border-radius: 17px;
-  background-color: #fefefe;
-  margin-top: 25px;
-  color: #222;
-  border: 1px solid #222;
-  box-shadow: 2px 2px 2px 2px #E0E0E0;
-}
-.quotation-mark {
-  margin-top: -10px;
-  font-weight: bold;
-  font-size: 50px;
-  color: #999;
-  font-family: "Times New Roman", Georgia, Serif;
-}
+
 .quote-text {
-  font-size: 14px;
-  margin-top: -15px;
+  font-size: 12px;
 }
+
+.delete-button{
+  float:right;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  padding: 2px 5px;
+  margin-top:20px;
+}
+
+/* ==========================================================================
+  Admin section Styling
+   ========================================================================== */
+
+.admin-menu li{
+  margin-bottom:20px;
+}
+
 /* ==========================================================================
    Custom Form controls Styling
    ========================================================================== */
+
+blockquote{
+  font-size:14px;
+  margin: 20px 10px -20px;
+}
 
 .material-switch > input[type="checkbox"] {
   display: none;
