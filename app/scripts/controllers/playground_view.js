@@ -15,6 +15,8 @@ angular.module('playgroundApp')
       $scope.surfaces = ['Grass', 'Sand', 'Padded'];
       $scope.ages = ['1-3', '3-6', '6-12'];
       $scope.enclosedStatus = [{'value':0, 'name':'No'},{'value':1, 'name':'Yes'}];
+      $scope.playground = {};
+
       $scope.addPlayground = function() {
         var formData = {
           'name'  : $scope.playground.title,
@@ -55,12 +57,25 @@ angular.module('playgroundApp')
         addPromise.then(function (repsonse) {
           $location.path('/');
         });
-      }
+      };
+
+
+      $scope.getReviews = function(id){
+        var reviewPromise = playgroundService.getReviews(id);
+        var reviews = [];
+        reviewPromise.then(function(response){
+          $.each(response.data, function(index){
+            reviews.push(response.data[index]);
+          });
+          $scope.playground.reviews =  reviews;
+        });
+
+      };
 
 
       var viewPromise = playgroundService.getPlayground($routeParams.id);
       viewPromise.then(function (response) {
-        $scope.playground = {};
+        $scope.playground.id = response.data.id;
         $scope.playground.title = response.data.name;
         $scope.playground.location = response.data.county;
         $scope.playground.county = response.data.county;
@@ -72,6 +87,9 @@ angular.module('playgroundApp')
         $scope.playground.isEnclosed = response.data.isEnclosed;
         $scope.playground.geoLat = response.data.geoLat;
         $scope.playground.geoLng = response.data.geoLng;
-        $scope.playground.id = response.data.id;
+         $scope.playground.rating = response.data.rating;
+        $scope.playground.userID = parseInt(response.data.userID);
+        $scope.getReviews($scope.playground.id);
       });
+
   });

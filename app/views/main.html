@@ -51,10 +51,11 @@
           </div>
         </li>
       </ul>
-      <button class="btn btn-success" ng-click="resetMap()"  >Reset</button>  <input class="btn btn-success" type="submit" value="Filter">
-      <a ng-click="zoomIn()" title="Zoom In" data-toggle="tooltip" data-placement="top" tooltip class="btn btn-primary btn-success">
+      <input class="btn btn-success" type="reset" ng-click="resetMap()" value="Reset" > <input class="btn btn-success" type="submit" value="Filter">
+      <div class="clearfix"></div>
+      <a ng-click="zoomIn()" title="Zoom In" data-toggle="tooltip" data-placement="top" tooltip class="btn btn-success">
         <span class="glyphicon glyphicon-zoom-in"></span> </a>
-      <a ng-click="zoomOut()" title="Zoom Out" data-toggle="tooltip" data-placement="top" tooltip class="btn btn-primary btn-success">
+      <a ng-click="zoomOut()" title="Zoom Out" data-toggle="tooltip" data-placement="top" tooltip class="btn btn-success">
         <span class="glyphicon glyphicon-zoom-out"></span> </a>
     </form>
     </div>
@@ -69,6 +70,7 @@
 
       <a ng-click="viewPlayground()" id="close-button-view"  title="Close" data-toggle="tooltip" data-placement="right" tooltip class="btn btn-primary btn-success close-button-view"><span id="close-view-icon" class="glyphicon glyphicon-minus"></span> </a>
       <div>
+        <a class="pull-right" href="/#/view/{{selectedMarker.id}}">Sharing Link</a>
         <h3>
           {{selectedMarker.title}}
         </h3>
@@ -128,6 +130,7 @@
                 <span ng-if="review.rating>4"  class="glyphicon glyphicon-star"></span>
                 <hr>
               </blockquote>
+                </div>
             </li>
           </ul>
         </div>

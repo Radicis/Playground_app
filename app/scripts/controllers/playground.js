@@ -26,7 +26,7 @@ angular.module('playgroundApp')
     $scope.showRightControls = true;
     $scope.showLeftControls = true;
 
-    var defaultZoom = 8;
+    var defaultZoom = 7;
 
     var directionsService = new google.maps.DirectionsService(),
       directionsDisplay = new google.maps.DirectionsRenderer();
@@ -224,9 +224,9 @@ angular.module('playgroundApp')
       };
 
       $scope.resetMap = function(){
-        $scope.map.center.latitude = 53.41291;
-        $scope.map.center.longitude = -8.24389;
-        $scope.map.zoom = defaultZoom;
+        //$scope.map.center.latitude = 53.41291;
+        //$scope.map.center.longitude = -8.24389;
+        //$scope.map.zoom = defaultZoom;
         $scope.markers = $scope.allMarkers;
       };
 
@@ -374,7 +374,6 @@ angular.module('playgroundApp')
     };
 
     $scope.setTravelMode = function(mode){
-      console.log('Setting travel mode to ' + mode);
       switch(mode){
         case 'DRIVING': $scope.travelMode = google.maps.TravelMode.DRIVING; break;
         case 'WALKING': $scope.travelMode = google.maps.TravelMode.WALKING; break;

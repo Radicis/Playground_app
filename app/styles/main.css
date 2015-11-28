@@ -141,6 +141,9 @@ p {
   background-color: transparent;
   border-color: transparent;
 }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
 /* ==========================================================================
    Map Container Styling
    ========================================================================== */
@@ -619,4 +622,7 @@ blockquote{
 }
 .img-circle {
   border: 4px double #ccc;
+}
+.static .thumbnail{
+  float:right;
 }

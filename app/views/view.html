@@ -1,14 +1,44 @@
 <div ng-if="!playground" class="loading">
   <img src="images/loading.gif" alt="loading" />
 </div>
+
 <div ng-if="playground" class="row static">
-<h3>
-  {{playground.title}}
-</h3>
-<img class="thumbnail" src="images/playgrounds/{{playground.images}}" />
-<p><strong>County:</strong> {{playground.county}}</p>
-<p><strong>Surface:</strong> {{playground.surface}}</p>
-<p><strong>Age:</strong> {{playground.age}}</p>
-<p ng-if="playground.isEnclosed"><strong>Is Enclosed</strong></p>
-<p><strong>Facilities:</strong> {{playground.facilities}}</p>
+  <h3>
+    {{playground.title}}
+  </h3>
+  <span ng-if="playground.rating>0" class="glyphicon glyphicon-star"></span>
+  <span ng-if="playground.rating>1" class="glyphicon glyphicon-star"></span>
+  <span ng-if="playground.rating>2" class="glyphicon glyphicon-star"></span>
+  <span  ng-if="playground.rating>3" class="glyphicon glyphicon-star"></span>
+  <span ng-if="playground.rating>4"  class="glyphicon glyphicon-star"></span>
+  <img class="thumbnail" src="images/playgrounds/{{playground.images}}" />
+  <p><strong>County:</strong> {{playground.county}}</p>
+  <p><strong>Surface:</strong> {{playground.surface}}</p>
+  <p><strong>Age:</strong> {{playground.age}}</p>
+  <p ng-if="playground.isEnclosed"><strong>Is Enclosed</strong></p>
+  <p><strong>Facilities:</strong> {{playground.facilities}}</p>
+  <p>{{playground.description}}</p>
+  <hr>
+
+  <div class="reviews clearfix">
+    <h4>Reviews</h4>
+    <ul ng-if="playground.reviews">
+      <li ng-repeat="review in playground.reviews">
+        <a ng-click="deleteReview(review.id)"  ng-if="isCreator(review.userID)" title="Delete" data-toggle="tooltip" data-placement="right" tooltip class="btn btn-primary btn-danger delete-button"><span class="glyphicon glyphicon-minus "></span> </a>
+        <div>
+          <blockquote class="quote-box">
+            <p>
+              {{ review.body }}  <span class="text-muted">by {{ review.username }} on {{review.date}} </span>
+            </p>
+            <span ng-if="review.rating>0" class="glyphicon glyphicon-star"></span>
+            <span ng-if="review.rating>1" class="glyphicon glyphicon-star"></span>
+            <span ng-if="review.rating>2" class="glyphicon glyphicon-star"></span>
+            <span  ng-if="review.rating>3" class="glyphicon glyphicon-star"></span>
+            <span ng-if="review.rating>4"  class="glyphicon glyphicon-star"></span>
+            <hr>
+          </blockquote>
+        </div>
+      </li>
+    </ul>
+  </div>
   </div>

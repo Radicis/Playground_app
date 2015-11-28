@@ -19,7 +19,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
 
   this.getPlayground = function(id){
     var deferred = $q.defer();
-    $http.get('http://playground.betterfrog.com/rest/api/playground/playgrounds/' + id).then(function(data){
+    $http.get('http://playground.betterfrog.com/rest/api/playground/playgrounds/id/' + id).then(function(data){
       deferred.resolve(data);
     });
     return deferred.promise;
