@@ -12,23 +12,24 @@ angular.module('playgroundApp')
 	.controller('PlaygroundViewCtrl', function ($scope, playgroundService, uiGmapGoogleMapApi, uiGmapIsReady, $routeParams, $cookies, $location) {
 
       $scope.userID = $cookies.get('userID');
-
+      $scope.surfaces = ['Grass', 'Sand', 'Padded'];
+      $scope.ages = ['1-3', '3-6', '6-12'];
+      $scope.enclosedStatus = [{'value':0, 'name':'No'},{'value':1, 'name':'Yes'}];
       $scope.addPlayground = function() {
         var formData = {
-          'name'  : $('input[name=name]').val(),
-          'county': $('input[name=county]').val(),
-          'geoLat'  : $('input[name=geoLat]').val(),
-          'geoLng': $('input[name=geoLng]').val(),
-          'description'  : $('input[name=description]').val(),
-          'isEnclosed': 0,
-          'facilities'  : $('input[name=facilities]').val(),
-          'images': $('input[name=images]').val(),
-          'surface'  : $('input[name=surface]').val(),
-          'age'  : $('input[name=age]').val(),
+          'name'  : $scope.playground.title,
+          'county': $scope.playground.county,
+          'geoLat'  : $scope.playground.geoLat,
+          'geoLng': $scope.playground.geoLng,
+          'description'  : $scope.playground.description,
+          'isEnclosed': $scope.playground.isEnclosed,
+          'facilities'  : $scope.playground.facilities,
+          'images': $scope.playground.images,
+          'surface' :$scope.playground.surface,
+          'age'  : $scope.playground.age,
           'userID'  : $('input[name=userID]').val(),
         };
 
-        
         var addPromise = playgroundService.addPlayground(formData);
         addPromise.then(function (repsonse) {
           $location.path('/');
@@ -37,20 +38,18 @@ angular.module('playgroundApp')
 
       $scope.updatePlayground = function(){
         var formData = {
-          'name'  : $('input[name=name]').val(),
-          'county': $('input[name=county]').val(),
-          'geoLat'  : $('input[name=geoLat]').val(),
-          'geoLng': $('input[name=geoLng]').val(),
-          'description'  : $('input[name=description]').val(),
-          'isEnclosed': 0,
-          'facilities'  : $('input[name=facilities]').val(),
-          'images': $('input[name=images]').val(),
-          'surface'  : $('input[name=surface]').val(),
-          'age'  : $('input[name=age]').val(),
+          'name'  : $scope.playground.title,
+          'county': $scope.playground.county,
+          'geoLat'  : $scope.playground.geoLat,
+          'geoLng': $scope.playground.geoLng,
+          'description'  : $scope.playground.description,
+          'isEnclosed': $scope.playground.isEnclosed,
+          'facilities'  : $scope.playground.facilities,
+          'images': $scope.playground.images,
+          'surface' :$scope.playground.surface,
+          'age'  : $scope.playground.age,
           'id'  : $('input[name=pid]').val(),
         };
-
-        console.log(formData.id);
 
         var addPromise = playgroundService.updatePlayground(formData);
         addPromise.then(function (repsonse) {

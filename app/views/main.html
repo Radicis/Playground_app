@@ -10,7 +10,7 @@
       <div class="input-group">
         <input type="text" name="searchFilter" class="form-control" placeholder="Search..." ng-model="searchFilter">
 						<span class="input-group-btn">
-							<button type="submit" class="btn btn-default">
+							<button type="submit" class="btn btn-success">
 								<span class="glyphicon glyphicon-search">
 									<span class="sr-only">Search...</span>
 								</span>
@@ -29,7 +29,7 @@
         <li class="list-group-item">
           Surface
           <div class="radio">
-            <label><input type="radio" name="surfaceFilter" ng-model="surfaceFilter" value="grass">Grass</label>
+            <label><input type="radio" name="surfaceFilter" ng-model="surfaceFilter" value="Grass">Grass</label>
           </div>
           <div class="radio">
             <label><input type="radio"  name="surfaceFilter" ng-model="surfaceFilter" value="Sand">Sand</label>
@@ -41,13 +41,13 @@
         <li class="list-group-item">
           Age Range
           <div class="radio">
-            <label><input type="radio" name="ageFilter" ng-model="ageFilter" value="03" />0-3</label>
+            <label><input type="radio" name="ageFilter" ng-model="ageFilter" value="1-3" />1-3</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="ageFilter" ng-model="ageFilter" value="36"/>3-6</label>
+            <label><input type="radio" name="ageFilter" ng-model="ageFilter" value="3-6"/>3-6</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="ageFilter" ng-model="ageFilter" value="6" />6+</label>
+            <label><input type="radio" name="ageFilter" ng-model="ageFilter" value="6-12" />6-12</label>
           </div>
         </li>
       </ul>
@@ -166,8 +166,9 @@
           <img src="images/playgrounds/{{selectedMarker.images}}" />
           <p><strong>County:</strong> {{selectedMarker.county}}</p>
           <p><strong>Surface:</strong> {{selectedMarker.surface}}</p>
-          <p><strong>Age:</strong> {{selectedMarker.age}}</p>
-          <p ng-if="selectedMarker.isEnclosed"><strong>Is Enclosed</strong></p>
+          <p><strong>Age:</strong> {{selectedMarker.age}} yrs</p>
+          <p ng-if="selectedMarker.isEnclosed==1"><strong>Is Enclosed</strong></p>
+          <p ng-if="selectedMarker.isEnclosed==0"><strong>Not Enclosed</strong></p>
           <p><strong>Facilities:</strong> {{selectedMarker.facilities}}</p>
           <div class="buttons">
           <ul>

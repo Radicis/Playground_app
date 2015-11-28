@@ -74,19 +74,6 @@ angular.module('playgroundApp')
 
       var contactTopPosition = $("#playground_" + $scope.selectedMarker.id).position().top;
       $('#playgrounds').animate({ scrollTop: contactTopPosition }, "slow");
-
-
-    };
-
-    $scope.getReviews = function(id){
-      var reviewPromise = playgroundService.getReviews(id);
-      var reviews = [];
-      reviewPromise.then(function(response){
-        $.each(response.data, function(index){
-          reviews.push(response.data[index]);
-        });
-        $scope.selectedMarker.reviews =  reviews;
-      })
     };
 
     var promise = playgroundService.getPlaygrounds();
@@ -132,6 +119,9 @@ angular.module('playgroundApp')
 
     });
 
+
+      //Checks if currnet user is Admin or creator of the content
+
       $scope.isCreator = function(id){
         if(id==$cookies.get('userID') || $rootScope.userIsAdmin){
           return true;
@@ -148,6 +138,19 @@ angular.module('playgroundApp')
         $('.angular-google-map-container').addClass('blur');
       }
     };
+
+
+      $scope.getReviews = function(id){
+        var reviewPromise = playgroundService.getReviews(id);
+        var reviews = [];
+        reviewPromise.then(function(response){
+          $.each(response.data, function(index){
+            reviews.push(response.data[index]);
+          });
+          $scope.selectedMarker.reviews =  reviews;
+        })
+      };
+
 
       $scope.addReview = function(form){
         var review = form.review.$modelValue;
@@ -172,8 +175,9 @@ angular.module('playgroundApp')
       var searchTerm = form.searchFilter.$modelValue;
       var enclosed = form.enclosedFilter.$modelValue;
       var surface = form.surfaceFilter.$modelValue;
+      var age = form.ageFilter.$modelValue;
 
-      $scope.filterPlaygrounds(searchTerm, enclosed, surface);
+      $scope.filterPlaygrounds(searchTerm, enclosed, surface, age);
     };
 
       $scope.filterPlaygrounds = function(term, enclosed, surface, age){
@@ -209,6 +213,8 @@ angular.module('playgroundApp')
           }
         });
 
+        //If no matching playgrounds are found in DB alert user
+
         if(filteredPlaygrounds.length==0){
           $scope.markers = $scope.allMarkers;
           alert("No matching playgrounds in database");
@@ -225,6 +231,7 @@ angular.module('playgroundApp')
       };
 
 
+    //Show/Hide right panel menu
 
     $scope.toggleRight = function(){
       if($scope.showRightControls) {
@@ -241,6 +248,9 @@ angular.module('playgroundApp')
 
       }
     };
+
+
+      //Show/Hide left panel menu
 
       $scope.toggleLeft = function(){
         if($scope.showLeftControls) {
@@ -260,12 +270,15 @@ angular.module('playgroundApp')
 
 
 
-    $scope.getWeather = function() {
+    //Calls the weather service to display 5 day forecast
+
+      $scope.getWeather = function() {
       var weatherPromise = weatherService.getWeather($scope.selectedMarker.county);
       var weather = $('#weather');
       weather.html('<img src="images/loading_small.gif"/>');
       weatherPromise.then(function (response) {
         var forecast = response.data.query.results.channel.item.forecast;
+        var condition = response.data.query.results.channel.item.condition.text;
         var weather = $('#weather');
         weather.html("");
         var html = "<ul class='weather'>";
@@ -273,7 +286,7 @@ angular.module('playgroundApp')
           html += "<li class='weekday'><div>";
           html += forecast[index].day ;
           html += "</div><div>";
-          html += "<img src='images/weather/icon_" + forecast[index].code + ".png' /></div><div>";
+          html += "<img src='images/weather/" + forecast[index].code + ".png' title='" + condition + "'/></div><div>";
           html += forecast[index].high + "&deg;c";
           html += "</div></li>";
         });
@@ -283,10 +296,14 @@ angular.module('playgroundApp')
     }
 
 
+    //Map custom styles
+
     $scope.styleArray= [
       {"featureType":"water","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#aee2e0"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#abce83"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#769E72"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#7B8758"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"color":"#EBF4A4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#8dab68"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#5B5B3F"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ABCE83"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#A4C67D"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#9BBF72"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#EBF4A4"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#87ae79"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#7f2200"},{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"visibility":"on"},{"weight":4.1}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#495421"}]},{"featureType":"administrative.neighborhood","elementType":"labels","stylers":[{"visibility":"off"}]}
     ];
 
+
+    //Initialize the map in the scope
 
     angular.extend($scope, {
       map: {

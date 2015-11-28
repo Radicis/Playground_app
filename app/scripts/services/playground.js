@@ -119,7 +119,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
       deferred.resolve(data);
     });
     return deferred.promise;
-  }
+  };
 
   this.deleteReview = function(id){
     var deferred = $q.defer();
@@ -132,7 +132,7 @@ angular.module('playgroundApp').service('playgroundService', function($rootScope
       deferred.resolve(data);
     });
     return deferred.promise;
-  }
+  };
 
 
 });

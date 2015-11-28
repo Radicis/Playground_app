@@ -375,6 +375,7 @@ ul {
 }
 #filterForm {
   margin-top: 20px;
+  padding:10px;
 }
 .county {
   position: relative;
@@ -546,7 +547,7 @@ blockquote{
   width: 40px;
 }
 .material-switch > label::before {
-  background: rgb(100, 100, 100);
+  background: rgb(10, 10, 10);
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   content: '';
@@ -558,9 +559,9 @@ blockquote{
   width: 40px;
 }
 .material-switch > label::after {
-  background: transparent;
+  background: #fefefe;
   border-radius: 16px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(222,222, 222, 0.3);
   content: '';
   height: 12px;
   left: 2px;

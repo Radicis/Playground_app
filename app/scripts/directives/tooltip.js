@@ -1,3 +1,11 @@
+'use strict';
+
+/**
+ * @ngdoc directive
+ * @name playgroundApp.directive:toolip
+ * @description
+ * # tooltip
+ */
 angular.module('playgroundApp').directive('tooltip', function(){
   return {
     restrict: 'A',
