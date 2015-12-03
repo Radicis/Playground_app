@@ -2,18 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="886783e5-603b-4093-beee-f252f9fc2332" name="Default" comment="">
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\Ballydehob.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\Ballynacally.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\Bandon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\BernardMcGlincheyPark.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\Doughiska.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\FitzgeraldPark.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\MarleyPark.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\Monivea.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\StStephensGreen.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\app\images\playgrounds\TheTimSmythePark.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\icons\playground.5836ce9a.png" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\loading.3c271a0e.gif" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Ballydehob.b83a78b1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Ballydehob.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Ballynacally.a9068e29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Ballynacally.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Bandon.0bbdec2b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Bandon.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\BernardMcGlincheyPark.01b6a532.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\BernardMcGlincheyPark.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Doughiska.d38cd2f7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Doughiska.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\FitzgeraldPark.b723a2a5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\FitzgeraldPark.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\MarleyPark.a363f56b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\MarleyPark.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Monivea.b1d13920.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\Monivea.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\StStephensGreen.3dde34bf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\StStephensGreen.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\TheTimSmythePark.7ba2fc99.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\TheTimSmythePark.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_0.5b6c1fb4.png" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_1.5b6c1fb4.png" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_10.f1c30d9b.png" afterPath="" />
@@ -71,6 +91,7 @@
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.8faedf9e.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.98265b1b.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.a6bd9822.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.af3beb81.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.b10c0153.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.b576ddf9.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.ce4e90d6.js" afterPath="" />
@@ -85,6 +106,7 @@
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.3befef96.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.4b16c747.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.61382c19.css" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.64b0219f.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.6e28ecf2.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.87b03723.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.b093eff2.css" afterPath="" />
@@ -94,19 +116,84 @@
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.e9325e4c.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.f979afbb.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\vendor.a542cc6a.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/favicon.ico" afterPath="$PROJECT_DIR$/app/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="$PROJECT_DIR$/dist/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/.htaccess" afterPath="$PROJECT_DIR$/rest/application/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/cache/.htaccess" afterPath="$PROJECT_DIR$/rest/application/cache/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/libraries/Format.php" afterPath="$PROJECT_DIR$/rest/application/libraries/Format.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/rest/application/libraries/REST_Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/add.html" afterPath="$PROJECT_DIR$/app/views/add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/add.html" afterPath="$PROJECT_DIR$/dist/views/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin.html" afterPath="$PROJECT_DIR$/app/views/admin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/admin.html" afterPath="$PROJECT_DIR$/dist/views/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/contact.html" afterPath="$PROJECT_DIR$/dist/views/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/auth.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/authentication.js" afterPath="$PROJECT_DIR$/app/scripts/services/authentication.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/autoload.php" afterPath="$PROJECT_DIR$/rest/application/config/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/config.php" afterPath="$PROJECT_DIR$/rest/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/constants.php" afterPath="$PROJECT_DIR$/rest/application/config/constants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/database.php" afterPath="$PROJECT_DIR$/rest/application/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/doctypes.php" afterPath="$PROJECT_DIR$/rest/application/config/doctypes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/edit.html" afterPath="$PROJECT_DIR$/app/views/edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/edit.html" afterPath="$PROJECT_DIR$/dist/views/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_404.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_404.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_404.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_404.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_db.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_db.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_exception.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_exception.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_general.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_general.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_general.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_general.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_php.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_php.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_php.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_php.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/foreign_chars.php" afterPath="$PROJECT_DIR$/rest/application/config/foreign_chars.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/hooks.php" afterPath="$PROJECT_DIR$/rest/application/config/hooks.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/index.html" afterPath="$PROJECT_DIR$/rest/application/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/cache/index.html" afterPath="$PROJECT_DIR$/rest/application/cache/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/index.html" afterPath="$PROJECT_DIR$/rest/application/config/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/core/index.html" afterPath="$PROJECT_DIR$/rest/application/core/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/helpers/index.html" afterPath="$PROJECT_DIR$/rest/application/helpers/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/hooks/index.html" afterPath="$PROJECT_DIR$/rest/application/hooks/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/index.html" afterPath="$PROJECT_DIR$/rest/application/language/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/bulgarian/index.html" afterPath="$PROJECT_DIR$/rest/application/language/bulgarian/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/english/index.html" afterPath="$PROJECT_DIR$/rest/application/language/english/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/portuguese-brazilian/index.html" afterPath="$PROJECT_DIR$/rest/application/language/portuguese-brazilian/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/libraries/index.html" afterPath="$PROJECT_DIR$/rest/application/libraries/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/logs/index.html" afterPath="$PROJECT_DIR$/rest/application/logs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/third_party/index.html" afterPath="$PROJECT_DIR$/rest/application/third_party/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/index.html" afterPath="$PROJECT_DIR$/rest/application/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/index.html" afterPath="$PROJECT_DIR$/rest/application/views/errors/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/index.html" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/index.html" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/main.html" afterPath="$PROJECT_DIR$/dist/views/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/memcached.php" afterPath="$PROJECT_DIR$/rest/application/config/memcached.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/migration.php" afterPath="$PROJECT_DIR$/rest/application/config/migration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/mimes.php" afterPath="$PROJECT_DIR$/rest/application/config/mimes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/playground.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/playground.js" afterPath="$PROJECT_DIR$/app/scripts/services/playground.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/profiler.php" afterPath="$PROJECT_DIR$/rest/application/config/profiler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/rest.php" afterPath="$PROJECT_DIR$/rest/application/config/rest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/bulgarian/rest_controller_lang.php" afterPath="$PROJECT_DIR$/rest/application/language/bulgarian/rest_controller_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/english/rest_controller_lang.php" afterPath="$PROJECT_DIR$/rest/application/language/english/rest_controller_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/portuguese-brazilian/rest_controller_lang.php" afterPath="$PROJECT_DIR$/rest/application/language/portuguese-brazilian/rest_controller_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/rest_server.php" afterPath="$PROJECT_DIR$/rest/application/views/rest_server.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/routes.php" afterPath="$PROJECT_DIR$/rest/application/config/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/smileys.php" afterPath="$PROJECT_DIR$/rest/application/config/smileys.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/user_agents.php" afterPath="$PROJECT_DIR$/rest/application/config/user_agents.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view.html" afterPath="$PROJECT_DIR$/app/views/view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/view.html" afterPath="$PROJECT_DIR$/dist/views/view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/weather.js" afterPath="$PROJECT_DIR$/app/scripts/services/weather.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/welcome_message.php" afterPath="$PROJECT_DIR$/rest/application/views/welcome_message.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="G:\xampp\htdocs\playground\rest\application\controllers\api\auth.php" afterPath="$PROJECT_DIR$/rest/application/controllers/api/Auth.php" />
+      <change type="MOVED" beforePath="G:\xampp\htdocs\playground\rest\application\controllers\api\playground.php" afterPath="$PROJECT_DIR$/rest/application/controllers/api/Playground.php" />
+      <change type="MOVED" beforePath="G:\xampp\htdocs\playground\rest\application\models\auth_model.php" afterPath="$PROJECT_DIR$/rest/application/models/Auth_model.php" />
     </list>
     <ignored path="playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -128,101 +215,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/styles/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7133995">
-              <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4528303">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="24" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3773584">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playground_view.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground_view.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.962963">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8867924">
-              <caret line="72" column="74" selection-start-line="72" selection-start-column="74" selection-end-line="72" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="playground.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6607144">
-              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="128" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="222" column="9" selection-start-line="222" selection-start-column="9" selection-end-line="222" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tooltip.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/directives/tooltip.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.074074">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playgroundmap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/directives/playgroundmap.js">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+              <caret line="132" column="21" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playground.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/playground.js">
+      <file leaf-file-name="authentication.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/authentication.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.148148">
+              <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.296296">
+              <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
+              <caret line="101" column="9" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="2" column="46" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.18367347">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -249,7 +306,6 @@
         <option value="$PROJECT_DIR$/app/views/loading.html" />
         <option value="$PROJECT_DIR$/rest/application/models/auth_model.php" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/loading.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/rest/application/config/config.php" />
         <option value="$PROJECT_DIR$/app/scripts/mapProviders.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/application.js" />
@@ -261,29 +317,31 @@
         <option value="$PROJECT_DIR$/rest/application/models/review_model.php" />
         <option value="$PROJECT_DIR$/rest/application/models/user_model.php" />
         <option value="$PROJECT_DIR$/rest/application/controllers/api/review.php" />
-        <option value="$PROJECT_DIR$/rest/application/models/Auth_model.php" />
-        <option value="$PROJECT_DIR$/rest/application/controllers/api/Auth.php" />
         <option value="$PROJECT_DIR$/app/views/signup.html" />
         <option value="$PROJECT_DIR$/app/views/login.html" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/auth.js" />
         <option value="$PROJECT_DIR$/app/views/about.html" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/contact.html" />
-        <option value="$PROJECT_DIR$/app/views/admin.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/admin.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/weather.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/authentication.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/playgroundmap.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/tooltip.js" />
-        <option value="$PROJECT_DIR$/app/views/add.html" />
         <option value="$PROJECT_DIR$/app/views/edit.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/playground.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" />
+        <option value="$PROJECT_DIR$/app/views/admin.html" />
+        <option value="$PROJECT_DIR$/app/scripts/services/eventsservice.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/view.html" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/views/add.html" />
+        <option value="$PROJECT_DIR$/app/scripts/services/playground.js" />
+        <option value="$PROJECT_DIR$/app/scripts/services/weather.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/auth.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/admin.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
         <option value="$PROJECT_DIR$/app/styles/main.css" />
+        <option value="$PROJECT_DIR$/rest/application/controllers/api/Auth.php" />
+        <option value="$PROJECT_DIR$/rest/application/models/Auth_model.php" />
+        <option value="$PROJECT_DIR$/app/scripts/services/authentication.js" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
       </list>
     </option>
   </component>
@@ -301,7 +359,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="9" />
     <option name="y" value="29" />
-    <option name="width" value="1785" />
+    <option name="width" value="1917" />
     <option name="height" value="999" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -327,7 +385,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,174 +401,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playground" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -648,9 +538,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playground" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playground" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -711,10 +619,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="29" width="1785" height="999" extended-state="0" />
+    <frame x="9" y="29" width="1917" height="999" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17919728" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16675434" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -730,7 +638,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32921347" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -754,10 +662,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/about.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -814,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/loading.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -842,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest/application/controllers/Rest_server.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537">
@@ -860,13 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.4363637">
           <caret line="380" column="18" selection-start-line="380" selection-start-column="18" selection-end-line="380" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="34.53846">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -898,20 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/models/Auth_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -933,38 +806,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2452831">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.8490567">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="33" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -982,18 +827,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2830188">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,110 +838,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="62" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/authentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/weather.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/playgroundmap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/tooltip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.074074">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4528303">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3773584">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/playground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.962963">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6607144">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="128" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="-1.9245284">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.3962264">
+          <caret line="13" column="76" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.961538">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1112,15 +866,168 @@
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.8867924">
-          <caret line="72" column="74" selection-start-line="72" selection-start-column="74" selection-end-line="72" selection-end-column="74" />
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.943397">
+          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0188675">
+          <caret line="25" column="151" selection-start-line="25" selection-start-column="151" selection-end-line="25" selection-end-column="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/playground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="146" column="3" selection-start-line="146" selection-start-column="3" selection-end-line="146" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="10" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="7" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/tooltip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/playgroundmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29582366">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/weather.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/playground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="222" column="9" selection-start-line="222" selection-start-column="9" selection-end-line="222" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7133995">
-          <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="132" column="21" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/controllers/api/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5729665">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="87" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.296296">
+          <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/models/Auth_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78708136">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="105" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0741627">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7248805">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/authentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.148148">
+          <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="9" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.18367347">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding />
         </state>
       </provider>

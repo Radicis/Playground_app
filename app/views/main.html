@@ -79,7 +79,7 @@
         <span ng-if="selectedMarker.rating>2" class="glyphicon glyphicon-star"></span>
         <span  ng-if="selectedMarker.rating>3" class="glyphicon glyphicon-star"></span>
         <span ng-if="selectedMarker.rating>4"  class="glyphicon glyphicon-star"></span>
-        <img class="thumbnail" src="images/playgrounds/{{selectedMarker.images}}" />
+        <img class="thumbnail" src="images/playgrounds/{{selectedMarker.images}}_1.jpg" />
         <p><strong>County:</strong> {{selectedMarker.county}}</p>
         <p><strong>Surface:</strong> {{selectedMarker.surface}}</p>
         <p><strong>Age:</strong> {{selectedMarker.age}}</p>
@@ -92,7 +92,7 @@
             <div class="input-group">
             <input type="text" id="review" name="review" placeholder="Say something about this playground.." class="form-control" required ng-model="review">
             <span class="input-group-btn">
-							<button type="submit" class="btn btn-default">
+							<button type="submit" class="btn btn-success">
 								<span class="glyphicon glyphicon-pencil">
 									<span class="sr-only">Write a review..</span>
 								</span>
@@ -146,7 +146,7 @@
     <ul class="playground-list" id="right-controls" >
       <li ng-repeat="marker in markers" id="playground_{{marker.id}}">
         <div ng-if="!(marker.id==selectedMarker.id)" ng-click="selectMarkerById(marker.id)">
-          <img class="list-image pull-right" src="images/playgrounds/{{marker.options.images }}" />
+          <img class="list-image pull-right" src="images/playgrounds/{{marker.options.images }}_1.jpg" />
           <h4 class="playground-click">
             {{marker.options.title}}
           </h4>
@@ -166,7 +166,7 @@
           <span ng-if="selectedMarker.rating>2" class="glyphicon glyphicon-star"></span>
           <span  ng-if="selectedMarker.rating>3" class="glyphicon glyphicon-star"></span>
           <span ng-if="selectedMarker.rating>4"  class="glyphicon glyphicon-star"></span>
-          <img src="images/playgrounds/{{selectedMarker.images}}" />
+          <img src="images/playgrounds/{{selectedMarker.images}}_1.jpg" />
           <p><strong>County:</strong> {{selectedMarker.county}}</p>
           <p><strong>Surface:</strong> {{selectedMarker.surface}}</p>
           <p><strong>Age:</strong> {{selectedMarker.age}} yrs</p>
@@ -179,6 +179,7 @@
           <li><a ng-if="isCreator(selectedMarker.userID)" data-toggle="tooltip" title="Edit"  data-placement="bottom" tooltip ng-href="#/edit/{{selectedMarker.id}}" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-pencil"></span></a></li>
           <li><a ng-click="getDirections()" data-toggle="popover" title="Directions"  data-placement="bottom" tooltip class="btn btn-primary btn-success"><span class="glyphicon glyphicon glyphicon-road"></span></a></li>
           <li><a ng-click="getWeather()" data-toggle="tooltip" title="Weather"  data-placement="bottom" tooltip class="btn btn-primary btn-success"><span class="glyphicon glyphicon glyphicon-certificate"></span></a></li>
+
           </ul>
           </div>
           <div id="weather"></div>
@@ -196,7 +197,7 @@
         </div>
       </li>
     </ul>
-      </div>
+    </div>
   </div>
 </div>
 

@@ -23,7 +23,7 @@
       <option ng-repeat="age in ages" value="{{age}}">{{age}}</option>
     </select>
     <input type="text" id="facilities" name="facilities" placeholder="facilities" class="form-control" required ng-model="playground.facilities">
-    <input type="text" id="description" name="description" placeholder="description" class="form-control" required ng-model="playground.description">
+    <textarea id="description" name="description" placeholder="description" class="form-control" required ng-model="playground.description"></textarea>
     <input type="text" id="images" name="images" placeholder="images" class="form-control" required ng-model="playground.images">
 
     <input class="btn btn-lg btn-success btn-block" type="submit" value="Update Playground">

@@ -96,6 +96,9 @@ class Playground extends REST_Controller {
                 'geoLng' => $this->post('geoLng'),
                 'surface' => $this->post('surface'),
                 'description' => $this->post('description'),
+				'facilities' => $this->post('facilities'),
+				'age' => $this->post('age'),
+				'images' => $this->post('images'),				
             ];
 
 
@@ -136,6 +139,9 @@ class Playground extends REST_Controller {
                 'geoLng' => $this->put('geoLng'),
                 'surface' => $this->put('surface'),
                 'description' => $this->put('description'),
+				'facilities' => $this->put('facilities'),
+				'age' => $this->put('age'),
+				'images' => $this->put('images'),	
                 'userID' => $this->put('userID'),
             ];
 

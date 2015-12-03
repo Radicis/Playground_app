@@ -4,6 +4,7 @@
 <div ng-if="playgrounds" class="static">
   <div class="row">
     <div class="col-md-3 admin-sidebar">
+      <h3>Menu</h3>
       <ul class="admin-menu">
       <li>
         <a ng-click="switchView()" class="btn btn-primary btn-success "><span class="glyphicon glyphicon-globe"></span> Playgrounds</a></li>
@@ -18,13 +19,11 @@
         <tr>
           <th>Name</th>
           <th>County</th>
-          <th>Surface</th>
           <th>Operations</th>
         </tr>
         <tr ng-repeat="playground in playgrounds">
           <td>{{playground.name}} </td>
           <td>{{playground.county}} </td>
-          <td>{{playground.surface}} </td>
           <td><a ng-href="#/view/{{playground.id}}">View</a> | <a ng-href="#/edit/{{playground.id}}">Edit</a> | <a ng-click="deletePlayground({{playground.id}})">Delete</a></td>
         </tr>
       </table>

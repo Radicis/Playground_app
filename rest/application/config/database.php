@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'playground',
+	'hostname' => 'mysql2649int.cp.blacknight.com',
+	'username' => 'u1378438_project',
+	'password' => 'b99Bux(N4N',
+	'database' => 'db1378438_playground',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

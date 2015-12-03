@@ -68,7 +68,24 @@ class Auth extends REST_Controller {
             $this->set_response($message, REST_Controller::HTTP_CREATED); // CREATED (201) being the HTTP response code
         }
         else{
-            $this->set_response($test, REST_Controller::HTTP_BAD_REQUEST); // CREATED (201) being the HTTP response co
+            $this->set_response($test, REST_Controller::HTTP_BAD_REQUEST); 
         }
+    }
+	
+	public function auth_delete()
+    {
+
+        $token = $this->delete('token');	
+		
+
+        if($token!=null){
+
+            $this->auth_model->delete($token);
+
+            $this->set_response("Deleted", REST_Controller::HTTP_ACCEPTED); 
+        }
+		else{
+			$this->set_response($token, REST_Controller::HTTP_BAD_REQUEST);
+		}
     }
 }

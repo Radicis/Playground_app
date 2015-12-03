@@ -100,6 +100,10 @@ class Auth_model extends CI_Model
             }
         }
     }
+	
+	public function delete($token){
+        return $this->db->delete('auth_tokens', array('token' => $token));
+    }
 
 
 }
