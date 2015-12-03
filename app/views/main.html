@@ -3,6 +3,12 @@
 </div>
 <div ng-if="showMap" class="row">
   <div class="col-md-2 no-padding" id="filters">
+    <div id="zoom">
+      <a ng-click="zoomIn()" title="Zoom In" data-toggle="tooltip" data-placement="right" tooltip class="btn btn-success">
+        <span class="glyphicon glyphicon-zoom-in"></span> </a><br>
+      <a ng-click="zoomOut()" title="Zoom Out" data-toggle="tooltip" data-placement="right" tooltip class="btn btn-success">
+        <span class="glyphicon glyphicon-zoom-out"></span> </a>
+    </div>
     <h4 class="side-top">Filters</h4>
     <a ng-click="toggleLeft()" id="close-left"  title="Close" data-toggle="tooltip" data-placement="right" tooltip class="btn btn-primary btn-success close-button-left"><span id="close-icon-left" class="glyphicon glyphicon-minus"></span> </a>
     <div class="scroller">
@@ -53,10 +59,6 @@
       </ul>
       <input class="btn btn-success" type="reset" ng-click="resetMap()" value="Reset" > <input class="btn btn-success" type="submit" value="Filter">
       <div class="clearfix"></div>
-      <a ng-click="zoomIn()" title="Zoom In" data-toggle="tooltip" data-placement="top" tooltip class="btn btn-success">
-        <span class="glyphicon glyphicon-zoom-in"></span> </a>
-      <a ng-click="zoomOut()" title="Zoom Out" data-toggle="tooltip" data-placement="top" tooltip class="btn btn-success">
-        <span class="glyphicon glyphicon-zoom-out"></span> </a>
     </form>
     </div>
   </div>

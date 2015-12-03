@@ -21,13 +21,14 @@ angular.module('playgroundApp')
               adminPromise.then(function(isAdmin) {
                 $rootScope.userIsAdmin = isAdmin;
               });
+              $window.location.reload();
             }
           } else {
             $rootScope.displayUsername = null;
             $rootScope.userIsAdmin = false;
           }
         });
-        $window.location.reload();
+
       });
 
       $rootScope.$on('logout-done', function() {

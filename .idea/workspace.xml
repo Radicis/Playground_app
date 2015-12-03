@@ -34,6 +34,8 @@
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\StStephensGreen.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\TheTimSmythePark.7ba2fc99.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\playgrounds\TheTimSmythePark.jpg" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\team\david2.png" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\team\louise2.jpg" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_0.5b6c1fb4.png" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_1.5b6c1fb4.png" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\images\weather\icon_10.f1c30d9b.png" afterPath="" />
@@ -90,6 +92,7 @@
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.68d4ba8c.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.8faedf9e.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.98265b1b.js" afterPath="" />
+      <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.9ca0c87c.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.a6bd9822.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.af3beb81.js" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\scripts\scripts.b10c0153.js" afterPath="" />
@@ -116,84 +119,20 @@
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.e9325e4c.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\main.f979afbb.css" afterPath="" />
       <change type="DELETED" beforePath="G:\xampp\htdocs\playground\dist\styles\vendor.a542cc6a.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/favicon.ico" afterPath="$PROJECT_DIR$/app/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="$PROJECT_DIR$/dist/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/.htaccess" afterPath="$PROJECT_DIR$/rest/application/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/cache/.htaccess" afterPath="$PROJECT_DIR$/rest/application/cache/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/libraries/Format.php" afterPath="$PROJECT_DIR$/rest/application/libraries/Format.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/rest/application/libraries/REST_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/add.html" afterPath="$PROJECT_DIR$/app/views/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/add.html" afterPath="$PROJECT_DIR$/dist/views/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin.html" afterPath="$PROJECT_DIR$/app/views/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/admin.html" afterPath="$PROJECT_DIR$/dist/views/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/auth.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/authentication.js" afterPath="$PROJECT_DIR$/app/scripts/services/authentication.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/autoload.php" afterPath="$PROJECT_DIR$/rest/application/config/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/config.php" afterPath="$PROJECT_DIR$/rest/application/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/constants.php" afterPath="$PROJECT_DIR$/rest/application/config/constants.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/database.php" afterPath="$PROJECT_DIR$/rest/application/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/doctypes.php" afterPath="$PROJECT_DIR$/rest/application/config/doctypes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/edit.html" afterPath="$PROJECT_DIR$/app/views/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/edit.html" afterPath="$PROJECT_DIR$/dist/views/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_404.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_404.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_404.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_404.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_db.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_db.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_exception.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_exception.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_general.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_general.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_general.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_general.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/error_php.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/error_php.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/error_php.php" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/error_php.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/foreign_chars.php" afterPath="$PROJECT_DIR$/rest/application/config/foreign_chars.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/hooks.php" afterPath="$PROJECT_DIR$/rest/application/config/hooks.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/playgrounds/ballynacally_1.jpg" afterPath="$PROJECT_DIR$/dist/images/playgrounds/ballynacally_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/playgrounds/bandon_1.jpg" afterPath="$PROJECT_DIR$/dist/images/playgrounds/bandon_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/playgrounds/bernard_1.jpg" afterPath="$PROJECT_DIR$/dist/images/playgrounds/bernard_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/playgrounds/doughiska_1.jpg" afterPath="$PROJECT_DIR$/dist/images/playgrounds/doughiska_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/playgrounds/fitzgeraldPark_1.jpg" afterPath="$PROJECT_DIR$/dist/images/playgrounds/fitzgeraldPark_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/playgrounds/marleyPark_1.jpg" afterPath="$PROJECT_DIR$/dist/images/playgrounds/marleyPark_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/playgrounds/monivea_1.jpg" afterPath="$PROJECT_DIR$/dist/images/playgrounds/monivea_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/playgrounds/stStephensGreen_1.jpg" afterPath="$PROJECT_DIR$/dist/images/playgrounds/stStephensGreen_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/playgrounds/theTimSmythePark_1.jpg" afterPath="$PROJECT_DIR$/dist/images/playgrounds/theTimSmythePark_1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/index.html" afterPath="$PROJECT_DIR$/rest/application/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/cache/index.html" afterPath="$PROJECT_DIR$/rest/application/cache/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/index.html" afterPath="$PROJECT_DIR$/rest/application/config/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/core/index.html" afterPath="$PROJECT_DIR$/rest/application/core/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/helpers/index.html" afterPath="$PROJECT_DIR$/rest/application/helpers/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/hooks/index.html" afterPath="$PROJECT_DIR$/rest/application/hooks/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/index.html" afterPath="$PROJECT_DIR$/rest/application/language/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/bulgarian/index.html" afterPath="$PROJECT_DIR$/rest/application/language/bulgarian/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/english/index.html" afterPath="$PROJECT_DIR$/rest/application/language/english/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/portuguese-brazilian/index.html" afterPath="$PROJECT_DIR$/rest/application/language/portuguese-brazilian/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/libraries/index.html" afterPath="$PROJECT_DIR$/rest/application/libraries/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/logs/index.html" afterPath="$PROJECT_DIR$/rest/application/logs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/third_party/index.html" afterPath="$PROJECT_DIR$/rest/application/third_party/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/index.html" afterPath="$PROJECT_DIR$/rest/application/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/index.html" afterPath="$PROJECT_DIR$/rest/application/views/errors/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/cli/index.html" afterPath="$PROJECT_DIR$/rest/application/views/errors/cli/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/errors/html/index.html" afterPath="$PROJECT_DIR$/rest/application/views/errors/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/main.html" afterPath="$PROJECT_DIR$/dist/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/memcached.php" afterPath="$PROJECT_DIR$/rest/application/config/memcached.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/migration.php" afterPath="$PROJECT_DIR$/rest/application/config/migration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/mimes.php" afterPath="$PROJECT_DIR$/rest/application/config/mimes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/playground.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/playground.js" afterPath="$PROJECT_DIR$/app/scripts/services/playground.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/playground_view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/profiler.php" afterPath="$PROJECT_DIR$/rest/application/config/profiler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/rest.php" afterPath="$PROJECT_DIR$/rest/application/config/rest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/bulgarian/rest_controller_lang.php" afterPath="$PROJECT_DIR$/rest/application/language/bulgarian/rest_controller_lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/english/rest_controller_lang.php" afterPath="$PROJECT_DIR$/rest/application/language/english/rest_controller_lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/language/portuguese-brazilian/rest_controller_lang.php" afterPath="$PROJECT_DIR$/rest/application/language/portuguese-brazilian/rest_controller_lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/rest_server.php" afterPath="$PROJECT_DIR$/rest/application/views/rest_server.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/routes.php" afterPath="$PROJECT_DIR$/rest/application/config/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/smileys.php" afterPath="$PROJECT_DIR$/rest/application/config/smileys.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/config/user_agents.php" afterPath="$PROJECT_DIR$/rest/application/config/user_agents.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view.html" afterPath="$PROJECT_DIR$/app/views/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/view.html" afterPath="$PROJECT_DIR$/dist/views/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/weather.js" afterPath="$PROJECT_DIR$/app/scripts/services/weather.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/application/views/welcome_message.php" afterPath="$PROJECT_DIR$/rest/application/views/welcome_message.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="G:\xampp\htdocs\playground\rest\application\controllers\api\auth.php" afterPath="$PROJECT_DIR$/rest/application/controllers/api/Auth.php" />
-      <change type="MOVED" beforePath="G:\xampp\htdocs\playground\rest\application\controllers\api\playground.php" afterPath="$PROJECT_DIR$/rest/application/controllers/api/Playground.php" />
-      <change type="MOVED" beforePath="G:\xampp\htdocs\playground\rest\application\models\auth_model.php" afterPath="$PROJECT_DIR$/rest/application/models/Auth_model.php" />
     </list>
     <ignored path="playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -225,11 +164,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="132" column="21" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.41687346">
+              <caret line="499" column="9" selection-start-line="499" selection-start-column="9" selection-end-line="499" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9245284">
+              <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -248,18 +197,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.296296">
-              <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="101" column="9" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+            <state vertical-scroll-proportion="-14.481482">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -275,10 +214,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.18367347">
+            <state vertical-scroll-proportion="-8.793103">
               <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding />
             </state>
@@ -328,7 +267,6 @@
         <option value="$PROJECT_DIR$/app/scripts/services/eventsservice.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/view.html" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/views/add.html" />
         <option value="$PROJECT_DIR$/app/scripts/services/playground.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/weather.js" />
@@ -336,12 +274,13 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/auth.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/admin.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/playground.js" />
-        <option value="$PROJECT_DIR$/app/styles/main.css" />
         <option value="$PROJECT_DIR$/rest/application/controllers/api/Auth.php" />
         <option value="$PROJECT_DIR$/rest/application/models/Auth_model.php" />
         <option value="$PROJECT_DIR$/app/scripts/services/authentication.js" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.css" />
       </list>
     </option>
   </component>
@@ -863,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8867924">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.943397">
@@ -952,14 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="21" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923">
@@ -972,14 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5729665">
           <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="87" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.296296">
-          <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
           <folding />
         </state>
       </provider>
@@ -1016,18 +932,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.793103">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="1.636891">
           <caret line="101" column="9" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.18367347">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state vertical-scroll-proportion="-14.481482">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9245284">
+          <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41687346">
+          <caret line="499" column="9" selection-start-line="499" selection-start-column="9" selection-end-line="499" selection-end-column="9" />
           <folding />
         </state>
       </provider>

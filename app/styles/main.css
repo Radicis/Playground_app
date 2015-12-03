@@ -493,14 +493,21 @@ img {
   margin-right: 10px;
   float: left;
 }
-.zoom-controls {
+#zoom {
   position: absolute;
   z-index: 9999999;
-  bott: 150px;
-  left: 50px;
+  right: -20px;
+  top:180px;
+}
+#zoom a{
+  margin-bottom:5px;
+  border:1px solid #222;
 }
 #map-directions{
   text-align: center;
+}
+.list-group {
+  margin-bottom: 0px;
 }
 /* ==========================================================================
    Review box Styling
