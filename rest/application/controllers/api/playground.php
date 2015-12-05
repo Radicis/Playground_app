@@ -18,7 +18,7 @@ class Playground extends REST_Controller {
     public function playgrounds_get()
     {
         // Users from a data store e.g. database
-        $users = $this->playground_model->get_all();
+        $playgrounds = $this->playground_model->get_all();
 
         $id = $this->get('id');
 
@@ -27,10 +27,10 @@ class Playground extends REST_Controller {
         if ($id === NULL)
         {
             // Check if the users data store contains users (in case the database result returns NULL)
-            if ($users)
+            if ($playgrounds)
             {
                 // Set the response and exit
-                $this->response($users, REST_Controller::HTTP_OK); // OK (200) being the HTTP response code
+                $this->response($playgrounds, REST_Controller::HTTP_OK); // OK (200) being the HTTP response code
             }
             else
             {
@@ -53,22 +53,22 @@ class Playground extends REST_Controller {
             $this->response(NULL, REST_Controller::HTTP_BAD_REQUEST); // BAD_REQUEST (400) being the HTTP response code
         }
 
-        $user = NULL;
+        $playground = NULL;
 
-        if (!empty($users))
+        if (!empty($playgrounds))
         {
-            foreach ($users as $this_user)
+            foreach ($playgrounds as $this_playground)
             {
-                if ($this_user->id == $id)
+                if ($this_playground->id == $id)
                 {
-                    $user = $this_user;
+                    $playground = $this_playground;
                 }
             }
         }
 
-        if (!empty($user))
+        if (!empty($playground))
         {
-            $this->set_response($user, REST_Controller::HTTP_OK); // OK (200) being the HTTP response code
+            $this->set_response($playground, REST_Controller::HTTP_OK); // OK (200) being the HTTP response code
         }
         else
         {
@@ -139,9 +139,9 @@ class Playground extends REST_Controller {
                 'geoLng' => $this->put('geoLng'),
                 'surface' => $this->put('surface'),
                 'description' => $this->put('description'),
-				'facilities' => $this->put('facilities'),
-				'age' => $this->put('age'),
-				'images' => $this->put('images'),	
+			        	'facilities' => $this->put('facilities'),
+				        'age' => $this->put('age'),
+				        'images' => $this->put('images'),	
                 'userID' => $this->put('userID'),
             ];
 
