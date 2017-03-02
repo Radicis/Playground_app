@@ -116,7 +116,7 @@ angular
 
 angular.module('playgroundApp').config(function(uiGmapGoogleMapApiProvider) {
   uiGmapGoogleMapApiProvider.configure({
-    key: 'AIzaSyD169v2fy1ptsLoahXLOpN5zVZqRpKy3co',
+    key: 'XXXX',
     v: '3',
     libraries: 'weather,geometry,visualization'
   });
